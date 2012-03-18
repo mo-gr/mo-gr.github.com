@@ -1,59 +1,59 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://notadomain.com/blog/2011/08/01/hello-world/</loc>
+        <loc>http://blog.notadomain.com/blog/2011/08/01/hello-world/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/blog/2011/08/07/switch-to-octopress/</loc>
+        <loc>http://blog.notadomain.com/blog/2011/08/07/switch-to-octopress/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/blog/2011/10/24/going-live/</loc>
+        <loc>http://blog.notadomain.com/blog/2011/10/24/going-live/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/blog/2011/11/07/google-reader-1/</loc>
+        <loc>http://blog.notadomain.com/blog/2011/11/07/google-reader-1/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/blog/2011/12/04/ssh-housekeeping/</loc>
+        <loc>http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/blog/2011/12/04/distraction-free-writing/</loc>
+        <loc>http://blog.notadomain.com/blog/2011/12/04/distraction-free-writing/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/blog/2011/12/29/picketlink/</loc>
+        <loc>http://blog.notadomain.com/blog/2011/12/29/picketlink/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/blog/2012/01/03/completely-moved-to-solid-state/</loc>
+        <loc>http://blog.notadomain.com/blog/2012/01/03/completely-moved-to-solid-state/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/blog/2012/02/12/code-clouds/</loc>
+        <loc>http://blog.notadomain.com/blog/2012/02/12/code-clouds/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/blog/2012/03/18/octopress-linklog/</loc>
+        <loc>http://blog.notadomain.com/blog/2012/03/18/octopress-linklog/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/about.html</loc>
+        <loc>http://blog.notadomain.com/about.html</loc>
         <lastmod>2012-03-18T16:59:44+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/blog/archives/</loc>
+        <loc>http://blog.notadomain.com/blog/archives/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/impressum.html</loc>
+        <loc>http://blog.notadomain.com/impressum.html</loc>
         <lastmod>2012-03-18T16:59:44+01:00</lastmod>
     </url>
     <url>
-        <loc>http://notadomain.com/</loc>
+        <loc>http://blog.notadomain.com/</loc>
         <lastmod>2012-03-18T17:08:05+01:00</lastmod>
     </url>
 </urlset>
