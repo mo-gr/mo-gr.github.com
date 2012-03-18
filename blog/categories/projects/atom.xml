@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Not a blog]]></title>
   <link href="http://blog.notadomain.com/blog/categories/projects/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2012-03-18T19:28:26+01:00</updated>
+  <updated>2012-03-18T19:40:03+01:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -34,7 +34,7 @@ following is a word cloud generated from <a href="http://www.hibernate.org/">hib
 most common words in the codebase. The bigger the word, the more common
 it is.</p>
 
-<p><img src="http://www.notadomain.com/images/hibernate-cloud.png" alt="Cloud of hibernate-core" /></p>
+<p><img src="http://blog.notadomain.com/images/hibernate-cloud.png" alt="Cloud of hibernate-core" /></p>
 
 <!--more-->
 
