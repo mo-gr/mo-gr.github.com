@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: projects | Not a blog]]></title>
-  <link href="http://blog.notadomain.com/blog/categories/projects/atom.xml" rel="self"/>
-  <link href="http://blog.notadomain.com/"/>
-  <updated>2012-03-18T18:09:38+01:00</updated>
-  <id>http://blog.notadomain.com/</id>
+  <link href="http://www.notadomain.com/blog/categories/projects/atom.xml" rel="self"/>
+  <link href="http://www.notadomain.com/"/>
+  <updated>2012-03-18T19:24:48+01:00</updated>
+  <id>http://www.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
     
@@ -20,9 +20,9 @@
 
 
 <title type="html"><![CDATA[Code clouds]]></title>
-<link href="http://blog.notadomain.com/blog/2012/02/12/code-clouds/"/>
+<link href="http://www.notadomain.com/blog/2012/02/12/code-clouds/"/>
 <updated>2012-02-12T19:04:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2012/02/12/code-clouds</id>
+<id>http://www.notadomain.com/blog/2012/02/12/code-clouds</id>
 
       <content type="html"><![CDATA[<p>Last year, I've been to <a href="http://jz11.java.no/news.html">Javazone</a> and among the many great speakers was
 <a href="http://twitter.com/#!/kevlinhenney">Kevlin Henney</a>. His talk was titled <a href="http://vimeo.com/28772428">Cool Code</a> and if you havn't seen it, I can highly recommend it! (same goes for all talks by Kevlin).</p>
@@ -92,7 +92,7 @@ from you! I would also love to show you some more clouds, but I
 currently only have customer-projects with interesting code bases
 around - and I am not comfortable with presenting them here.</p>
 
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/02/12/code-clouds/">&infin; Permalink</a></p>
+<p><a rel="bookmark" href="http://www.notadomain.com/blog/2012/02/12/code-clouds/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>
