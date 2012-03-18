@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: meta | Not a blog]]></title>
-  <link href="http://blog.notadomain.com/blog/categories/meta/atom.xml" rel="self"/>
-  <link href="http://blog.notadomain.com/"/>
-  <updated>2012-03-18T17:09:02+01:00</updated>
-  <id>http://blog.notadomain.com/</id>
+  <link href="http://mo-gr.github.com/blog/categories/meta/atom.xml" rel="self"/>
+  <link href="http://mo-gr.github.com/"/>
+  <updated>2012-03-18T17:25:17+01:00</updated>
+  <id>http://mo-gr.github.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
     
@@ -22,12 +22,12 @@
 <title type="html"><![CDATA[&rarr; Octopress linklog]]></title>
 <link href="http://octopress.org/docs/blogging/linklog/"/>
 <updated>2012-03-18T16:54:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2012/03/18/octopress-linklog</id>
+<id>http://mo-gr.github.com/blog/2012/03/18/octopress-linklog</id>
 
       <content type="html"><![CDATA[<p>I am currently integrating octopress linklog in my blog. Basically
 <a href="http://daringfireball.net/">daring fireball</a> style link blogging.</p>
 
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/18/octopress-linklog/">&infin; Permalink</a></p>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2012/03/18/octopress-linklog/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>
@@ -39,9 +39,9 @@
 
 
 <title type="html"><![CDATA[Going Live]]></title>
-<link href="http://blog.notadomain.com/blog/2011/10/24/going-live/"/>
+<link href="http://mo-gr.github.com/blog/2011/10/24/going-live/"/>
 <updated>2011-10-24T23:02:00+02:00</updated>
-<id>http://blog.notadomain.com/blog/2011/10/24/going-live</id>
+<id>http://mo-gr.github.com/blog/2011/10/24/going-live</id>
 
       <content type="html"><![CDATA[<p>Lazy me. Aparently it has been nearly two months since I last played with this blog. So instead of planing to tinker
 with it more and more, I decided to just go live.</p>
@@ -61,7 +61,7 @@ flourish as I go with it.</p>
 
 <p>The basics are set up and running. I even added an <a href="http://blog.notadomain.com/impressum.html">Impressum</a> to be a bit safer in the shark-infested minefield that the german internet is from a juristic stance.</p>
 
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/10/24/going-live/">&infin; Permalink</a></p>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2011/10/24/going-live/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>
@@ -73,16 +73,16 @@ flourish as I go with it.</p>
 
 
 <title type="html"><![CDATA[Switch to Octopress]]></title>
-<link href="http://blog.notadomain.com/blog/2011/08/07/switch-to-octopress/"/>
+<link href="http://mo-gr.github.com/blog/2011/08/07/switch-to-octopress/"/>
 <updated>2011-08-07T17:30:00+02:00</updated>
-<id>http://blog.notadomain.com/blog/2011/08/07/switch-to-octopress</id>
+<id>http://mo-gr.github.com/blog/2011/08/07/switch-to-octopress</id>
 
       <content type="html"><![CDATA[<p>After a few weeks of not doing anything to my blog at all I decided to switch to <a href="http://octopress.org/" title="octopress">octopress</a>. It looks like a nice
 project and seems to fit most of my needs. I am currently setting up some form of deployment and tinkering with the
 styles. I am currently writing the posts locally and deploy them to an ec2 instance. But I would like to get a setup
 running where I can edit and create posts on the go from my iPad. Ideally without ssh-ing into ec2.</p>
 
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/08/07/switch-to-octopress/">&infin; Permalink</a></p>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2011/08/07/switch-to-octopress/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>
@@ -94,13 +94,13 @@ running where I can edit and create posts on the go from my iPad. Ideally withou
 
 
 <title type="html"><![CDATA[Hello World]]></title>
-<link href="http://blog.notadomain.com/blog/2011/08/01/hello-world/"/>
+<link href="http://mo-gr.github.com/blog/2011/08/01/hello-world/"/>
 <updated>2011-08-01T16:28:00+02:00</updated>
-<id>http://blog.notadomain.com/blog/2011/08/01/hello-world</id>
+<id>http://mo-gr.github.com/blog/2011/08/01/hello-world</id>
 
       <content type="html"><![CDATA[<p>Hello world. Are you <em>up</em> and <em>running</em>?</p>
 
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/08/01/hello-world/">&infin; Permalink</a></p>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2011/08/01/hello-world/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>

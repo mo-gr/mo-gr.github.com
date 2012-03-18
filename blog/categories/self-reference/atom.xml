@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: self-reference | Not a blog]]></title>
-  <link href="http://blog.notadomain.com/blog/categories/self-reference/atom.xml" rel="self"/>
-  <link href="http://blog.notadomain.com/"/>
-  <updated>2012-03-18T17:09:02+01:00</updated>
-  <id>http://blog.notadomain.com/</id>
+  <link href="http://mo-gr.github.com/blog/categories/self-reference/atom.xml" rel="self"/>
+  <link href="http://mo-gr.github.com/"/>
+  <updated>2012-03-18T17:25:17+01:00</updated>
+  <id>http://mo-gr.github.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
     
@@ -20,9 +20,9 @@
 
 
 <title type="html"><![CDATA[ssh housekeeping]]></title>
-<link href="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/"/>
+<link href="http://mo-gr.github.com/blog/2011/12/04/ssh-housekeeping/"/>
 <updated>2011-12-04T21:46:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping</id>
+<id>http://mo-gr.github.com/blog/2011/12/04/ssh-housekeeping</id>
 
       <content type="html"><![CDATA[<p><em>Disclaimer: This post is primarily aimed at myself. No information here that can't be found via google.</em></p>
 
@@ -39,7 +39,7 @@
 
 <p>The lower-case p-param will ask ssh-keygen to change the passphrase of the file that is passed as an argument to -f.</p>
 
-<p>On that account, I also changed the hostname in the public part of the key to reflect my current machine. Just edit ~/.ssh/id_rsa.pub in a text editor and change the hostname at the end of the key. It is just an identifier after all.<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/">&infin; Permalink</a></p></p>
+<p>On that account, I also changed the hostname in the public part of the key to reflect my current machine. Just edit ~/.ssh/id_rsa.pub in a text editor and change the hostname at the end of the key. It is just an identifier after all.<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2011/12/04/ssh-housekeeping/">&infin; Permalink</a></p></p>
 ]]></content>
     </entry>
   

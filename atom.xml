@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[Not a blog]]></title>
-  <link href="http://blog.notadomain.com/atom.xml" rel="self"/>
-  <link href="http://blog.notadomain.com/"/>
-  <updated>2012-03-18T17:09:02+01:00</updated>
-  <id>http://blog.notadomain.com/</id>
+  <link href="http://mo-gr.github.com/atom.xml" rel="self"/>
+  <link href="http://mo-gr.github.com/"/>
+  <updated>2012-03-18T17:25:17+01:00</updated>
+  <id>http://mo-gr.github.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
     
@@ -21,11 +21,11 @@
 <title type="html"><![CDATA[&rarr; Octopress linklog]]></title>
 <link href="http://octopress.org/docs/blogging/linklog/"/>
 <updated>2012-03-18T16:54:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2012/03/18/octopress-linklog</id>
+<id>http://mo-gr.github.com/blog/2012/03/18/octopress-linklog</id>
 
       <content type="html"><![CDATA[<p>I am currently integrating octopress linklog in my blog. Basically
 <a href="http://daringfireball.net/">daring fireball</a> style link blogging.</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/18/octopress-linklog/">&infin; Permalink</a></p>]]></content>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2012/03/18/octopress-linklog/">&infin; Permalink</a></p>]]></content>
     </entry>
   
     <entry>
@@ -35,9 +35,9 @@
 
 
 <title type="html"><![CDATA[Code clouds]]></title>
-<link href="http://blog.notadomain.com/blog/2012/02/12/code-clouds/"/>
+<link href="http://mo-gr.github.com/blog/2012/02/12/code-clouds/"/>
 <updated>2012-02-12T19:04:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2012/02/12/code-clouds</id>
+<id>http://mo-gr.github.com/blog/2012/02/12/code-clouds</id>
 
       <content type="html"><![CDATA[<p>Last year, I&#8217;ve been to <a href="http://jz11.java.no/news.html">Javazone</a> and among the many great speakers was
 <a href="http://twitter.com/#!/kevlinhenney">Kevlin Henney</a>. His talk was titled <a href="http://vimeo.com/28772428">Cool Code</a> and if you havn&#8217;t seen it, I can highly recommend it! (same goes for all talks by Kevlin).</p>
@@ -106,7 +106,7 @@ seperate posts.</p>
 from you! I would also love to show you some more clouds, but I
 currently only have customer-projects with interesting code bases
 around - and I am not comfortable with presenting them here.</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/02/12/code-clouds/">&infin; Permalink</a></p>]]></content>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2012/02/12/code-clouds/">&infin; Permalink</a></p>]]></content>
     </entry>
   
     <entry>
@@ -116,9 +116,9 @@ around - and I am not comfortable with presenting them here.</p>
 
 
 <title type="html"><![CDATA[Completely moved to Solid State]]></title>
-<link href="http://blog.notadomain.com/blog/2012/01/03/completely-moved-to-solid-state/"/>
+<link href="http://mo-gr.github.com/blog/2012/01/03/completely-moved-to-solid-state/"/>
 <updated>2012-01-03T01:12:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2012/01/03/completely-moved-to-solid-state</id>
+<id>http://mo-gr.github.com/blog/2012/01/03/completely-moved-to-solid-state</id>
 
       <content type="html"><![CDATA[<p><em>tl;dr: SSDs are awesome. Don&#8217;t have one? Get one!</em></p>
 
@@ -142,7 +142,7 @@ around - and I am not comfortable with presenting them here.</p>
 <p>By the way, I decided to start fresh with the new SSD and reinstalled Lion from scratch. Thanks to a rather fast internet connection, the cloud in general and iCloud in particular as well was a recent time machine backup, I&#8217;ve got my system from SSD-in-my-hand to ready-for-production-work in about 3 to 4 hours. This made me really appreciate the Mac App Store. In the time it took me to search for the licenses in my mails, I got all apps from the MAS ready to go with no interaction. Downloaded and licensed. No registration-key-copy-pasta. This was such a pleasant experience that I seriously consider purchasing MAS-Versions of the applications that I got pre-MAS that are available in the MAS by now.</p>
 
 <p><em>*-affiliate links</em></p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/01/03/completely-moved-to-solid-state/">&infin; Permalink</a></p>]]></content>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2012/01/03/completely-moved-to-solid-state/">&infin; Permalink</a></p>]]></content>
     </entry>
   
     <entry>
@@ -152,9 +152,9 @@ around - and I am not comfortable with presenting them here.</p>
 
 
 <title type="html"><![CDATA[Picketlink]]></title>
-<link href="http://blog.notadomain.com/blog/2011/12/29/picketlink/"/>
+<link href="http://mo-gr.github.com/blog/2011/12/29/picketlink/"/>
 <updated>2011-12-29T17:28:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2011/12/29/picketlink</id>
+<id>http://mo-gr.github.com/blog/2011/12/29/picketlink</id>
 
       <content type="html"><![CDATA[<p>My friend <a href="https://twitter.com/#!/michaelschuetz">Michael</a> and myself have been hacking some features into a specific version of <a href="http://www.jboss.org/picketlink">picketlink</a>. An update to a newer version was out of the question. We blogged about it over <a href="http://blog.akquinet.de/2011/12/26/patching-picketlink-to-support-multiple-ldap-stores/">here</a>.</p>
 
@@ -164,7 +164,7 @@ around - and I am not comfortable with presenting them here.</p>
 <p>I really like to get my head around existing code bases. Finding my ways through them and fixing or modifing them. I should do that far more often!</p>
 
 <p>Anyway, I don&#8217;t want to rant too much about picketlink. It works most of the time. But man… there are some code smells in there. If I&#8217;m modifying a class somewhere down around line 3500-something, this is a smell. If a class needs more than 1000 LoC, it should probably not be a single class. DRY anyone? Enough of a rant… Our modifications aren&#8217;t really that much better. <a href="http://en.wikipedia.org/wiki/Broken_window_theory">Broken window theory</a> at work…</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/12/29/picketlink/">&infin; Permalink</a></p>]]></content>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2011/12/29/picketlink/">&infin; Permalink</a></p>]]></content>
     </entry>
   
     <entry>
@@ -174,9 +174,9 @@ around - and I am not comfortable with presenting them here.</p>
 
 
 <title type="html"><![CDATA[Distraction free writing]]></title>
-<link href="http://blog.notadomain.com/blog/2011/12/04/distraction-free-writing/"/>
+<link href="http://mo-gr.github.com/blog/2011/12/04/distraction-free-writing/"/>
 <updated>2011-12-04T22:01:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2011/12/04/distraction-free-writing</id>
+<id>http://mo-gr.github.com/blog/2011/12/04/distraction-free-writing</id>
 
       <content type="html"><![CDATA[<p>I&#8217;ve never been a big fan of fat, bloaty WYSIWYMG text editors. Some people call them word processors. Most of my longer texts in university have been written in LaTeX/vim. This also includes my diploma thesis. Every longer experience with the so called word processors made me hate them even more. I like the appeal of writing - and basically thinking - in plain text files. Having a confusing UI and lots of inconsistend formatting in the document is very annoying to me. But for everyday work, LaTeX is just too much of an overhead and, more often than not, feels arcane.</p>
 
@@ -205,7 +205,7 @@ alias ia="open -a iA\ Writer"
 </code></pre>
 
 <p>This will allow you to open any file in the corresponding application directly from the commandline.</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/12/04/distraction-free-writing/">&infin; Permalink</a></p>]]></content>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2011/12/04/distraction-free-writing/">&infin; Permalink</a></p>]]></content>
     </entry>
   
     <entry>
@@ -215,9 +215,9 @@ alias ia="open -a iA\ Writer"
 
 
 <title type="html"><![CDATA[ssh housekeeping]]></title>
-<link href="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/"/>
+<link href="http://mo-gr.github.com/blog/2011/12/04/ssh-housekeeping/"/>
 <updated>2011-12-04T21:46:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping</id>
+<id>http://mo-gr.github.com/blog/2011/12/04/ssh-housekeeping</id>
 
       <content type="html"><![CDATA[<p><em>Disclaimer: This post is primarily aimed at myself. No information here that can&#8217;t be found via google.</em></p>
 
@@ -235,7 +235,7 @@ alias ia="open -a iA\ Writer"
 <p>The lower-case p-param will ask ssh-keygen to change the passphrase of the file that is passed as an argument to -f.</p>
 
 <p>On that account, I also changed the hostname in the public part of the key to reflect my current machine. Just edit ~/.ssh/id_rsa.pub in a text editor and change the hostname at the end of the key. It is just an identifier after all.</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/">&infin; Permalink</a></p>]]></content>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2011/12/04/ssh-housekeeping/">&infin; Permalink</a></p>]]></content>
     </entry>
   
     <entry>
@@ -245,9 +245,9 @@ alias ia="open -a iA\ Writer"
 
 
 <title type="html"><![CDATA[Google Reader (-1)]]></title>
-<link href="http://blog.notadomain.com/blog/2011/11/07/google-reader-1/"/>
+<link href="http://mo-gr.github.com/blog/2011/11/07/google-reader-1/"/>
 <updated>2011-11-07T19:16:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2011/11/07/google-reader-1</id>
+<id>http://mo-gr.github.com/blog/2011/11/07/google-reader-1</id>
 
       <content type="html"><![CDATA[<p><em>tl;dr: I don&#8217;t like the new Google Reader UI. I&#8217;m using <a href="http://reederapp.com/">Reeder</a> for now and I like it a lot.</em></p>
 
@@ -294,7 +294,7 @@ very fair. You should probably just give both a testrun and see what works best 
 <p>However, once in a while, probably out of a bad habbit, I still hit my Google Reader shortcut in Safari - and everytime, the looks of it make me shiver away.</p>
 
 <p>I&#8217;m a bit annoyed by google for crippling Reader and I am not <a href="http://fury.com/2011/11/my-offer-to-google-reader/">alone</a> with my oppinion. It seems like google slowly starts losing it with their strong focus on plus. Their services and offerings start to annoy me more and more to the point that I actively look for alternatives. Has anything good come out of the plus-ification of their stuff yet?</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/11/07/google-reader-1/">&infin; Permalink</a></p>]]></content>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2011/11/07/google-reader-1/">&infin; Permalink</a></p>]]></content>
     </entry>
   
     <entry>
@@ -304,9 +304,9 @@ very fair. You should probably just give both a testrun and see what works best 
 
 
 <title type="html"><![CDATA[Going Live]]></title>
-<link href="http://blog.notadomain.com/blog/2011/10/24/going-live/"/>
+<link href="http://mo-gr.github.com/blog/2011/10/24/going-live/"/>
 <updated>2011-10-24T23:02:00+02:00</updated>
-<id>http://blog.notadomain.com/blog/2011/10/24/going-live</id>
+<id>http://mo-gr.github.com/blog/2011/10/24/going-live</id>
 
       <content type="html"><![CDATA[<p>Lazy me. Aparently it has been nearly two months since I last played with this blog. So instead of planing to tinker
 with it more and more, I decided to just go live.</p>
@@ -325,7 +325,7 @@ flourish as I go with it.</p>
 <p>The next few postings aren&#8217;t going to be about <a href="http://blog.notadomain.com/blog/categories/meta/">meta-blogging</a> topics.</p>
 
 <p>The basics are set up and running. I even added an <a href="http://blog.notadomain.com/impressum.html">Impressum</a> to be a bit safer in the shark-infested minefield that the german internet is from a juristic stance.</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/10/24/going-live/">&infin; Permalink</a></p>]]></content>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2011/10/24/going-live/">&infin; Permalink</a></p>]]></content>
     </entry>
   
     <entry>
@@ -335,15 +335,15 @@ flourish as I go with it.</p>
 
 
 <title type="html"><![CDATA[Switch to Octopress]]></title>
-<link href="http://blog.notadomain.com/blog/2011/08/07/switch-to-octopress/"/>
+<link href="http://mo-gr.github.com/blog/2011/08/07/switch-to-octopress/"/>
 <updated>2011-08-07T17:30:00+02:00</updated>
-<id>http://blog.notadomain.com/blog/2011/08/07/switch-to-octopress</id>
+<id>http://mo-gr.github.com/blog/2011/08/07/switch-to-octopress</id>
 
       <content type="html"><![CDATA[<p>After a few weeks of not doing anything to my blog at all I decided to switch to <a href="http://octopress.org/" title="octopress">octopress</a>. It looks like a nice
 project and seems to fit most of my needs. I am currently setting up some form of deployment and tinkering with the
 styles. I am currently writing the posts locally and deploy them to an ec2 instance. But I would like to get a setup
 running where I can edit and create posts on the go from my iPad. Ideally without ssh-ing into ec2.</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/08/07/switch-to-octopress/">&infin; Permalink</a></p>]]></content>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2011/08/07/switch-to-octopress/">&infin; Permalink</a></p>]]></content>
     </entry>
   
     <entry>
@@ -353,12 +353,12 @@ running where I can edit and create posts on the go from my iPad. Ideally withou
 
 
 <title type="html"><![CDATA[Hello World]]></title>
-<link href="http://blog.notadomain.com/blog/2011/08/01/hello-world/"/>
+<link href="http://mo-gr.github.com/blog/2011/08/01/hello-world/"/>
 <updated>2011-08-01T16:28:00+02:00</updated>
-<id>http://blog.notadomain.com/blog/2011/08/01/hello-world</id>
+<id>http://mo-gr.github.com/blog/2011/08/01/hello-world</id>
 
       <content type="html"><![CDATA[<p>Hello world. Are you <em>up</em> and <em>running</em>?</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/08/01/hello-world/">&infin; Permalink</a></p>]]></content>
+<p><a rel="bookmark" href="http://mo-gr.github.com/blog/2011/08/01/hello-world/">&infin; Permalink</a></p>]]></content>
     </entry>
   
 </feed>
