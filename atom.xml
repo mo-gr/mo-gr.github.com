@@ -3,7 +3,7 @@
   <title><![CDATA[Not a blog]]></title>
   <link href="http://blog.notadomain.com/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2012-03-19T11:54:24+01:00</updated>
+  <updated>2012-03-19T13:44:25+01:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -11,6 +11,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[&rarr; Why is the DOS path character "\\"?]]></title>
+<link href="http://blogs.msdn.com/b/larryosterman/archive/2005/06/24/432386.aspx"/>
+<updated>2012-03-19T13:38:00+01:00</updated>
+<id>http://blog.notadomain.com/blog/2012/03/19/why-is-the-dos-path-character-slash</id>
+
+      <content type="html"><![CDATA[<p>Interesting article on why Microsofts engineers chose &#8220;&#92;&#8221; as the path
+seperator (and therefore making the windows command line such an
+unpleasant place to be). I like this kind of history. It&#8217;s often interesting
+and insightful.</p>
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/19/why-is-the-dos-path-character-slash/">&infin; Permalink</a></p>]]></content>
+    </entry>
   
     <entry>
       
