@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Completely moved to Solid State - Not a blog</title>
+  <title>Octoflattr - Not a blog</title>
   <meta name="author" content="Moritz Grauel">
 
   
-  <meta name="description" content="tl;dr: SSDs are awesome. Don&#8217;t have one? Get one! Happy new year! I got a late christmas gift in the form of a Crucial M4 256G* Solid State &hellip;">
+  <meta name="description" content="tl;dr: Here is how I integrated Flattr into my octopress blog. Flattr Over the weekend, I integrated Flattr into my blog. Flattr is an
+online payment &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.notadomain.com/blog/2012/01/03/completely-moved-to-solid-state">
+  <link rel="canonical" href="http://blog.notadomain.com/blog/2012/03/19/octoflattr">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -91,7 +92,7 @@
   <header>
     <h1 class="entry-title">
 
-Completely Moved to Solid State
+Octoflattr
 
 </h1>
 
@@ -104,37 +105,86 @@ Completely Moved to Solid State
 
   
 
-<time datetime="2012-01-03T01:12:00+01:00" pubdate>Jan 3<span>rd</span>, 2012</time>
+<time datetime="2012-03-19T10:54:00+01:00" pubdate>Mar 19<span>th</span>, 2012</time>
         
-         &bull; <a rel="bookmark" href="/blog/2012/01/03/completely-moved-to-solid-state/">&infin;</a>
+         &bull; <a rel="bookmark" href="/blog/2012/03/19/octoflattr/">&infin;</a>
       </p>
     
   </header>
 
 
 
-  <div class="entry-content"><p><em>tl;dr: SSDs are awesome. Don&#8217;t have one? Get one!</em></p>
-
-<p>Happy new year!</p>
-
-<p><img src="http://dl.dropbox.com/u/165601/blog/rocket.jpg" title="&#34;Picture completely unrelated to post - Happy new year&#34;" alt="&#34;Picture completely unrelated to post - Happy new year&#34;"></p>
-
-<p>I got a late christmas gift in the form of a <a href="http://www.amazon.de/gp/product/B004W2JL2A/ref=as_li_ss_tl?ie=UTF8&amp;tag=notadomaincom-21&amp;linkCode=as2&amp;camp=1638&amp;creative=19454&amp;creativeASIN=B004W2JL2A">Crucial M4 256G*</a> Solid State Drive. But let me start a bit earlier.</p>
+  <div class="entry-content"><p><em>tl;dr:</em> <a href="https://github.com/mo-gr/not-a-blog/commit/1408219062aa8aac81abf54431d5edcd638dff2b">Here</a> is how I integrated <a href="http://flattr.com">Flattr</a> into my octopress blog.</p>
 
 <!--more-->
 
 
-<p>I wrote my diploma thesis on my trusty old Mid-2009 13&#8221; MacBook Pro. By far not the fastest machine even by Mid-2009 standards but fast enough for most of my needs most of the time. When I started at <a href="http://spree.de">akquinet</a> last year, they got me a 2.2 GHz i7 17&#8221; MacBook Pro and wow, that thing was fast! Especially compared to my old 13&#8221;. Even though the i7 was equipped with a traditional spinning disk hard disk, it felt way faster.</p>
+<h2>Flattr</h2>
 
-<p>But I still use my 13&#8221; a lot and since everybody was singing the song of the SSD, I gut myself an <a href="http://www.amazon.de/gp/product/B003NE5JCY/ref=as_li_ss_tl?ie=UTF8&amp;tag=notadomaincom-21&amp;linkCode=as2&amp;camp=1638&amp;creative=19454&amp;creativeASIN=B003NE5JCY">OCZ Vertex 2*</a> to see what their tune was all about. And it was music… pure music. All of a sudden, the mighty i7 17&#8221; felt dead slow to me. It was like trying to ride on a dead horse. Where my aging 13&#8221; was snappy and responsive, the spinning disk in the 17&#8221; made it feel like it was heaving trouble getting up at all.</p>
+<p>Over the weekend, I integrated <a href="http://flattr.com">Flattr</a> into my blog. <a href="http://flattr.com">Flattr</a> is an
+online payment system for giving small donations to content creators
+over the internet. It is a neat way to <em>tip</em> people on the web. It
+slowly gains some traction in Europe and many german content creators have it
+integrated into their services. Even some newspapers like the german
+<a href="http://taz.de">taz</a> integrate <a href="http://flattr.com">Flattr</a> to give users of their online portal an easy
+way to voluntarily pay for news articles.</p>
 
-<p>They say, the only people not recommending an SSD to you, are those, that don&#8217;t have one themself. This can&#8217;t be more true. Remember the old days of the late 90ies. When the best thing you could do to your computer was add more RAM. Always. Those days are over. Screw RAM. I have Gigs idling around all the time. Today the very best performance upgrade that money can buy is a solid state disk! Yes, they are expensive. More expensive than spinning disks. But they are worth every cent. 256 Gig SSDs are not absurdly expensive and they are a size that one can live with. Flush out all your huge files on to a big disk and live with the slight inconvenience of having to attach a USB drive when you want to watch that blue-ray rip. Once you&#8217;ve tasted the blood of an SSD you won&#8217;t go back!</p>
+<p>In the USA it is not that common yet. Although pages, like <a href="http://5by5.tv/">5by5</a>
+started integrating flattr recently as well.</p>
 
-<p>Speaking of blood, I should probably mention one caveat. SSDs are not per se less reliable than spinning disks. But they apparently have a tendency to fail big time when they do fail. Think in terms of <a href="http://www.codinghorror.com/blog/2011/05/the-hot-crazy-solid-state-drive-scale.html">oh-my-God-what-just-happened-to-all-my-data</a>. I&#8217;ll report when one of my SSDs has gone that way. Until then, Time Machine and myself will be good friends and seeing each other quite frequently.</p>
+<h2>Octopress integration</h2>
 
-<p>By the way, I decided to start fresh with the new SSD and reinstalled Lion from scratch. Thanks to a rather fast internet connection, the cloud in general and iCloud in particular as well was a recent time machine backup, I&#8217;ve got my system from SSD-in-my-hand to ready-for-production-work in about 3 to 4 hours. This made me really appreciate the Mac App Store. In the time it took me to search for the licenses in my mails, I got all apps from the MAS ready to go with no interaction. Downloaded and licensed. No registration-key-copy-pasta. This was such a pleasant experience that I seriously consider purchasing MAS-Versions of the applications that I got pre-MAS that are available in the MAS by now.</p>
+<p>For the <a href="http://octopress.org/">Octopress</a> Integration, I basically used a
+solution by <a href="http://blog.simonszu.de">Simon Szustkowski</a> that I found
+via google. His solution is very straight forward. He gave a detailed
+description of it on his <a href="http://blog.simonszu.de/2012/02/flattr-fur-octopress/">blog</a>
+(which is in german) and there is also an octopress fork with the
+changes included over <a href="https://github.com/bascht/octopress/commit/e2591467af488bceb2ed058220865cc5111e4f3e#diff-1">here</a>.</p>
 
-<p><em>*-affiliate links</em></p>
+<p>Following that way, you get a <a href="http://flattr.com">Flattr</a> button on every post. In addition to that,
+I also created a <a href="http://flattr.com">Flattr</a> button for the blog as a whole and added it to
+the asides. My changes to <a href="http://octopress.org/">Octopress</a> can be seen
+<a href="https://github.com/mo-gr/not-a-blog/commit/1408219062aa8aac81abf54431d5edcd638dff2b">here</a>.
+They integrate Simons solution and my Button for the blog into one
+commit to my blog repo.
+The <a href="http://flattr.com">Flattr</a> Thing for the blog must be created manually on the <a href="http://flattr.com">Flattr</a> homepage
+and the URL to that thing must be put in your <code>_config.yml</code> under
+<code>flattr_blog_thing</code>. If that configuration is set and the custom aside
+is enabled in the <code>default_asides</code>, there will be a <a href="http://flattr.com">Flattr</a> Button in
+the aside.</p>
+
+<div><script src='https://gist.github.com/2106894.js?file='></script>
+<noscript><pre><code>{% if site.flattr_blog_thing %}
+&lt;a class=&quot;FlattrButton&quot; style=&quot;display:none;&quot; rev=&quot;flattr;button:compact;&quot; href=&quot;{{ site.url }}&quot;&gt;&lt;/a&gt;
+&lt;noscript&gt;
+  &lt;a href=&quot;{{ site.flattr_blog_thing }}&quot; target=&quot;_blank&quot;&gt;
+    &lt;img src=&quot;http://api.flattr.com/button/flattr-badge-large.png&quot; alt=&quot;Flattr this&quot; title=&quot;Flattr this&quot; border=&quot;0&quot; /&gt;
+  &lt;/a&gt;
+&lt;/noscript&gt;
+{% endif %}</code></pre></noscript></div>
+
+
+<p>All other changes are directly from Simons solution. when the
+<code>flattr_user</code> is set in <code>_config.yml</code>, the flattr-api Javascript will be
+included in the header <code>source/_include/custom/head.html</code>. This will
+also conditionally include <code>flattr_button.html</code> in the sharing area below each
+post <code>source/_includes/post/sharing.html</code>. The <a href="http://flattr.com">Flattr</a> Things are
+automatically generated by the <a href="http://flattr.com">Flattr</a> API when someone first clicks on
+one of those buttons. (A <em>Thing</em> in Flattr-Lingo is something you can
+give money to.)</p>
+
+<h2>Official support?</h2>
+
+<p>By the way, the currently <a href="https://github.com/imathis/octopress/pull/255#issuecomment-2566028">official stance</a> of <a href="http://octopress.org/">Octopress</a> is to not
+integrate <a href="http://flattr.com">Flattr</a> into the core of <a href="http://octopress.org/">Octopress</a>. <a href="https://github.com/imathis">Brandon</a> wants to keep <a href="http://octopress.org/">Octopress</a>
+lean and have only the essentials in the core - which I think is very
+reasonable. Maybe there will be an official Flattr-pluign sometime in
+the future. Until then, I hope this helps other people integrating <a href="http://flattr.com">Flattr</a> into their
+<a href="http://octopress.org/">Octopress</a> setups. If you have any questions, feel free to <a href="http://blog.notadomain.com/about.html">contact</a>
+me.</p>
+
+<p>And if you havn&#8217;t yet tried <a href="http://flattr.com">Flattr</a>, go ahead and make the internet a
+better place for everyone!</p>
 </div>
 
 
@@ -152,7 +202,7 @@ Completely Moved to Solid State
 
   
 
-<time datetime="2012-01-03T01:12:00+01:00" pubdate>Jan 3<span>rd</span>, 2012</time>
+<time datetime="2012-03-19T10:54:00+01:00" pubdate>Mar 19<span>th</span>, 2012</time>
       
 
 
@@ -160,18 +210,18 @@ Completely Moved to Solid State
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.notadomain.com/blog/2012/01/03/completely-moved-to-solid-state/" data-via="mo_gr" data-counturl="http://blog.notadomain.com/blog/2012/01/03/completely-moved-to-solid-state/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.notadomain.com/blog/2012/03/19/octoflattr/" data-via="mo_gr" data-counturl="http://blog.notadomain.com/blog/2012/03/19/octoflattr/" >Tweet</a>
   
   
   
   
     <a class="FlattrButton" style="display:none;"
-    title="Completely moved to Solid State"
+    title="Octoflattr"
     data-flattr-uid="mogr"
     data-flattr-tags=""
     data-flattr-button="compact"
     data-flattr-category="text"
-    href="http://blog.notadomain.com/blog/2012/01/03/completely-moved-to-solid-state/">
+    href="http://blog.notadomain.com/blog/2012/03/19/octoflattr/">
     
 </a>
 
@@ -181,10 +231,8 @@ Completely Moved to Solid State
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2011/12/29/picketlink/" title="Previous Post: Picketlink">&laquo; Picketlink</a>
+        <a class="basic-alignment left" href="/blog/2012/03/18/octopress-linklog/" title="Previous Post: Octopress linklog">&laquo; Octopress linklog</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/02/12/code-clouds/" title="Next Post: Code clouds">Code clouds &raquo;</a>
       
     </p>
   </footer>
@@ -313,8 +361,8 @@ Completely Moved to Solid State
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://blog.notadomain.com/blog/2012/01/03/completely-moved-to-solid-state';
-        var disqus_url = 'http://blog.notadomain.com/blog/2012/01/03/completely-moved-to-solid-state';
+        var disqus_identifier = 'http://blog.notadomain.com/blog/2012/03/19/octoflattr';
+        var disqus_url = 'http://blog.notadomain.com/blog/2012/03/19/octoflattr';
         var disqus_script = 'embed.js';
       
     (function () {
