@@ -3,7 +3,7 @@
   <title><![CDATA[Not a blog]]></title>
   <link href="http://blog.notadomain.com/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2012-03-31T18:10:23+02:00</updated>
+  <updated>2012-04-03T16:56:41+02:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -11,6 +11,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[&rarr; JavaScript: The Good Parts]]></title>
+<link href="http://www.youtube.com/watch?v=hQVTIJBZook"/>
+<updated>2012-04-03T16:48:00+02:00</updated>
+<id>http://blog.notadomain.com/blog/2012/04/03/javascript-the-good-parts</id>
+
+      <content type="html"><![CDATA[<p>Thanks to <a href="https://twitter.com/#!/davidvoelkel">David Völkel</a> for pointing me to <a href="http://www.crockford.com/">Doug Crockfords</a> Talk about JavaScripts good parts. If you enjoyed my CoffeeScript talk  not <em>only</em> for the entertainment, you probably gonna like that talk as well. Highly recommend watching it - well worth the hour.</p>
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/04/03/javascript-the-good-parts/">&infin; Permalink</a></p>]]></content>
+    </entry>
   
     <entry>
       
