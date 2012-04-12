@@ -9,7 +9,7 @@
   <meta name="author" content="Moritz Grauel">
 
   
-  <meta name="description" content="tl;dr: I don&#8217;t like the new Google Reader UI. I&#8217;m using Reeder for now and I like it a lot. I used to be big fan of google reader. It was &hellip;">
+  <meta name="description" content="Disclaimer: This post is primarily aimed at myself. No information here that can&#8217;t be found via google. I&#8217;ve been using the same ssh &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,65 @@
   <div id="main">
     <div id="content">
       <div class="blog-index">
+  
+    
+    
+
+
+
+
+
+
+
+
+
+    <article >
+      
+  <header>
+    <h1 class="entry-title">
+
+<a href="/blog/2011/12/04/ssh-housekeeping/">Ssh Housekeeping</a>
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2011-12-04T21:46:00+01:00" pubdate>Dec 4<span>th</span>, 2011</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2011/12/04/ssh-housekeeping/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p><em>Disclaimer: This post is primarily aimed at myself. No information here that can&#8217;t be found via google.</em></p>
+
+<p>I&#8217;ve been using the same ssh public/private key for about 5 years and probably a minimum of three OS reinstalls.</p>
+
+<p>Since that time, my personal password policy has changed. Gone are the times of easy, memorable passwords. I use <a href="https://agilebits.com/onepassword">1Password</a> to manage all my passwords.</p>
+
+<p>Since I have no reason to believe that my private key has been compromised, I thought it might be time to change the password on the key.</p>
+
+<p>To change the password on an ssh private key, use the ssh-keygen command, that you probably already used to create the key in the first place.</p>
+
+<pre><code>$ ssh-keygen -p -f ~/.ssh/id_rsa
+</code></pre>
+
+<p>The lower-case p-param will ask ssh-keygen to change the passphrase of the file that is passed as an argument to -f.</p>
+
+<p>On that account, I also changed the hostname in the public part of the key to reflect my current machine. Just edit ~/.ssh/id_rsa.pub in a text editor and change the hostname at the end of the key. It is just an identifier after all.</p>
+</div>
+
+
+    </article>
   
     
     
@@ -287,6 +346,10 @@ running where I can edit and create posts on the go from my iPad. Ideally withou
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/04/12/reduced-maven-noise/">Reduced maven noise</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/04/03/javascript-the-good-parts/">JavaScript: The Good Parts</a>
       </li>
     
@@ -300,10 +363,6 @@ running where I can edit and create posts on the go from my iPad. Ideally withou
     
       <li class="post">
         <a href="/blog/2012/03/19/octoflattr/">Octoflattr</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/18/octopress-linklog/">Octopress linklog</a>
       </li>
     
   </ul>
