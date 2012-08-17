@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>ssh housekeeping - Not a blog</title>
+  <title>Category: coding - Not a blog</title>
   <meta name="author" content="Moritz Grauel">
 
   
-  <meta name="description" content="Disclaimer: This post is primarily aimed at myself. No information here that can&#8217;t be found via google. I&#8217;ve been using the same ssh &hellip;">
+  <meta name="description" content="Category: coding">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping">
+  <link rel="canonical" href="http://blog.notadomain.comblog/categories/coding">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -46,7 +46,7 @@
 
 </head>
 
-<body   >
+<body  id="archive"   >
   <header role="banner"><hgroup>
   <h1><a href="/">Not a blog</a></h1>
   
@@ -76,125 +76,53 @@
   <div id="main">
     <div id="content">
       <div>
-
-
-
-
-
-
-
-
-
-
-<article class="hentry" role="article" >
+<article role="article">
   
   <header>
-    <h1 class="entry-title">
+    <h1 class="entry-title">Category: Coding</h1>
+    
+  </header>
+  
+  <div id="blog-archives" class="category">
 
-Ssh Housekeeping
+
+
+  
+  <h2>2012</h2>
+
+
+
+
+
+
+
+
+
+
+
+<article >
+  
+<h1 class="entry-title">
+
+<a href="/blog/2012/04/16/type-hints/">Type Hints</a>
 
 </h1>
 
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2011-12-04T21:46:00+01:00" pubdate>Dec 4<span>th</span>, 2011</time>
-        
-         &bull; <a rel="bookmark" href="/blog/2011/12/04/ssh-housekeeping/">&infin;</a>
-      </p>
-    
-  </header>
-
-
-
-  <div class="entry-content"><p><em>Disclaimer: This post is primarily aimed at myself. No information here that can&#8217;t be found via google.</em></p>
-
-<p>I&#8217;ve been using the same ssh public/private key for about 5 years and probably a minimum of three OS reinstalls.</p>
-
-<p>Since that time, my personal password policy has changed. Gone are the times of easy, memorable passwords. I use <a href="https://agilebits.com/onepassword">1Password</a> to manage all my passwords.</p>
-
-<p>Since I have no reason to believe that my private key has been compromised, I thought it might be time to change the password on the key.</p>
-
-<p>To change the password on an ssh private key, use the ssh-keygen command, that you probably already used to create the key in the first place.</p>
-
-<pre><code>$ ssh-keygen -p -f ~/.ssh/id_rsa
-</code></pre>
-
-<p>The lower-case p-param will ask ssh-keygen to change the passphrase of the file that is passed as an argument to -f.</p>
-
-<p>On that account, I also changed the hostname in the public part of the key to reflect my current machine. Just edit ~/.ssh/id_rsa.pub in a text editor and change the hostname at the end of the key. It is just an identifier after all.</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
-  
-
-<span class="byline author vcard">Posted by <span class="fn">Moritz Grauel</span></span>
-
-      
-
-
-
-
-  
-
-<time datetime="2011-12-04T21:46:00+01:00" pubdate>Dec 4<span>th</span>, 2011</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/self-reference/'>self-reference</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/" data-via="mo_gr" data-counturl="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/" >Tweet</a>
+<time datetime="2012-04-16T22:59:00+02:00" pubdate><span class='month'>Apr</span> <span class='day'>16</span> <span class='year'>2012</span></time>
+<footer>
   
   
   
+  <span class="categories">posted in <a class='category' href='/blog/categories/idea/'>IDEA</a>, <a class='category' href='/blog/categories/intellij/'>IntelliJ</a>, <a class='category' href='/blog/categories/coding/'>coding</a></span>
   
-    <a class="FlattrButton" style="display:none;"
-    title="ssh housekeeping"
-    data-flattr-uid="mogr"
-    data-flattr-tags=""
-    data-flattr-button="compact"
-    data-flattr-category="text"
-    href="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/">
-    
-</a>
+</footer>
 
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2011/11/07/google-reader-1/" title="Previous Post: Google Reader (-1)">&laquo; Google Reader (-1)</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2011/12/04/distraction-free-writing/" title="Next Post: Distraction free writing">Distraction free writing &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  </section>
+
+  
+</article>
 
 </div>
 
@@ -297,7 +225,6 @@ Ssh Housekeeping
 </aside>
 
 
-
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -312,10 +239,7 @@ Ssh Housekeeping
       var disqus_shortname = 'not-a-blog';
       
         
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping';
-        var disqus_url = 'http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
