@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: coding | Not a blog]]></title>
+  <link href="http://blog.notadomain.com/blog/categories/coding/atom.xml" rel="self"/>
+  <link href="http://blog.notadomain.com/"/>
+  <updated>2012-10-01T16:00:31+08:00</updated>
+  <id>http://blog.notadomain.com/</id>
+  <author>
+    <name><![CDATA[Moritz Grauel]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Type Hints]]></title>
+<link href="http://blog.notadomain.com/blog/2012/04/16/type-hints/"/>
+<updated>2012-04-16T22:59:00+08:00</updated>
+<id>http://blog.notadomain.com/blog/2012/04/16/type-hints</id>
+
+      <content type="html"><![CDATA[<p>Today, <a href="mana">Matthias Naber</a> made me aware of <a href="idea">IntelliJ</a> type hints in JSF and JSP files.</p>
+
+<p><a href="idea">IntelliJ</a> does quite a good job in figuring out the types of EL variables itself, providing code completion and usage information. But there are situations where <a href="idea">IDEA</a> is unable determine the type of an EL variable. This usually occurs to me in a facelet <code>composition</code> where the variables are passed in as a <code>param</code>.</p>
+
+<p>The following is a basic facelt composition invocation:</p>
+
+<pre><code>&lt;ui:include src="toiletten.xhtml"&gt;
+    &lt;ui:param name="toilette" value="#{umkleide.toiletten}"/&gt;
+&lt;/ui:include&gt;
+</code></pre>
+
+<p>In the file containing the invocation, <a href="idea">IDEA</a> is fully aware of the type of the EL variables. However in the included file (toiletten.xhtml), which might look something like this:</p>
+
+<pre><code>&lt;html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html" 
+  xmlns:ui="http://java.sun.com/jsf/facelets"&gt;
+  &lt;ui:composition&gt;
+    &lt;h:outputLabel value="#{toilette.ppBecken}"/&gt;
+  &lt;/ui:composition&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p><a href="idea">IntelliJ</a> is unable to infere the type of the EL variable <code>toilette</code>. It is therefore neither able to offer me code completion nor warn me about typos and errors. It might even mark the getter <code>getPpBecken()</code> in the Toilette as unused.</p>
+
+<p>However, if you help <a href="idea">IDEA</a> a little bit by hinting the type, all the goodness is restored. Just add the following, proprietary comment somewhere in the file:</p>
+
+<pre><code>    &lt;!--@elvariable id="toilette" type="com.notadomain.datamodel.Toiletten"--&gt;
+</code></pre>
+
+<p>This comment tells <a href="idea">IntelliJ</a> the type of the EL variable, enabling autocompletion, usage indexing and of course only marking true errors in the file.</p>
+
+<p>If you are using JSPs, the comment should probably look something like:</p>
+
+<pre><code>    &lt;%--@elvariable id="toilette" type="com.notadomain.datamodel.Toiletten"--%&gt;
+</code></pre>
+
+<p>If you are somehow worried about putting proprietary comments in your files, <em>you</em> have some weird issues. But nonetheless, those comments, at least in facelets, even work outside of the <code>composition</code>-tag, which will make them become ignored anyway.</p>
+
+<pre><code>&lt;html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html" 
+  xmlns:ui="http://java.sun.com/jsf/facelets"&gt;
+  &lt;!--@elvariable id="toilette" type="com.notadomain.datamodel.Toiletten"--&gt;
+  &lt;ui:composition&gt;
+    &lt;h:outputLabel value="#{toilette.ppBecken}"/&gt;
+  &lt;/ui:composition&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>A properly configured <a href="idea">IntelliJ</a> setup will help you so many times a day. You are going to be a <em>lot</em> more productive. It is absolutely worth, adding some comments and guides to make the warnings and analyzations of your IDE more precise and focussed.</p>
+
+<p>If I had gotten a coin for every time, I fixed a bug, that was already underlined and critized by <a href="idea">IDEA</a> when I found it, I'd have an aweful lot of coins.</p>
+
+<p>Use your tools to their full advance and don't check in code that contains warnings! I really wish, there would be something like the <code>-Werror</code> flag in <code>javac</code>!</p>
+]]></content>
+    </entry>
+  
+</feed>
+

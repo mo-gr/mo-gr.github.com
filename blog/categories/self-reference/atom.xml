@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: self-reference | Not a blog]]></title>
+  <link href="http://blog.notadomain.com/blog/categories/self-reference/atom.xml" rel="self"/>
+  <link href="http://blog.notadomain.com/"/>
+  <updated>2012-10-01T16:00:31+08:00</updated>
+  <id>http://blog.notadomain.com/</id>
+  <author>
+    <name><![CDATA[Moritz Grauel]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[ssh housekeeping]]></title>
+<link href="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/"/>
+<updated>2011-12-04T21:46:00+08:00</updated>
+<id>http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping</id>
+
+      <content type="html"><![CDATA[<p><em>Disclaimer: This post is primarily aimed at myself. No information here that can't be found via google.</em></p>
+
+<p>I've been using the same ssh public/private key for about 5 years and probably a minimum of three OS reinstalls.</p>
+
+<p>Since that time, my personal password policy has changed. Gone are the times of easy, memorable passwords. I use <a href="https://agilebits.com/onepassword">1Password</a> to manage all my passwords.</p>
+
+<p>Since I have no reason to believe that my private key has been compromised, I thought it might be time to change the password on the key.</p>
+
+<p>To change the password on an ssh private key, use the ssh-keygen command, that you probably already used to create the key in the first place.</p>
+
+<pre><code>$ ssh-keygen -p -f ~/.ssh/id_rsa
+</code></pre>
+
+<p>The lower-case p-param will ask ssh-keygen to change the passphrase of the file that is passed as an argument to -f.</p>
+
+<p>On that account, I also changed the hostname in the public part of the key to reflect my current machine. Just edit ~/.ssh/id_rsa.pub in a text editor and change the hostname at the end of the key. It is just an identifier after all.<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/">&infin; Permalink</a></p></p>
+]]></content>
+    </entry>
+  
+</feed>
+

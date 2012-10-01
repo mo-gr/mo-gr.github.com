@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>ssh housekeeping - Not a blog</title>
+  <meta name="author" content="Moritz Grauel">
+
+  
+  <meta name="description" content="Disclaimer: This post is primarily aimed at myself. No information here that can&#8217;t be found via google. I&#8217;ve been using the same ssh &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Not a blog" type="application/atom+xml">
+  <!--Fonts from Google's Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    (function() {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+        t.parentNode.insertBefore(s, t);
+    })();
+/* ]]> */
+</script>
+
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Not a blog</a></h1>
+  
+    <h2>Yet another pointless personal blog</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.notadomain.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul role=main-navigation>
+  <li><a href="/" title="Blog">Blog</a></li>
+  <li><a href="/blog/archives" title="Blog archives">Archives</a></li>
+  <li><a href="/impressum.html" title="Impressum">Impressum</a></li>
+  <li><a href="/about.html" title="About Moritz Grauel">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+
+
+
+
+
+
+
+
+
+
+<article class="hentry" role="article" >
+  
+  <header>
+    <h1 class="entry-title">
+
+Ssh Housekeeping
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2011-12-04T21:46:00+08:00" pubdate>Dec 4<span>th</span>, 2011</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2011/12/04/ssh-housekeeping/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p><em>Disclaimer: This post is primarily aimed at myself. No information here that can&#8217;t be found via google.</em></p>
+
+<p>I&#8217;ve been using the same ssh public/private key for about 5 years and probably a minimum of three OS reinstalls.</p>
+
+<p>Since that time, my personal password policy has changed. Gone are the times of easy, memorable passwords. I use <a href="https://agilebits.com/onepassword">1Password</a> to manage all my passwords.</p>
+
+<p>Since I have no reason to believe that my private key has been compromised, I thought it might be time to change the password on the key.</p>
+
+<p>To change the password on an ssh private key, use the ssh-keygen command, that you probably already used to create the key in the first place.</p>
+
+<pre><code>$ ssh-keygen -p -f ~/.ssh/id_rsa
+</code></pre>
+
+<p>The lower-case p-param will ask ssh-keygen to change the passphrase of the file that is passed as an argument to -f.</p>
+
+<p>On that account, I also changed the hostname in the public part of the key to reflect my current machine. Just edit ~/.ssh/id_rsa.pub in a text editor and change the hostname at the end of the key. It is just an identifier after all.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Moritz Grauel</span></span>
+
+      
+
+
+
+
+  
+
+<time datetime="2011-12-04T21:46:00+08:00" pubdate>Dec 4<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/self-reference/'>self-reference</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/" data-via="mo_gr" data-counturl="http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/11/07/google-reader-1/" title="Previous Post: Google Reader (-1)">&laquo; Google Reader (-1)</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/12/04/distraction-free-writing/" title="Next Post: Distraction free writing">Distraction free writing &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/10/01/stay-calm/">Stay calm</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/11/big-travel/">Berlin → Москва → Иркутск → 北京 → ???</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/16/type-hints/">Type Hints</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/12/reduced-maven-noise/">Reduced maven noise</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/03/javascript-the-good-parts/">JavaScript: The Good Parts</a>
+      </li>
+    
+  </ul>
+</section>
+
+<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://blog.notadomain.com"></a>
+<noscript>
+  <a href="http://flattr.com/thing/582242/Not-a-blog" target="_blank">
+    <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" />
+  </a>
+</noscript>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("mo_gr", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/mo_gr" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @mo_gr</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mo-gr">@mo-gr</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mo-gr',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/106410106555697258570?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Moritz Grauel -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'not-a-blog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/';
+        var disqus_url = 'http://blog.notadomain.com/blog/2011/12/04/ssh-housekeeping/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
