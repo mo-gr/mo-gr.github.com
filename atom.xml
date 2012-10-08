@@ -3,7 +3,7 @@
   <title><![CDATA[Not a blog]]></title>
   <link href="http://blog.notadomain.com/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2012-10-02T22:54:03+08:00</updated>
+  <updated>2012-10-08T09:47:56+08:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -11,6 +11,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Elevator Rushhour]]></title>
+<link href="http://blog.notadomain.com/blog/2012/10/08/elevator-rushhour/"/>
+<updated>2012-10-08T09:35:00+08:00</updated>
+<id>http://blog.notadomain.com/blog/2012/10/08/elevator-rushhour</id>
+
+      <content type="html"><![CDATA[<p>This morning, we encountered something, I didn&#8217;t knew existed: <em>Elevator
+Rushhour</em>. I&#8217;ve never lived in a 28 story building before. We now live
+on the 21st floor. If every floor is roughly the same as ours, there are 12
+apartments on each floor.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=&gt; (* 28 12)
+</span><span class='line'>; 336</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So there are a good 300 apartments. The building currently has three working elevators.
+Even if we assume that not every
+apartment is inhabited and not every inhabitant has to get up in
+the morning to get to work, this leaves us with a lot of people that
+need to exit the building in a narrow timeframe.</p>
+
+<p>We left at 8:00. And we waited for nearly 10 minutes to finally leave the
+building. The elevators were all basically stopping at every other floor
+on their way down. Then going all the way up again only to repeat the
+stop and go on their way down.</p>
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/10/08/elevator-rushhour/">&infin; Permalink</a></p>]]></content>
+    </entry>
   
     <entry>
       

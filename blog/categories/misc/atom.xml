@@ -4,7 +4,7 @@
   <title><![CDATA[Category: misc | Not a blog]]></title>
   <link href="http://blog.notadomain.com/blog/categories/misc/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2012-10-02T22:54:03+08:00</updated>
+  <updated>2012-10-08T09:48:24+08:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -24,7 +24,7 @@
 <updated>2012-09-11T21:20:00+08:00</updated>
 <id>http://blog.notadomain.com/blog/2012/09/11/big-travel</id>
 
-      <content type="html"><![CDATA[<p><img src="http://25.media.tumblr.com/tumblr_madug76njY1rgtzh1o1_1280.jpg" title="'Ready to go on a tour'" ></p>
+      <content type="html"><![CDATA[<p>{% img http://25.media.tumblr.com/tumblr_madug76njY1rgtzh1o1_1280.jpg 'Ready to go on a tour' %}</p>
 
 <p>On thrusday, in just a few short days, we will start quite a big travel.
 First stop will be Moscow, where we stay for a day before we head on to
