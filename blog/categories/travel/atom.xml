@@ -4,7 +4,7 @@
   <title><![CDATA[Category: travel | Not a blog]]></title>
   <link href="http://blog.notadomain.com/blog/categories/travel/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2012-11-07T15:59:26+08:00</updated>
+  <updated>2012-11-10T13:03:10+08:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Small Differences: Money]]></title>
+<link href="http://blog.notadomain.com/blog/2012/11/10/small-differences-money/"/>
+<updated>2012-11-10T12:24:00+08:00</updated>
+<id>http://blog.notadomain.com/blog/2012/11/10/small-differences-money</id>
+
+      <content type="html"><![CDATA[<p>Of course china uses money like everywhere else. And a lot of payments are done using cash. But the cash here is a bit different than in Europe.</p>
+
+<p>This mainly boils down to the fact, that the biggest bill available in china is the 100 RMB bill. This is currently worth roughly 12.50 €. All other bills are worth even less. Also, coins are used far less often and only go up to 1 RMB (about 0.12 €).</p>
+
+<p>This has two interesting consequences. First: You always have a trousers pocket full of papermoney. A thick stack of bills which is worth about 10 €. I kind of like that. Far more comfy than having a pocket full of €-coins. And still worth so little, that you don't really care if you lose a bill. (I guess this is similar in the US with their 1 $ bill).</p>
+
+<p>The second consequence is, whenever you have to pay for something a bit more expensive, you deal with huge stacks of money. Making you feel a bit like a gangster in the first moment and making you wish, you had a counting machine the moment after that. (Counting machines are extremely common in china. Basically every cash register has one).</p>
+
+<p>Did I mention, we payed our entire 3 month rent and a safety deposit in cash? This is how some of it looked:</p>
+
+<p>{% img https://www.dropbox.com/s/i38xa6h39hlzyqn/Cash.jpg?dl=1 Lots of cash %}</p>
+
+<p>Really, you have to deal with silly big stacks of cash from time to time. You have to make multiple trips to an ATM to get reasonable amounts of cash because they can't spit out stacks big enough. Stuff like that.</p>
+
+<p>Apparently there is also quite a lot of counterfeit money in the wild. The Chinese will always check 50 and 100 RMB bills for validity. Either by hand or by feeding it through a counting machine.</p>
+
+<p>And there is also the other side of the value spectrum. The smallest bill in circulation (and not quite uncommon) is the 1 Yi Jiao bill, aka 0.1 RMB. So it is roughly worth 1 euro cent.</p>
+
+<p>On the street, prices are usually multiples of 1 RMB. Amounts below 1 RMB are usually only found in supermarkets and similar stores. So you usually put your Yi Jiaos somewhere and hope to remember theme the next time you are grocery shopping.</p>
+
+<p>This is how it looks:</p>
+
+<p>{% img https://www.dropbox.com/s/099yd7pqn7e6182/worthless.jpg?dl=1 Worthless money %}</p>
+
+<p>It has roughly the same size and feel as monopoly money. Only, it is worth slightly less then monopoly money.   <p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/11/10/small-differences-money/">&infin; Permalink</a></p></p>
+]]></content>
+    </entry>
   
     <entry>
       
@@ -36,7 +75,7 @@
 
 <p>They also showed us the cards. This is a bit useless since we have no idea at all how to recharge those cards. But I can at least show them here. In order from top to bottom: Water, electricity and gas.</p>
 
-<p><img src="https://www.dropbox.com/s/147h19vten5i5c2/Prepaid.jpg?dl=1"></p>
+<p>{% img https://www.dropbox.com/s/147h19vten5i5c2/Prepaid.jpg?dl=1 %}</p>
 
 <p>If you think about it, it actually isn't that bad of an idea. At least people can't get in situations, where they all of a sudden have to repay huge sums because they used more gas then anticipated.</p>
 
@@ -72,7 +111,7 @@ us <em>just</em> five days to realize that.</p>
 day with lots of sun – I tried to take the same picutre again. Same ISO, same
 aperture, same shutter speed, roughly the same time of the day. I merged those images. This is the result:</p>
 
-<p><img src="https://www.dropbox.com/s/e211rvp9v1fnn6s/Airquality.jpg?dl=1" title="Overlay of a clear and a usual day" ></p>
+<p>{% img https://www.dropbox.com/s/e211rvp9v1fnn6s/Airquality.jpg?dl=1 Overlay of a clear and a usual day %}</p>
 
 <p>To be honest, I made one mistake. I let the camera on
 auto-white-balance. This probably overstates the difference a bit.
@@ -131,7 +170,7 @@ stop and go on their way down.</p>
 <updated>2012-10-02T21:19:00+08:00</updated>
 <id>http://blog.notadomain.com/blog/2012/10/02/farewell-russia</id>
 
-      <content type="html"><![CDATA[<p><img src="https://www.dropbox.com/s/jlts0qrpwciy9yy/map.jpg?dl=1" title="'A map of the places where we took pictures'" ></p>
+      <content type="html"><![CDATA[<p>{% img https://www.dropbox.com/s/jlts0qrpwciy9yy/map.jpg?dl=1 'A map of the places where we took pictures'%}</p>
 
 <p>We have arrived in Beijing and I could already write a lot about it. But I won't do that now because I don't want all of our Russia impressions to get lost in time and memory. This post is intended two give a rather brief overview about our time there (but fails to be brief). More detailed stories are following soon (I hope).</p>
 
@@ -146,12 +185,12 @@ stop and go on their way down.</p>
 
 <h1>Lake Baikal</h1>
 
-<p><img class="right" src="http://24.media.tumblr.com/tumblr_mapyz7GE9q1rgtzh1o1_500.jpg" width="350" title="'Blurry Irkutsk'" ></p>
+<p>{% img right http://24.media.tumblr.com/tumblr_mapyz7GE9q1rgtzh1o1_500.jpg 350 'Blurry Irkutsk' %}</p>
 
 <p>This marks the start of an amazing, yet exhausting week in Siberia. We arrived in Иркутск (Irkutsk) before sunrise, somehow managed to get on a trolley bus to the center and walked the rest to the hostel, at which we intended to stay a week later. At the hostel, we woke the poor lady in charge that day, dropped off some of our baggage, we wouldn't need in Russia and left again. Without sleep or real breakfast, we moved to the ferry port to take the boat to Листвянка (Lystvyanka) - at least that was the plan. However the boat was already sold out. This was a bit off a downer.</p>
 
 <p>
-<img class="left" src="https://www.dropbox.com/s/m80hfloz63vmu23/Lystvyanka.jpg?dl=1" width="350" title="'Lystvyanka'" >
+{% img left https://www.dropbox.com/s/m80hfloz63vmu23/Lystvyanka.jpg?dl=1 350 'Lystvyanka'%}
 
 We were not the only ones who were in this sad situation. There were two Russian couples in their early thirties with their children who wanted to go to Lystvyanka as well. It is safe to say there was a slight language barrier between us. They decided to go there by Маршгутка (Marschrutka) instead of the boat and kindly offered to take us along. Although it took them and us a while to communicate that.
 
@@ -162,15 +201,15 @@ About an hour later we arrived in Lystvyanka - sleep deprived and tired. This mi
 
 <p>Therefore we changed our plan a bit and got on the ferry to Port Baikal on the opposite side of the River Ангара (Angara). The ferry looked a bit... Let's call her battle proven.</p>
 
-<p><img src="https://www.dropbox.com/s/yuctifmxdhysqos/ferry.jpg?dl=1" title="'Ferry to Port Baikal'" ></p>
+<p>{% img https://www.dropbox.com/s/yuctifmxdhysqos/ferry.jpg?dl=1 'Ferry to Port Baikal' %}</p>
 
 <p>Port Baikal also deserves its own entry. A long time ago it must have been a thriving place – a key port to the Trans Siberian Express. Now it is just a shadow of its former self. But it has a calm, melancholic beauty and is a good place to start short hikes. We stayed there for two nights, had a great time and met some wonderful people who are now new friends of ours (Ivan &amp; Mascha).</p>
 
-<p><img src="http://25.media.tumblr.com/tumblr_maulaqXJB41rgtzh1o1_1280.jpg" title="View from over Port Baikal" ></p>
+<p>{% img http://25.media.tumblr.com/tumblr_maulaqXJB41rgtzh1o1_1280.jpg View from over Port Baikal %}</p>
 
 <p>In Port Baikal we also discovered that our original plan of going directly to Слюдянка (Sludyanka) via train was not feasible. The time schedule of the trains is a bit weird. So we went back to Lystvyanka via ferry, took another Marschrutka (this time on our own) to Irkutsk and stayed there for an unplanned night.</p>
 
-<p><img class="right" src="https://www.dropbox.com/s/vlo20pdpogixxlh/cat%20galina.jpg?dl=1" width="350" title="'Galinas Cat'" ></p>
+<p>{% img right https://www.dropbox.com/s/vlo20pdpogixxlh/cat%20galina.jpg?dl=1 350 'Galinas Cat'%}</p>
 
 <p>After we arrived in Irkutsk, we must have looked a bit lost because a lady, that was on the same Marschrutka asked us if we might need help. Turned out, she was German and lived in the area for a while now. She recommended us a nice pension (Pension Galina), called there to make sure, they have room for us and told us the way. Then she disappeared. We were very thankful (and lucky) we met her. The pension was very nice. Galina herself looks a bit like a friendly witch. She lives in an old, wooden house with a beautiful cat and makes amazing влини for breakfast. And she even talks a bit German.</p>
 
@@ -182,13 +221,13 @@ About an hour later we arrived in Lystvyanka - sleep deprived and tired. This mi
 
 <p>We went to Sludyanka in order to hike up to Пик Черского (peak Cherskogo) and see lake heart. It is said to be good for a young couple to see lake heart together. I guess we are on the safe side now because in the end we did manage to see the lake. However we would not have made it without the help of two other nice people we met in Sludyanka.</p>
 
-<p><img class="right" src="https://www.dropbox.com/s/9uripvn93yysjkp/lake%20heart.jpg?dl=1" width="350" title="'Lake Heart'" ></p>
+<p>{% img right https://www.dropbox.com/s/9uripvn93yysjkp/lake%20heart.jpg?dl=1 350 'Lake Heart' %}</p>
 
 <p>Since we arrived in Sludyanka too late to start the hike the same day, we stayed for a night at the local mineral museum that also has a guest house. We asked them whether it is possible to get up to the peak and back down on the same day. Apparently it has been done before but it requires top physical condition. We decided to try.</p>
 
 <p>In the evening however two middle aged men also arrived there: Andrei and Nikolai. They had a slightly longer hike planned than ours (with a much more relaxed time schedule). But the peak was their first stop as well. They offered to take us along with them. And they assured us that there is a base camp were we could sleep (even without a sleeping bag). We agreed to join them and spend the following night together with them at the camp.</p>
 
-<p><img src="https://www.dropbox.com/s/ab9vrypyqyxw9ie/basecamp.jpg?dl=1" title="'View from the Basecemp'" ></p>
+<p>{% img https://www.dropbox.com/s/ab9vrypyqyxw9ie/basecamp.jpg?dl=1 'View from the Basecemp'%}</p>
 
 <p>Nikolai is a professional guide in the area and his skills were very useful. The next day started rainy which would quickly turn into snowy as we progressed. And hiking in Russia is different. The trail is not really marked. You can see where people usually walk and that is it. No painted trees or rocks like on European routes. And with a few cm of snow, it is very easy to loose the trail. But Nikolai knew the area very well and got us safely to the Base camp.</p>
 
@@ -196,7 +235,7 @@ About an hour later we arrived in Lystvyanka - sleep deprived and tired. This mi
 
 <h1>TransSib</h1>
 
-<p><img class="right" src="https://www.dropbox.com/s/nm8uiomgfu8nku8/ulan%20head.jpg?dl=1" width="350" title="'Ulan Udes head'" ></p>
+<p>{%img right https://www.dropbox.com/s/nm8uiomgfu8nku8/ulan%20head.jpg?dl=1 350 'Ulan Udes head'%}</p>
 
 <p>We had to make it back down that day because we had tickets to a 2nd class sleeping car in the trans sib to Улан Уле (Ulan Ude). The train departed around midnight local time. If you ever get to take a train in Russia, be aware: times are always announced in Moscow time - no matter where and in which time zone you are!</p>
 
@@ -204,7 +243,7 @@ About an hour later we arrived in Lystvyanka - sleep deprived and tired. This mi
 
 <h1>Irkutsk - finally</h1>
 
-<p><img class="right" src="http://25.media.tumblr.com/tumblr_mb4bbgAKhA1rgtzh1o1_500.jpg" width="350" title="'Irkutsk Airport'" ></p>
+<p>{%img right http://25.media.tumblr.com/tumblr_mb4bbgAKhA1rgtzh1o1_500.jpg 350 'Irkutsk Airport'%}</p>
 
 <p>We arrived late in the night (~ 2:00), got to the hostel where our baggage was stored, took the second shower in Siberia and slept. We slept well and long.</p>
 
@@ -219,26 +258,6 @@ About an hour later we arrived in Lystvyanka - sleep deprived and tired. This mi
 <p>One more thing must be mentioned: the people in the area! Each and every one of the people (except one - who was very drunk), we had direct interactions with in Siberia were extremely kind, friendly and tried to help us as much as possible. In that sense: thanks to everyone and до свидания!</p>
 
 <p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/10/02/farewell-russia/">&infin; Permalink</a></p>
-
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[&rarr; Stay calm]]></title>
-<link href="http://www.spiegel.de/panorama/china-fuenf-deutsche-bei-busunfall-nahe-peking-gestorben-a-858843.html"/>
-<updated>2012-10-01T15:58:00+08:00</updated>
-<id>http://blog.notadomain.com/blog/2012/10/01/stay-calm</id>
-
-      <content type="html"><![CDATA[<p>Just a quick sign of life: There was a serious road accident near Beijing with german casualties.
-We are none of them. We have savely arrived in our Beijing hostel.
-Expect to hear from us more soon.</p>
-
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/10/01/stay-calm/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>
