@@ -4,7 +4,7 @@
   <title><![CDATA[Category: misc | Not a blog]]></title>
   <link href="http://blog.notadomain.com/blog/categories/misc/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2012-11-10T13:03:10+08:00</updated>
+  <updated>2012-11-15T13:24:39+08:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -38,7 +38,7 @@ us <em>just</em> five days to realize that.</p>
 day with lots of sun – I tried to take the same picutre again. Same ISO, same
 aperture, same shutter speed, roughly the same time of the day. I merged those images. This is the result:</p>
 
-<p>{% img https://www.dropbox.com/s/e211rvp9v1fnn6s/Airquality.jpg?dl=1 Overlay of a clear and a usual day %}</p>
+<p><img src="https://www.dropbox.com/s/e211rvp9v1fnn6s/Airquality.jpg?dl=1" title="Overlay of a clear and a usual day" ></p>
 
 <p>To be honest, I made one mistake. I let the camera on
 auto-white-balance. This probably overstates the difference a bit.
@@ -60,7 +60,7 @@ Anyways, take a deep breath and enjoy.</p>
 <updated>2012-09-11T21:20:00+08:00</updated>
 <id>http://blog.notadomain.com/blog/2012/09/11/big-travel</id>
 
-      <content type="html"><![CDATA[<p>{% img http://25.media.tumblr.com/tumblr_madug76njY1rgtzh1o1_1280.jpg 'Ready to go on a tour' %}</p>
+      <content type="html"><![CDATA[<p><img src="http://25.media.tumblr.com/tumblr_madug76njY1rgtzh1o1_1280.jpg" title="'Ready to go on a tour'" ></p>
 
 <p>On thrusday, in just a few short days, we will start quite a big travel.
 First stop will be Moscow, where we stay for a day before we head on to
