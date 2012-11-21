@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: misc, | Not a blog]]></title>
+  <link href="http://blog.notadomain.com/blog/categories/misc-/atom.xml" rel="self"/>
+  <link href="http://blog.notadomain.com/"/>
+  <updated>2012-11-21T10:30:44+08:00</updated>
+  <id>http://blog.notadomain.com/</id>
+  <author>
+    <name><![CDATA[Moritz Grauel]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Elevator Rushhour]]></title>
+<link href="http://blog.notadomain.com/blog/2012/10/08/elevator-rushhour/"/>
+<updated>2012-10-08T09:35:00+08:00</updated>
+<id>http://blog.notadomain.com/blog/2012/10/08/elevator-rushhour</id>
+
+      <content type="html"><![CDATA[<p>This morning, we encountered something, I didn't knew existed: <em>Elevator
+Rushhour</em>. I've never lived in a 28 story building before. We now live
+on the 21st floor. If every floor is roughly the same as ours, there are 12
+apartments on each floor.</p>
+
+<p><code>
+=&gt; (* 28 12)
+; 336
+</code></p>
+
+<p>So there are a good 300 apartments. The building currently has three working elevators.
+Even if we assume that not every
+apartment is inhabited and not every inhabitant has to get up in
+the morning to get to work, this leaves us with a lot of people that
+need to exit the building in a narrow timeframe.</p>
+
+<p>We left at 8:00. And we waited for nearly 10 minutes to finally leave the
+building. The elevators were all basically stopping at every other floor
+on their way down. Then going all the way up again only to repeat the
+stop and go on their way down.</p>
+
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/10/08/elevator-rushhour/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[&rarr; Stay calm]]></title>
+<link href="http://www.spiegel.de/panorama/china-fuenf-deutsche-bei-busunfall-nahe-peking-gestorben-a-858843.html"/>
+<updated>2012-10-01T15:58:00+08:00</updated>
+<id>http://blog.notadomain.com/blog/2012/10/01/stay-calm</id>
+
+      <content type="html"><![CDATA[<p>Just a quick sign of life: There was a serious road accident near Beijing with german casualties.
+We are none of them. We have savely arrived in our Beijing hostel.
+Expect to hear from us more soon.</p>
+
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/10/01/stay-calm/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+</feed>
+
