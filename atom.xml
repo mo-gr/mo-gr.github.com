@@ -3,7 +3,7 @@
   <title><![CDATA[Not a blog]]></title>
   <link href="http://blog.notadomain.com/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2012-12-11T17:02:06+08:00</updated>
+  <updated>2012-12-11T17:08:57+08:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -11,6 +11,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Bye bye Beijing]]></title>
+<link href="http://blog.notadomain.com/blog/2012/12/11/bye-bye-beijing/"/>
+<updated>2012-12-11T17:03:00+08:00</updated>
+<id>http://blog.notadomain.com/blog/2012/12/11/bye-bye-beijing</id>
+
+      <content type="html"><![CDATA[<p>On another note, today is actually my last day in Beijing. My next stop tomorrow will be Seoul and I&#8217;m looking forward to it (and to finally having proper internet again).</p>
+
+<p>However, I&#8217;ll continue my journey without the mac, I&#8217;m currently typing on. I&#8217;ll only have an iPad with me. Therefore, I can&#8217;t post any further updates to this blog until we are back home.</p>
+
+<p>Until further notice, all updates will go to either <a href="http://mo-gr.tumblr.com">tumblr</a>, <a href="http://twitter.com/mo_gr">twitter</a> or <a href="https://alpha.app.net/mo">app.net</a>.</p>
+
+<p>See you on the other side&#8230;</p>
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/12/11/bye-bye-beijing/">&infin; Permalink</a></p>]]></content>
+    </entry>
   
     <entry>
       
@@ -834,28 +855,6 @@ around - and I am not comfortable with presenting them here.</p>
 
 <p><em>*-affiliate links</em></p>
 <p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/01/03/completely-moved-to-solid-state/">&infin; Permalink</a></p>]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[Picketlink]]></title>
-<link href="http://blog.notadomain.com/blog/2011/12/29/picketlink/"/>
-<updated>2011-12-29T17:28:00+08:00</updated>
-<id>http://blog.notadomain.com/blog/2011/12/29/picketlink</id>
-
-      <content type="html"><![CDATA[<p>My friend <a href="https://twitter.com/#!/michaelschuetz">Michael</a> and myself have been hacking some features into a specific version of <a href="http://www.jboss.org/picketlink">picketlink</a>. An update to a newer version was out of the question. We blogged about it over <a href="http://blog.akquinet.de/2011/12/26/patching-picketlink-to-support-multiple-ldap-stores/">here</a>.</p>
-
-<!--more-->
-
-
-<p>I really like to get my head around existing code bases. Finding my ways through them and fixing or modifing them. I should do that far more often!</p>
-
-<p>Anyway, I don&#8217;t want to rant too much about picketlink. It works most of the time. But man… there are some code smells in there. If I&#8217;m modifying a class somewhere down around line 3500-something, this is a smell. If a class needs more than 1000 LoC, it should probably not be a single class. DRY anyone? Enough of a rant… Our modifications aren&#8217;t really that much better. <a href="http://en.wikipedia.org/wiki/Broken_window_theory">Broken window theory</a> at work…</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2011/12/29/picketlink/">&infin; Permalink</a></p>]]></content>
     </entry>
   
 </feed>
