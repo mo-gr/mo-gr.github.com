@@ -4,7 +4,7 @@
   <title><![CDATA[Category: travel | Not a blog]]></title>
   <link href="http://blog.notadomain.com/blog/categories/travel/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2012-11-21T10:30:44+08:00</updated>
+  <updated>2012-12-11T17:02:06+08:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Hops Coffee]]></title>
+<link href="http://blog.notadomain.com/blog/2012/12/11/hops-coffee/"/>
+<updated>2012-12-11T16:34:00+08:00</updated>
+<id>http://blog.notadomain.com/blog/2012/12/11/hops-coffee</id>
+
+      <content type="html"><![CDATA[<p>Last weekend, we've been to Qingdao (青岛). Qingdao is quite often also referred to by its <em>german</em> name-mangling Tsingtao. Tsingtao happens to be the biggest brewer and beer exporter in China and therefore also one of the largest in the world (Chinas economy of scale at work here).</p>
+
+<p>Therefore it can't come as a huge surprise, that Qingdao features a rather nice beer museum. The history of the brewery and the old as well as the current brewing equipment is on display along with a bar for tasting and of course a gift shop with lot's of souvenirs. Some more related to beer than others.</p>
+
+<p>The one, that really caught my eye was <em>Hops Coffee</em>. The direct combination of my two most favorite beverages in the world can't be recommended at all. But the idea of a slight hops aroma in a nice cup of coffee sounds at least interesting to me.</p>
+
+<p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/HopsCoffee.jpg" title="&#34;Hops Coffee, brewed and ready to drink&#34;" alt="&#34;Hops Coffee, brewed and ready to drink&#34;"></p>
+
+<p>Sadly, the actual product was more of a multi stage disappointment than a great new beverage. First, it's instant. I can live with that and was kind of expecting it to be.</p>
+
+<p>Second, the instant mix also includes sweeteners (<em>yuck</em>) and milk powder, ruining an otherwise perfectly good instant coffee.</p>
+
+<p>And then, there is the actual Hops. Or better yet, the lack of it. The hops aroma exists purely by the power of your mind. It is so weak, that after my first cup, I searched the box to see if the hops aroma might be in another sachet. It isn't. If you concentrate hard and really want to smell some hops it is just barely there. But nothing more.…</p>
+
+<p>All in all, the hops coffee was rather disappointing. It is a sweetened, whitened, otherwise boring instant coffee. However, I'll probably get hold of some actual hops for proper brewing some time early next year. I'll use that to make some proper hops coffee. Brewed from good beans and otherwise black as coffee is intended to be. Looking forward to see how that turns out…</p>
+
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/12/11/hops-coffee/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
   
     <entry>
       
@@ -152,43 +184,6 @@ auto-white-balance. This probably overstates the difference a bit.
 Anyways, take a deep breath and enjoy.</p>
 
 <p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/10/11/take-a-deep-breath/">&infin; Permalink</a></p>
-
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[Elevator Rushhour]]></title>
-<link href="http://blog.notadomain.com/blog/2012/10/08/elevator-rushhour/"/>
-<updated>2012-10-08T09:35:00+08:00</updated>
-<id>http://blog.notadomain.com/blog/2012/10/08/elevator-rushhour</id>
-
-      <content type="html"><![CDATA[<p>This morning, we encountered something, I didn't knew existed: <em>Elevator
-Rushhour</em>. I've never lived in a 28 story building before. We now live
-on the 21st floor. If every floor is roughly the same as ours, there are 12
-apartments on each floor.</p>
-
-<p><code>
-=&gt; (* 28 12)
-; 336
-</code></p>
-
-<p>So there are a good 300 apartments. The building currently has three working elevators.
-Even if we assume that not every
-apartment is inhabited and not every inhabitant has to get up in
-the morning to get to work, this leaves us with a lot of people that
-need to exit the building in a narrow timeframe.</p>
-
-<p>We left at 8:00. And we waited for nearly 10 minutes to finally leave the
-building. The elevators were all basically stopping at every other floor
-on their way down. Then going all the way up again only to repeat the
-stop and go on their way down.</p>
-
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/10/08/elevator-rushhour/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>

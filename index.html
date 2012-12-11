@@ -9,7 +9,7 @@
   <meta name="author" content="Moritz Grauel">
 
   
-  <meta name="description" content="Yesterday, I finally finished my second play through of Bastion. The game is so great, that I want to recommend it here. Story On first sight, The &hellip;">
+  <meta name="description" content="Last weekend, we&#8217;ve been to Qingdao (青岛). Qingdao is quite often also referred to by its german name-mangling Tsingtao. Tsingtao happens to be &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,64 @@
   <div id="main">
     <div id="content">
       <div class="blog-index">
+  
+    
+    
+
+
+
+
+
+
+
+
+
+    <article >
+      
+  <header>
+    <h1 class="entry-title">
+
+<a href="/blog/2012/12/11/hops-coffee/">Hops Coffee</a>
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2012-12-11T16:34:00+08:00" pubdate>Dec 11<span>th</span>, 2012</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2012/12/11/hops-coffee/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p>Last weekend, we&#8217;ve been to Qingdao (青岛). Qingdao is quite often also referred to by its <em>german</em> name-mangling Tsingtao. Tsingtao happens to be the biggest brewer and beer exporter in China and therefore also one of the largest in the world (Chinas economy of scale at work here).</p>
+
+<p>Therefore it can&#8217;t come as a huge surprise, that Qingdao features a rather nice beer museum. The history of the brewery and the old as well as the current brewing equipment is on display along with a bar for tasting and of course a gift shop with lot&#8217;s of souvenirs. Some more related to beer than others.</p>
+
+<p>The one, that really caught my eye was <em>Hops Coffee</em>. The direct combination of my two most favorite beverages in the world can&#8217;t be recommended at all. But the idea of a slight hops aroma in a nice cup of coffee sounds at least interesting to me.</p>
+
+<p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/HopsCoffee.jpg" title="&#34;Hops Coffee, brewed and ready to drink&#34;" alt="&#34;Hops Coffee, brewed and ready to drink&#34;"></p>
+
+<p>Sadly, the actual product was more of a multi stage disappointment than a great new beverage. First, it&#8217;s instant. I can live with that and was kind of expecting it to be.</p>
+
+<p>Second, the instant mix also includes sweeteners (<em>yuck</em>) and milk powder, ruining an otherwise perfectly good instant coffee.</p>
+
+<p>And then, there is the actual Hops. Or better yet, the lack of it. The hops aroma exists purely by the power of your mind. It is so weak, that after my first cup, I searched the box to see if the hops aroma might be in another sachet. It isn&#8217;t. If you concentrate hard and really want to smell some hops it is just barely there. But nothing more.…</p>
+
+<p>All in all, the hops coffee was rather disappointing. It is a sweetened, whitened, otherwise boring instant coffee. However, I&#8217;ll probably get hold of some actual hops for proper brewing some time early next year. I&#8217;ll use that to make some proper hops coffee. Brewed from good beans and otherwise black as coffee is intended to be. Looking forward to see how that turns out…</p>
+</div>
+
+
+    </article>
   
     
     
@@ -670,102 +728,6 @@ in a semi regular fashion.</p>
 
     </article>
   
-    
-    
-
-
-
-
-
-
-
-
-
-    <article >
-      
-  <header>
-    <h1 class="entry-title">
-
-<a href="/blog/2012/04/16/type-hints/">Type Hints</a>
-
-</h1>
-
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2012-04-16T22:59:00+08:00" pubdate>Apr 16<span>th</span>, 2012</time>
-        
-         &bull; <a rel="bookmark" href="/blog/2012/04/16/type-hints/">&infin;</a>
-      </p>
-    
-  </header>
-
-
-
-  <div class="entry-content"><p>Today, <a href="mana">Matthias Naber</a> made me aware of <a href="idea">IntelliJ</a> type hints in JSF and JSP files.</p>
-
-<p><a href="idea">IntelliJ</a> does quite a good job in figuring out the types of EL variables itself, providing code completion and usage information. But there are situations where <a href="idea">IDEA</a> is unable determine the type of an EL variable. This usually occurs to me in a facelet <code>composition</code> where the variables are passed in as a <code>param</code>.</p>
-
-<p>The following is a basic facelt composition invocation:</p>
-
-<pre><code>&lt;ui:include src="toiletten.xhtml"&gt;
-    &lt;ui:param name="toilette" value="#{umkleide.toiletten}"/&gt;
-&lt;/ui:include&gt;
-</code></pre>
-
-<p>In the file containing the invocation, <a href="idea">IDEA</a> is fully aware of the type of the EL variables. However in the included file (toiletten.xhtml), which might look something like this:</p>
-
-<pre><code>&lt;html xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:h="http://java.sun.com/jsf/html" 
-  xmlns:ui="http://java.sun.com/jsf/facelets"&gt;
-  &lt;ui:composition&gt;
-    &lt;h:outputLabel value="#{toilette.ppBecken}"/&gt;
-  &lt;/ui:composition&gt;
-&lt;/html&gt;
-</code></pre>
-
-<p><a href="idea">IntelliJ</a> is unable to infere the type of the EL variable <code>toilette</code>. It is therefore neither able to offer me code completion nor warn me about typos and errors. It might even mark the getter <code>getPpBecken()</code> in the Toilette as unused.</p>
-
-<p>However, if you help <a href="idea">IDEA</a> a little bit by hinting the type, all the goodness is restored. Just add the following, proprietary comment somewhere in the file:</p>
-
-<pre><code>    &lt;!--@elvariable id="toilette" type="com.notadomain.datamodel.Toiletten"--&gt;
-</code></pre>
-
-<p>This comment tells <a href="idea">IntelliJ</a> the type of the EL variable, enabling autocompletion, usage indexing and of course only marking true errors in the file.</p>
-
-<p>If you are using JSPs, the comment should probably look something like:</p>
-
-<pre><code>    &lt;%--@elvariable id="toilette" type="com.notadomain.datamodel.Toiletten"--%&gt;
-</code></pre>
-
-<p>If you are somehow worried about putting proprietary comments in your files, <em>you</em> have some weird issues. But nonetheless, those comments, at least in facelets, even work outside of the <code>composition</code>-tag, which will make them become ignored anyway.</p>
-
-<pre><code>&lt;html xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:h="http://java.sun.com/jsf/html" 
-  xmlns:ui="http://java.sun.com/jsf/facelets"&gt;
-  &lt;!--@elvariable id="toilette" type="com.notadomain.datamodel.Toiletten"--&gt;
-  &lt;ui:composition&gt;
-    &lt;h:outputLabel value="#{toilette.ppBecken}"/&gt;
-  &lt;/ui:composition&gt;
-&lt;/html&gt;
-</code></pre>
-
-<p>A properly configured <a href="idea">IntelliJ</a> setup will help you so many times a day. You are going to be a <em>lot</em> more productive. It is absolutely worth, adding some comments and guides to make the warnings and analyzations of your IDE more precise and focussed.</p>
-
-<p>If I had gotten a coin for every time, I fixed a bug, that was already underlined and critized by <a href="idea">IDEA</a> when I found it, I&#8217;d have an aweful lot of coins.</p>
-
-<p>Use your tools to their full advance and don&#8217;t check in code that contains warnings! I really wish, there would be something like the <code>-Werror</code> flag in <code>javac</code>!</p>
-</div>
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -781,6 +743,10 @@ in a semi regular fashion.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/12/11/hops-coffee/">Hops Coffee</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/11/16/bastion/">Bastion</a>
       </li>
     
@@ -794,10 +760,6 @@ in a semi regular fashion.</p>
     
       <li class="post">
         <a href="/blog/2012/10/29/small-differences/">Small differences: Prepaid</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/10/11/take-a-deep-breath/">Take a deep breath</a>
       </li>
     
   </ul>
