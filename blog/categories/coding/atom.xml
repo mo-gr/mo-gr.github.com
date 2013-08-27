@@ -4,7 +4,7 @@
   <title><![CDATA[Category: coding | Not a blog]]></title>
   <link href="http://blog.notadomain.com/blog/categories/coding/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2012-08-17T13:42:24+02:00</updated>
+  <updated>2013-08-27T14:46:31+02:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -74,9 +74,9 @@
 
 <p>A properly configured <a href="idea">IntelliJ</a> setup will help you so many times a day. You are going to be a <em>lot</em> more productive. It is absolutely worth, adding some comments and guides to make the warnings and analyzations of your IDE more precise and focussed.</p>
 
-<p>If I had gotten a coin for every time, I fixed a bug, that was already underlined and critized by <a href="idea">IDEA</a> when I found it, I'd have an aweful lot of coins.</p>
+<p>If I had gotten a coin for every time, I fixed a bug, that was already underlined and critized by <a href="idea">IDEA</a> when I found it, I&rsquo;d have an aweful lot of coins.</p>
 
-<p>Use your tools to their full advance and don't check in code that contains warnings! I really wish, there would be a <code>-Werror</code> flag in <code>javac</code>!</p>
+<p>Use your tools to their full advance and don&rsquo;t check in code that contains warnings! I really wish, there would be something like the <code>-Werror</code> flag in <code>javac</code>!</p>
 ]]></content>
     </entry>
   

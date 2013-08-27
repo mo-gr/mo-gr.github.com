@@ -9,7 +9,7 @@
   <meta name="author" content="Moritz Grauel">
 
   
-  <meta name="description" content="Impressum Oct 23rd, 2011 Kontakt: E-Mail:
+  <meta name="description" content="Impressum Oct 23rd, 2011 Kontakt: E-Mail:&nbsp;
 mo@notadomain.com  
 Quelle: Impressum von e-recht24.de speziell für Privatpersonen erzeugt. &hellip;">
   
@@ -23,10 +23,11 @@ Quelle: Impressum von e-recht24.de speziell für Privatpersonen erzeugt. &hellip
   <link rel="canonical" href="http://blog.notadomain.com/impressum.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Not a blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google's Web font directory at http://google.com/webfonts -->
 <link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
@@ -94,7 +95,7 @@ Quelle: Impressum von e-recht24.de speziell für Privatpersonen erzeugt. &hellip
   
   <h2>Kontakt:</h2>
 <table><tr>
-<tr><td><p>E-Mail:</p></td>
+<tr><td><p>E-Mail:&nbsp;</p></td>
 <td><p>mo@notadomain.com</p></td>
 </tr></table>
 <p> </p>
@@ -250,23 +251,23 @@ Quelle: Impressum von e-recht24.de speziell für Privatpersonen erzeugt. &hellip
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/04/16/type-hints/">Type Hints</a>
+        <a href="/blog/2013/08/27/brain-for-hire/">Brain for Hire</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/04/12/reduced-maven-noise/">Reduced maven noise</a>
+        <a href="/blog/2012/12/11/bye-bye-beijing/">Bye Bye Beijing</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/04/03/javascript-the-good-parts/">JavaScript: The Good Parts</a>
+        <a href="/blog/2012/12/11/hops-coffee/">Hops Coffee</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/31/berlin-expert-days/">Berlin Expert Days</a>
+        <a href="/blog/2012/11/16/bastion/">Bastion</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/19/why-is-the-dos-path-character-slash/">Why is the DOS path character "\\"?</a>
+        <a href="/blog/2012/11/15/opportunities-of-scale/">Opportunities of Scale</a>
       </li>
     
   </ul>
@@ -281,23 +282,6 @@ Quelle: Impressum von e-recht24.de speziell für Privatpersonen erzeugt. &hellip
 
 
 <section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating...</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("mo_gr", 4, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/mo_gr" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @mo_gr</a>
-  
-</section>
-
-
-<section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
     <li class="loading">Status updating...</li>
@@ -306,7 +290,7 @@ Quelle: Impressum von e-recht24.de speziell für Privatpersonen erzeugt. &hellip
   <a href="https://github.com/mo-gr">@mo-gr</a> on GitHub
   
   <script type="text/javascript">
-    $.domReady(function(){
+    $(document).ready(function(){
         if (!window.jXHR){
             var jxhr = document.createElement('script');
             jxhr.type = 'text/javascript';
@@ -327,17 +311,6 @@ Quelle: Impressum von e-recht24.de speziell für Privatpersonen erzeugt. &hellip
 </section>
 
 
-<section class="googleplus">
-  <h1>
-    <a href="https://plus.google.com/106410106555697258570?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
   
 </aside>
 
@@ -345,7 +318,7 @@ Quelle: Impressum von e-recht24.de speziell für Privatpersonen erzeugt. &hellip
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Moritz Grauel -
+  Copyright &copy; 2013 - Moritz Grauel -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -363,7 +336,7 @@ Quelle: Impressum von e-recht24.de speziell für Privatpersonen erzeugt. &hellip
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>

@@ -9,8 +9,8 @@
   <meta name="author" content="Moritz Grauel">
 
   
-  <meta name="description" content="Last year, I&#8217;ve been to Javazone and among the many great speakers was
-Kevlin Henney. His talk was titled Cool Code and if you havn&#8217;t &hellip;">
+  <meta name="description" content="Last year, I&rsquo;ve been to Javazone and among the many great speakers was
+Kevlin Henney. His talk was titled Cool Code and if you havn&rsquo;t &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,13 +19,14 @@ Kevlin Henney. His talk was titled Cool Code and if you havn&#8217;t &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.notadomain.com/blog/2012/02/12/code-clouds">
+  <link rel="canonical" href="http://blog.notadomain.com/blog/2012/02/12/code-clouds/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Not a blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google's Web font directory at http://google.com/webfonts -->
 <link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
@@ -114,8 +115,8 @@ Code Clouds
 
 
 
-  <div class="entry-content"><p>Last year, I&#8217;ve been to <a href="http://jz11.java.no/news.html">Javazone</a> and among the many great speakers was
-<a href="http://twitter.com/#!/kevlinhenney">Kevlin Henney</a>. His talk was titled <a href="http://vimeo.com/28772428">Cool Code</a> and if you havn&#8217;t seen it, I can highly recommend it! (same goes for all talks by Kevlin).</p>
+  <div class="entry-content"><p>Last year, I&rsquo;ve been to <a href="http://jz11.java.no/news.html">Javazone</a> and among the many great speakers was
+<a href="http://twitter.com/#!/kevlinhenney">Kevlin Henney</a>. His talk was titled <a href="http://vimeo.com/28772428">Cool Code</a> and if you havn&rsquo;t seen it, I can highly recommend it! (same goes for all talks by Kevlin).</p>
 
 <p>One of the things he mentioned in his talk were word clouds generated
 from code to get a good overview of what a programm is about. They
@@ -134,15 +135,15 @@ Strings and takes a great deal of work to somehow handle null. Names and
 sessions are important to hiberante as well and obviously, hiberante
 also deals with transactions.</p>
 
-<p>I really like this kind of visualization of code. It provides no hard facts but it can help detect code smells and project priorities. If <em>String</em> is very common, this might be a sign of an insufficient domain model. Maybe a few more classes should be introduced. Same goes for <em>Object</em>. In general, a code cloud should talk about the domain of the programm. About customers, orders and the like. It should not talk about implementation details like Strings or booleans. (Since <a href="http://www.hibernate.org/">hibernate-core</a> is a general library, it might be ok, that transactions and sessions are not the primary words but Strings and Objects - although I somehow doubt it). Use code clouds as an additional datapoint, don&#8217;t rely to heavily on them and they might turn out to be a useful little tool in your analysis box.</p>
+<p>I really like this kind of visualization of code. It provides no hard facts but it can help detect code smells and project priorities. If <em>String</em> is very common, this might be a sign of an insufficient domain model. Maybe a few more classes should be introduced. Same goes for <em>Object</em>. In general, a code cloud should talk about the domain of the programm. About customers, orders and the like. It should not talk about implementation details like Strings or booleans. (Since <a href="http://www.hibernate.org/">hibernate-core</a> is a general library, it might be ok, that transactions and sessions are not the primary words but Strings and Objects &ndash; although I somehow doubt it). Use code clouds as an additional datapoint, don&rsquo;t rely to heavily on them and they might turn out to be a useful little tool in your analysis box.</p>
 
 <p>After <a href="http://jz11.java.no/news.html">Javazone</a>, I
 tried to create code clouds for the projects, I was working on. However I
-couldn&#8217;t find a good tool. <a href="http://www.wordle.net/">Wordle</a> generates nice clouds, but it works
+couldn&rsquo;t find a good tool. <a href="http://www.wordle.net/">Wordle</a> generates nice clouds, but it works
 only online. I am not so comfortable with uploading my complete
 codebase of customer projects to some website. So <a href="http://www.wordle.net/">Wordle</a> was out of
 the game.
-Apparently there were a few Windows tools, but I didn&#8217;t check them out.
+Apparently there were a few Windows tools, but I didn&rsquo;t check them out.
 But the idea of code clouds stuck with me.</p>
 
 <p>Then a few days ago, I read a post on <a href="http://news.ycombinator.com/">hacker news</a> about <a href="https://github.com/jasondavies/d3-cloud">d3-cloud</a> by
@@ -180,7 +181,7 @@ seperate posts.</p>
 <p>If you used <a href="https://github.com/mo-gr/Cloudserver">cloudserver</a>, have questions or ideas, I would love to hear
 from you! I would also love to show you some more clouds, but I
 currently only have customer-projects with interesting code bases
-around - and I am not comfortable with presenting them here.</p>
+around &ndash; and I am not comfortable with presenting them here.</p>
 </div>
 
 
@@ -212,21 +213,9 @@ around - and I am not comfortable with presenting them here.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.notadomain.com/blog/2012/02/12/code-clouds/" data-via="mo_gr" data-counturl="http://blog.notadomain.com/blog/2012/02/12/code-clouds/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.notadomain.com/blog/2012/02/12/code-clouds/" data-via="mo_gr" data-counturl="http://blog.notadomain.com/blog/2012/02/12/code-clouds/" >Tweet</a>
   
   
-  
-  
-    <a class="FlattrButton" style="display:none;"
-    title="Code clouds"
-    data-flattr-uid="mogr"
-    data-flattr-tags=""
-    data-flattr-button="compact"
-    data-flattr-category="text"
-    href="http://blog.notadomain.com/blog/2012/02/12/code-clouds/">
-    
-</a>
-
   
 </div>
 
@@ -257,23 +246,23 @@ around - and I am not comfortable with presenting them here.</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/04/16/type-hints/">Type Hints</a>
+        <a href="/blog/2013/08/27/brain-for-hire/">Brain for Hire</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/04/12/reduced-maven-noise/">Reduced maven noise</a>
+        <a href="/blog/2012/12/11/bye-bye-beijing/">Bye Bye Beijing</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/04/03/javascript-the-good-parts/">JavaScript: The Good Parts</a>
+        <a href="/blog/2012/12/11/hops-coffee/">Hops Coffee</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/31/berlin-expert-days/">Berlin Expert Days</a>
+        <a href="/blog/2012/11/16/bastion/">Bastion</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/19/why-is-the-dos-path-character-slash/">Why is the DOS path character "\\"?</a>
+        <a href="/blog/2012/11/15/opportunities-of-scale/">Opportunities of Scale</a>
       </li>
     
   </ul>
@@ -288,23 +277,6 @@ around - and I am not comfortable with presenting them here.</p>
 
 
 <section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating...</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("mo_gr", 4, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/mo_gr" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @mo_gr</a>
-  
-</section>
-
-
-<section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
     <li class="loading">Status updating...</li>
@@ -313,7 +285,7 @@ around - and I am not comfortable with presenting them here.</p>
   <a href="https://github.com/mo-gr">@mo-gr</a> on GitHub
   
   <script type="text/javascript">
-    $.domReady(function(){
+    $(document).ready(function(){
         if (!window.jXHR){
             var jxhr = document.createElement('script');
             jxhr.type = 'text/javascript';
@@ -334,17 +306,6 @@ around - and I am not comfortable with presenting them here.</p>
 </section>
 
 
-<section class="googleplus">
-  <h1>
-    <a href="https://plus.google.com/106410106555697258570?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
   
 </aside>
 
@@ -353,7 +314,7 @@ around - and I am not comfortable with presenting them here.</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Moritz Grauel -
+  Copyright &copy; 2013 - Moritz Grauel -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -365,8 +326,8 @@ around - and I am not comfortable with presenting them here.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://blog.notadomain.com/blog/2012/02/12/code-clouds';
-        var disqus_url = 'http://blog.notadomain.com/blog/2012/02/12/code-clouds';
+        var disqus_identifier = 'http://blog.notadomain.com/blog/2012/02/12/code-clouds/';
+        var disqus_url = 'http://blog.notadomain.com/blog/2012/02/12/code-clouds/';
         var disqus_script = 'embed.js';
       
     (function () {
@@ -387,7 +348,7 @@ around - and I am not comfortable with presenting them here.</p>
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>

@@ -19,13 +19,14 @@ online payment &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.notadomain.com/blog/2012/03/19/octoflattr">
+  <link rel="canonical" href="http://blog.notadomain.com/blog/2012/03/19/octoflattr/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Not a blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google's Web font directory at http://google.com/webfonts -->
 <link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
@@ -153,7 +154,7 @@ and the URL to that thing must be put in your <code>_config.yml</code> under
 is enabled in the <code>default_asides</code>, there will be a <a href="http://flattr.com">Flattr</a> Button in
 the aside.</p>
 
-<div><script src='https://gist.github.com/2106894.js?file='></script>
+<div><script src='https://gist.github.com/2106894.js'></script>
 <noscript><pre><code>{% if site.flattr_blog_thing %}
 &lt;a class=&quot;FlattrButton&quot; style=&quot;display:none;&quot; rev=&quot;flattr;button:compact;&quot; href=&quot;{{ site.url }}&quot;&gt;&lt;/a&gt;
 &lt;noscript&gt;
@@ -177,13 +178,13 @@ give money to.)</p>
 
 <p>By the way, the currently <a href="https://github.com/imathis/octopress/pull/255#issuecomment-2566028">official stance</a> of <a href="http://octopress.org/">Octopress</a> is to not
 integrate <a href="http://flattr.com">Flattr</a> into the core of <a href="http://octopress.org/">Octopress</a>. <a href="https://github.com/imathis">Brandon</a> wants to keep <a href="http://octopress.org/">Octopress</a>
-lean and have only the essentials in the core - which I think is very
+lean and have only the essentials in the core &ndash; which I think is very
 reasonable. Maybe there will be an official Flattr-pluign sometime in
 the future. Until then, I hope this helps other people integrating <a href="http://flattr.com">Flattr</a> into their
 <a href="http://octopress.org/">Octopress</a> setups. If you have any questions, feel free to <a href="http://blog.notadomain.com/about.html">contact</a>
 me.</p>
 
-<p>And if you havn&#8217;t yet tried <a href="http://flattr.com">Flattr</a>, go ahead and make the internet a
+<p>And if you havn&rsquo;t yet tried <a href="http://flattr.com">Flattr</a>, go ahead and make the internet a
 better place for everyone!</p>
 </div>
 
@@ -210,21 +211,9 @@ better place for everyone!</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.notadomain.com/blog/2012/03/19/octoflattr/" data-via="mo_gr" data-counturl="http://blog.notadomain.com/blog/2012/03/19/octoflattr/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://blog.notadomain.com/blog/2012/03/19/octoflattr/" data-via="mo_gr" data-counturl="http://blog.notadomain.com/blog/2012/03/19/octoflattr/" >Tweet</a>
   
   
-  
-  
-    <a class="FlattrButton" style="display:none;"
-    title="Octoflattr"
-    data-flattr-uid="mogr"
-    data-flattr-tags=""
-    data-flattr-button="compact"
-    data-flattr-category="text"
-    href="http://blog.notadomain.com/blog/2012/03/19/octoflattr/">
-    
-</a>
-
   
 </div>
 
@@ -255,23 +244,23 @@ better place for everyone!</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/04/16/type-hints/">Type Hints</a>
+        <a href="/blog/2013/08/27/brain-for-hire/">Brain for Hire</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/04/12/reduced-maven-noise/">Reduced maven noise</a>
+        <a href="/blog/2012/12/11/bye-bye-beijing/">Bye Bye Beijing</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/04/03/javascript-the-good-parts/">JavaScript: The Good Parts</a>
+        <a href="/blog/2012/12/11/hops-coffee/">Hops Coffee</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/31/berlin-expert-days/">Berlin Expert Days</a>
+        <a href="/blog/2012/11/16/bastion/">Bastion</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/19/why-is-the-dos-path-character-slash/">Why is the DOS path character "\\"?</a>
+        <a href="/blog/2012/11/15/opportunities-of-scale/">Opportunities of Scale</a>
       </li>
     
   </ul>
@@ -286,23 +275,6 @@ better place for everyone!</p>
 
 
 <section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating...</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("mo_gr", 4, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/mo_gr" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @mo_gr</a>
-  
-</section>
-
-
-<section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
     <li class="loading">Status updating...</li>
@@ -311,7 +283,7 @@ better place for everyone!</p>
   <a href="https://github.com/mo-gr">@mo-gr</a> on GitHub
   
   <script type="text/javascript">
-    $.domReady(function(){
+    $(document).ready(function(){
         if (!window.jXHR){
             var jxhr = document.createElement('script');
             jxhr.type = 'text/javascript';
@@ -332,17 +304,6 @@ better place for everyone!</p>
 </section>
 
 
-<section class="googleplus">
-  <h1>
-    <a href="https://plus.google.com/106410106555697258570?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
   
 </aside>
 
@@ -351,7 +312,7 @@ better place for everyone!</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Moritz Grauel -
+  Copyright &copy; 2013 - Moritz Grauel -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -363,8 +324,8 @@ better place for everyone!</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://blog.notadomain.com/blog/2012/03/19/octoflattr';
-        var disqus_url = 'http://blog.notadomain.com/blog/2012/03/19/octoflattr';
+        var disqus_identifier = 'http://blog.notadomain.com/blog/2012/03/19/octoflattr/';
+        var disqus_url = 'http://blog.notadomain.com/blog/2012/03/19/octoflattr/';
         var disqus_script = 'embed.js';
       
     (function () {
@@ -385,7 +346,7 @@ better place for everyone!</p>
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>

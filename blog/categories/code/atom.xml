@@ -4,7 +4,7 @@
   <title><![CDATA[Category: code | Not a blog]]></title>
   <link href="http://blog.notadomain.com/blog/categories/code/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2012-08-17T13:42:24+02:00</updated>
+  <updated>2013-08-27T14:46:31+02:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -24,8 +24,8 @@
 <updated>2012-02-12T19:04:00+01:00</updated>
 <id>http://blog.notadomain.com/blog/2012/02/12/code-clouds</id>
 
-      <content type="html"><![CDATA[<p>Last year, I've been to <a href="http://jz11.java.no/news.html">Javazone</a> and among the many great speakers was
-<a href="http://twitter.com/#!/kevlinhenney">Kevlin Henney</a>. His talk was titled <a href="http://vimeo.com/28772428">Cool Code</a> and if you havn't seen it, I can highly recommend it! (same goes for all talks by Kevlin).</p>
+      <content type="html"><![CDATA[<p>Last year, I&rsquo;ve been to <a href="http://jz11.java.no/news.html">Javazone</a> and among the many great speakers was
+<a href="http://twitter.com/#!/kevlinhenney">Kevlin Henney</a>. His talk was titled <a href="http://vimeo.com/28772428">Cool Code</a> and if you havn&rsquo;t seen it, I can highly recommend it! (same goes for all talks by Kevlin).</p>
 
 <p>One of the things he mentioned in his talk were word clouds generated
 from code to get a good overview of what a programm is about. They
@@ -44,15 +44,15 @@ Strings and takes a great deal of work to somehow handle null. Names and
 sessions are important to hiberante as well and obviously, hiberante
 also deals with transactions.</p>
 
-<p>I really like this kind of visualization of code. It provides no hard facts but it can help detect code smells and project priorities. If <em>String</em> is very common, this might be a sign of an insufficient domain model. Maybe a few more classes should be introduced. Same goes for <em>Object</em>. In general, a code cloud should talk about the domain of the programm. About customers, orders and the like. It should not talk about implementation details like Strings or booleans. (Since <a href="http://www.hibernate.org/">hibernate-core</a> is a general library, it might be ok, that transactions and sessions are not the primary words but Strings and Objects - although I somehow doubt it). Use code clouds as an additional datapoint, don't rely to heavily on them and they might turn out to be a useful little tool in your analysis box.</p>
+<p>I really like this kind of visualization of code. It provides no hard facts but it can help detect code smells and project priorities. If <em>String</em> is very common, this might be a sign of an insufficient domain model. Maybe a few more classes should be introduced. Same goes for <em>Object</em>. In general, a code cloud should talk about the domain of the programm. About customers, orders and the like. It should not talk about implementation details like Strings or booleans. (Since <a href="http://www.hibernate.org/">hibernate-core</a> is a general library, it might be ok, that transactions and sessions are not the primary words but Strings and Objects &ndash; although I somehow doubt it). Use code clouds as an additional datapoint, don&rsquo;t rely to heavily on them and they might turn out to be a useful little tool in your analysis box.</p>
 
 <p>After <a href="http://jz11.java.no/news.html">Javazone</a>, I
 tried to create code clouds for the projects, I was working on. However I
-couldn't find a good tool. <a href="http://www.wordle.net/">Wordle</a> generates nice clouds, but it works
+couldn&rsquo;t find a good tool. <a href="http://www.wordle.net/">Wordle</a> generates nice clouds, but it works
 only online. I am not so comfortable with uploading my complete
 codebase of customer projects to some website. So <a href="http://www.wordle.net/">Wordle</a> was out of
 the game.
-Apparently there were a few Windows tools, but I didn't check them out.
+Apparently there were a few Windows tools, but I didn&rsquo;t check them out.
 But the idea of code clouds stuck with me.</p>
 
 <p>Then a few days ago, I read a post on <a href="http://news.ycombinator.com/">hacker news</a> about <a href="https://github.com/jasondavies/d3-cloud">d3-cloud</a> by
@@ -90,7 +90,7 @@ seperate posts.</p>
 <p>If you used <a href="https://github.com/mo-gr/Cloudserver">cloudserver</a>, have questions or ideas, I would love to hear
 from you! I would also love to show you some more clouds, but I
 currently only have customer-projects with interesting code bases
-around - and I am not comfortable with presenting them here.</p>
+around &ndash; and I am not comfortable with presenting them here.</p>
 
 <p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/02/12/code-clouds/">&infin; Permalink</a></p>
 

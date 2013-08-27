@@ -9,7 +9,8 @@
   <meta name="author" content="Moritz Grauel">
 
   
-  <meta name="description" content="Today, Matthias Naber made me aware of IntelliJ type hints in JSF and JSP files. IntelliJ does quite a good job in figuring out the types of EL &hellip;">
+  <meta name="description" content="I guess it&rsquo;s time to make it official: I am now a freelancer After years of constant employment, this is the first time I
+am standing on my own &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,13 +19,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.notadomain.com">
+  <link rel="canonical" href="http://blog.notadomain.com/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Not a blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google's Web font directory at http://google.com/webfonts -->
 <link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
@@ -93,7 +95,7 @@
   <header>
     <h1 class="entry-title">
 
-<a href="/blog/2012/04/16/type-hints/">Type Hints</a>
+<a href="/blog/2013/08/27/brain-for-hire/">Brain for Hire</a>
 
 </h1>
 
@@ -106,165 +108,36 @@
 
   
 
-<time datetime="2012-04-16T22:59:00+02:00" pubdate>Apr 16<span>th</span>, 2012</time>
+<time datetime="2013-08-27T13:50:00+02:00" pubdate>Aug 27<span>th</span>, 2013</time>
         
-         &bull; <a rel="bookmark" href="/blog/2012/04/16/type-hints/">&infin;</a>
+         &bull; <a rel="bookmark" href="/blog/2013/08/27/brain-for-hire/">&infin;</a>
       </p>
     
   </header>
 
 
 
-  <div class="entry-content"><p>Today, <a href="mana">Matthias Naber</a> made me aware of <a href="idea">IntelliJ</a> type hints in JSF and JSP files.</p>
+  <div class="entry-content"><p>I guess it&rsquo;s time to make it official:</p>
 
-<p><a href="idea">IntelliJ</a> does quite a good job in figuring out the types of EL variables itself, providing code completion and usage information. But there are situations where <a href="idea">IDEA</a> is unable determine the type of an EL variable. This usually occurs to me in a facelet <code>composition</code> where the variables are passed in as a <code>param</code>.</p>
+<h3>I am now a freelancer</h3>
 
-<p>The following is a basic facelt composition invocation:</p>
+<p>After years of constant employment, this is the first time I
+am standing on my own two feet. I&rsquo;m still on the fence whether this is the
+best decision or biggest mistake in my career so far.</p>
 
-<pre><code>&lt;ui:include src="toiletten.xhtml"&gt;
-    &lt;ui:param name="toilette" value="#{umkleide.toiletten}"/&gt;
-&lt;/ui:include&gt;
-</code></pre>
+<p>I greatly enjoyed working at <a href="http://www.spree.de">akquinet</a> for the last
+two and a half years. So, the decision to take this step was not an easy
+one. But I just have to do this personal experiment. I don&rsquo;t want to
+look back at my life later on and regret never having tried this. The
+time is right and for the first few months I should be all set.</p>
 
-<p>In the file containing the invocation, <a href="idea">IDEA</a> is fully aware of the type of the EL variables. However in the included file (toiletten.xhtml), which might look something like this:</p>
-
-<pre><code>&lt;html xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:h="http://java.sun.com/jsf/html" 
-  xmlns:ui="http://java.sun.com/jsf/facelets"&gt;
-  &lt;ui:composition&gt;
-    &lt;h:outputLabel value="#{toilette.ppBecken}"/&gt;
-  &lt;/ui:composition&gt;
-&lt;/html&gt;
-</code></pre>
-
-<p><a href="idea">IntelliJ</a> is unable to infere the type of the EL variable <code>toilette</code>. It is therefore neither able to offer me code completion nor warn me about typos and errors. It might even mark the getter <code>getPpBecken()</code> in the Toilette as unused.</p>
-
-<p>However, if you help <a href="idea">IDEA</a> a little bit by hinting the type, all the goodness is restored. Just add the following, proprietary comment somewhere in the file:</p>
-
-<pre><code>    &lt;!--@elvariable id="toilette" type="com.notadomain.datamodel.Toiletten"--&gt;
-</code></pre>
-
-<p>This comment tells <a href="idea">IntelliJ</a> the type of the EL variable, enabling autocompletion, usage indexing and of course only marking true errors in the file.</p>
-
-<p>If you are using JSPs, the comment should probably look something like:</p>
-
-<pre><code>    &lt;%--@elvariable id="toilette" type="com.notadomain.datamodel.Toiletten"--%&gt;
-</code></pre>
-
-<p>If you are somehow worried about putting proprietary comments in your files, <em>you</em> have some weird issues. But nonetheless, those comments, at least in facelets, even work outside of the <code>composition</code>-tag, which will make them become ignored anyway.</p>
-
-<pre><code>&lt;html xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:h="http://java.sun.com/jsf/html" 
-  xmlns:ui="http://java.sun.com/jsf/facelets"&gt;
-  &lt;!--@elvariable id="toilette" type="com.notadomain.datamodel.Toiletten"--&gt;
-  &lt;ui:composition&gt;
-    &lt;h:outputLabel value="#{toilette.ppBecken}"/&gt;
-  &lt;/ui:composition&gt;
-&lt;/html&gt;
-</code></pre>
-
-<p>A properly configured <a href="idea">IntelliJ</a> setup will help you so many times a day. You are going to be a <em>lot</em> more productive. It is absolutely worth, adding some comments and guides to make the warnings and analyzations of your IDE more precise and focussed.</p>
-
-<p>If I had gotten a coin for every time, I fixed a bug, that was already underlined and critized by <a href="idea">IDEA</a> when I found it, I&#8217;d have an aweful lot of coins.</p>
-
-<p>Use your tools to their full advance and don&#8217;t check in code that contains warnings! I really wish, there would be a <code>-Werror</code> flag in <code>javac</code>!</p>
-</div>
-
-
-    </article>
-  
-    
-    
-
-
-
-  
-
-
-
-
-
-
-
-    <article data-linklog>
-      
-  <header>
-    <h1 class="entry-title">
-<span class='linklog-marker'>&rarr;</span>
-<a href="http://pveentjer.wordpress.com/2012/04/07/maven-reducing-test-output/">Reduced Maven Noise</a>
-
-</h1>
-
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2012-04-12T11:52:00+02:00" pubdate>Apr 12<span>th</span>, 2012</time>
-        
-         &bull; <a rel="bookmark" href="/blog/2012/04/12/reduced-maven-noise/">&infin;</a>
-      </p>
-    
-  </header>
-
-
-
-  <div class="entry-content"><p>I stumbled upon this quick post by <a href="pv">Peter Veentjer</a> about how to reduce maven test output. Highly recommended. Gives you the ability back to actually parse the output of maven by reducing the noise generated by tests to a minimum. Basically just add</p>
-
-<pre><code>&lt;redirectTestOutputToFile&gt;true&lt;/redirectTestOutputToFile&gt;
-</code></pre>
-
-<p>to your surefire config.</p>
-</div>
-
-
-    </article>
-  
-    
-    
-
-
-
-  
-
-
-
-
-
-
-
-    <article data-linklog>
-      
-  <header>
-    <h1 class="entry-title">
-<span class='linklog-marker'>&rarr;</span>
-<a href="http://www.youtube.com/watch?v=hQVTIJBZook">JavaScript: The Good Parts</a>
-
-</h1>
-
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2012-04-03T16:48:00+02:00" pubdate>Apr 3<span>rd</span>, 2012</time>
-        
-         &bull; <a rel="bookmark" href="/blog/2012/04/03/javascript-the-good-parts/">&infin;</a>
-      </p>
-    
-  </header>
-
-
-
-  <div class="entry-content"><p>Thanks to <a href="https://twitter.com/#!/davidvoelkel">David Völkel</a> for pointing me to <a href="http://www.crockford.com/">Doug Crockfords</a> Talk about JavaScripts good parts. If you enjoyed my CoffeeScript talk  not <em>only</em> for the entertainment, you probably gonna like that talk as well. Highly recommend watching it - well worth the hour.</p>
+<p>Nonetheless, here is some shameless self promotion: If you are looking for
+an experienced technical consultant to maneuver your JVM based project
+out of a tight corner – <a href="/about.html#contact">contact me</a>. If you are looking
+for an excellent developer to help on your next kick-ass web application – <a href="/about.html#contact">contact me</a>.
+If you need someone coaching your team to get up to speed on modern web
+technologies – <a href="/about.html#contact">contact me</a>. And if you are actually looking for a highly
+motivated clojure developer – please, please <a href="/about.html#contact">contact me</a>.</p>
 </div>
 
 
@@ -286,7 +159,7 @@
   <header>
     <h1 class="entry-title">
 
-<a href="/blog/2012/03/31/berlin-expert-days/">Berlin Expert Days</a>
+<a href="/blog/2012/12/11/bye-bye-beijing/">Bye Bye Beijing</a>
 
 </h1>
 
@@ -299,101 +172,22 @@
 
   
 
-<time datetime="2012-03-31T16:39:00+02:00" pubdate>Mar 31<span>st</span>, 2012</time>
+<time datetime="2012-12-11T17:03:00+01:00" pubdate>Dec 11<span>th</span>, 2012</time>
         
-         &bull; <a rel="bookmark" href="/blog/2012/03/31/berlin-expert-days/">&infin;</a>
+         &bull; <a rel="bookmark" href="/blog/2012/12/11/bye-bye-beijing/">&infin;</a>
       </p>
     
   </header>
 
 
 
-  <div class="entry-content"><p>This years <a href="http://bed-con.org/">Berlin Expert Days</a> conference has come to an end. The <a href="http://bed-con.org/">BEDCon</a> is a small tech conference in, you
-guessed it, Berlin. The focus is somewhere around the Java ecosystem but it is no LASER sharp focus.</p>
+  <div class="entry-content"><p>On another note, today is actually my last day in Beijing. My next stop will be Seoul and I&rsquo;m looking forward to it (and to finally having proper Internet again).</p>
 
-<p>This years <a href="http://bed-con.org/">BEDCon</a> was full of high quality talks and interesting attendies. The conference sold out with somewhere
-around 350 people and although some talks were a bit crowded, the atmosphere was very nice and friendly! Thanks to everyone who
-contributed in one way or another! I had a great time.</p>
+<p>However, I&rsquo;ll continue my journey without the mac that I&rsquo;m currently typing on. I&rsquo;ll only have an iPad with me. Therefore, I can&rsquo;t post any further updates to this blog until we are back home.</p>
 
-<h2>Why Coffee is good for developers</h2>
+<p>Until further notice, all updates will go to either <a href="http://mo-gr.tumblr.com">tumblr</a>, <a href="http://twitter.com/mo_gr">twitter</a> or <a href="https://alpha.app.net/mo">app.net</a>.</p>
 
-<p>This was the first conference, where I attended as a speaker. I gave a (hopefully) entertaining introduction to <a href="http://coffeescript.org/">CoffeeScript</a> on
-the second day titled <a href="http://bed-con.org/talks/why-coffee-is-good-for-developers/">Why Coffee is good for developers</a>. And judging by the feedback I got in person and via twitter, the talk was a huge success. Thanks to
-everyone who attended! I hope you had as much fun listening as I had giving the talk!</p>
-
-<p>I opened my talk with some facts about actual coffee as a pun on the title of the talk before spinning into
-<a href="http://coffeescript.org/">CoffeeScript</a> and the problems, it tries to solve. Some people told me, they liked the idea and also enjoyed my
-facts about coffee. Although one person aparently didn&#8217;t liked it at all. He left before I even got to the interesting
-parts probably thinking, I was talking about coffee for an hour. Maybe he is more of a tea guy :)</p>
-
-<h2>HTML slides are gaining traction</h2>
-
-<p>My <a href="http://blog.notadomain.com/wcig4d">slides</a> are available online and the sources are on <a href="https://github.com/mo-gr/wcig4d">github</a> too (Sorry, slides are in german.) The slides work best in Safari but should also work in Chrome. Non-WebKit Browsers are probably going to have some problems. Since a few people have asked me, I made the
-slides with my own custom fork of the fabulous <a href="https://github.com/bartaz/impress.js">impress.js</a>. I rewrote it in <a href="http://coffeescript.org/">CoffeeScript</a> and modified it quite a
-bit for this presentation. If you plan to use it, at this moment, I have to recomment using <a href="https://github.com/bartaz/impress.js">impress.js</a> over my fork. I
-plan to put some more effort into my fork and iron out many of the wrinkles. But at the moment, <a href="https://github.com/bartaz/impress.js">impress.js</a> is more
-stable and more active. I&#8217;ll post here when there are news about my fork.</p>
-
-<p>I was by far not the only speaker with HTML slides. An intersting trend, that I really do appreciate. HTML slides tend
-to be less bullet point ridden than powerpoint slides. The presentations are often more interactive and engaging. The slides are easier and faster to
-share after the talk and they discourage the stupid idea of printing out slides. But as <a href="https://github.com/bartaz/impress.js">impress.js</a> calls out in its
-readme, they &#8220;may not help you if you have nothing interesting to say ;)&#8221;</p>
-
-<p>One other framework for HTML slides, that looked very intersting was <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>. <a href="http://twitter.com/#!/spinscale">Alexander Reelsen</a> used it for his
-slides and they looked great. But then again, he also hat something interesting to say&#8230;</p>
-
-<p>If you have anything to do with the web at all, check out one of the options for HTML slides! Not only is it fun to
-create the slides, it is also a nice exercise for your web-fu! And you can use <a href="http://www.jetbrains.com/idea">IntelliJ</a> instead of PowerPoint for
-creating slides - how awesome is that?!</p>
-</div>
-
-
-    </article>
-  
-    
-    
-
-
-
-  
-
-
-
-
-
-
-
-    <article data-linklog>
-      
-  <header>
-    <h1 class="entry-title">
-<span class='linklog-marker'>&rarr;</span>
-<a href="http://blogs.msdn.com/b/larryosterman/archive/2005/06/24/432386.aspx">Why Is the DOS Path Character &#8220;&#92;&#8221;?</a>
-
-</h1>
-
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2012-03-19T13:38:00+01:00" pubdate>Mar 19<span>th</span>, 2012</time>
-        
-         &bull; <a rel="bookmark" href="/blog/2012/03/19/why-is-the-dos-path-character-slash/">&infin;</a>
-      </p>
-    
-  </header>
-
-
-
-  <div class="entry-content"><p>Interesting article on why Microsofts engineers chose &#8220;&#92;&#8221; as the path
-seperator (and therefore making the windows command line such an
-unpleasant place to be). I like this kind of history. It&#8217;s often interesting
-and insightful.</p>
+<p>See you on the other side&hellip;</p>
 </div>
 
 
@@ -415,7 +209,7 @@ and insightful.</p>
   <header>
     <h1 class="entry-title">
 
-<a href="/blog/2012/03/19/octoflattr/">Octoflattr</a>
+<a href="/blog/2012/12/11/hops-coffee/">Hops Coffee</a>
 
 </h1>
 
@@ -428,227 +222,497 @@ and insightful.</p>
 
   
 
-<time datetime="2012-03-19T10:54:00+01:00" pubdate>Mar 19<span>th</span>, 2012</time>
+<time datetime="2012-12-11T16:34:00+01:00" pubdate>Dec 11<span>th</span>, 2012</time>
         
-         &bull; <a rel="bookmark" href="/blog/2012/03/19/octoflattr/">&infin;</a>
+         &bull; <a rel="bookmark" href="/blog/2012/12/11/hops-coffee/">&infin;</a>
       </p>
     
   </header>
 
 
 
-  <div class="entry-content"><p><em>tl;dr:</em> <a href="https://github.com/mo-gr/not-a-blog/commit/1408219062aa8aac81abf54431d5edcd638dff2b">Here</a> is how I integrated <a href="http://flattr.com">Flattr</a> into my octopress blog.</p>
+  <div class="entry-content"><p>Last weekend, we&rsquo;ve been to Qingdao (青岛). Qingdao is quite often also referred to by its <em>german</em> name-mangling Tsingtao. Tsingtao happens to be the biggest brewer and beer exporter in China and therefore also one of the largest in the world (Chinas economy of scale at work here).</p>
+
+<p>Therefore it can&rsquo;t come as a huge surprise, that Qingdao features a rather nice beer museum. The history of the brewery and the old as well as the current brewing equipment is on display along with a bar for tasting and of course a gift shop with lot&rsquo;s of souvenirs. Some more related to beer than others.</p>
+
+<p>The one, that really caught my eye was <em>Hops Coffee</em>. The direct combination of my two most favorite beverages in the world can&rsquo;t be recommended at all. But the idea of a slight hops aroma in a nice cup of coffee sounds at least interesting to me.</p>
+
+<p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/HopsCoffee.jpg" title="&#34;Hops Coffee, brewed and ready to drink&#34;" alt="&#34;Hops Coffee, brewed and ready to drink&#34;"></p>
+
+<p>Sadly, the actual product was more of a multi stage disappointment than a great new beverage. First, it&rsquo;s instant. I can live with that and was kind of expecting it to be.</p>
+
+<p>Second, the instant mix also includes sweeteners (<em>yuck</em>) and milk powder, ruining an otherwise perfectly good instant coffee.</p>
+
+<p>And then, there is the actual Hops. Or better yet, the lack of it. The hops aroma exists purely by the power of your mind. It is so weak, that after my first cup, I searched the box to see if the hops aroma might be in another sachet. It isn&rsquo;t. If you concentrate hard and really want to smell some hops it is just barely there. But nothing more.…</p>
+
+<p>All in all, the hops coffee was rather disappointing. It is a sweetened, whitened, otherwise boring instant coffee. However, I&rsquo;ll probably get hold of some actual hops for proper brewing some time early next year. I&rsquo;ll use that to make some proper hops coffee. Brewed from good beans and otherwise black as coffee is intended to be. Looking forward to see how that turns out…</p>
+</div>
+
+
+    </article>
+  
+    
+    
+
+
+
+
+
+
+
+
+
+    <article >
+      
+  <header>
+    <h1 class="entry-title">
+
+<a href="/blog/2012/11/16/bastion/">Bastion</a>
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2012-11-16T16:36:00+01:00" pubdate>Nov 16<span>th</span>, 2012</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2012/11/16/bastion/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/TheBastionLogo.jpg" title="Bastion Logo" ></p>
+
+<p>Yesterday, I finally finished my second play through of Bastion. The game is so great, that I want to recommend it here.</p>
+
+<h3>Story</h3>
+
+<p>On first sight, The Bastion appears to be little more than a flying peace of rock drifting through the remains of what the Calamity left of the old world. In the beginning of the game, The Bastion finds The Kid (or The Kid finds The Bastion). On the  Bastion, the Kid meets The Stranger and &ndash; guided by him &ndash; The Kid searches the land to find other survivors and ultimately to uncover the secrets of the Calamity, that fractured the earth, destroyed Caelondia and left so few survivors.</p>
+
+<p>When The Kid and The Stranger first met, the Bastion is weak and powerless. To bring her back to old glory, The Kid first has to search for the Cores, that are scattered throughout the land. With every Core that is recovered, the Bastion gains new Energy and grows, enabling them to travel much further into the lands.
+Soon they realize, they are not the only ones who survived the Calamity. Other Survivors, like Zulf from the folk of the Ura, join them on the Bastion.</p>
+
+<p>In the end, they figure out, what the Calamity actually was, what led to this huge catastrophe. A discovery, not everyone deals with equally&hellip;</p>
+
+<h3>Gameplay</h3>
+
+<p>One could think of Bastion as a hack-n-slash RPG. You control The Kid and roam the world in an isometric top-down perspective. Battle in Bastion is realtime and The Kid gathers quite an arsenal of close-combat and long-range weapons. Throw in his Bullhead Shield and some special abilities and you are set. There is also some leveling involved, but apart from packing a bigger punch and more health, leveling up doesn&rsquo;t gain you much. So don&rsquo;t expect a Diablo-Style skill tree or anything.</p>
+
+<p>Bastion started out as an Indie game on XBox Live but is now available on nearly everything that has a display. I&rsquo;ve played it on the iPad, but if you can, play it on something that has a bigger screen &ndash; Bastion is beautiful. Bastion is drawn in living, vibrant colors and has a comic-art-style that really hits my taste. It&rsquo;s meant to be played on your big screen TV, with the rocking volume from your speakers. But I&rsquo;ll get to the audio later.</p>
+
+<p>The difficulty was quite right for me. I had no problem, finishing the game. The occasional death happened, but it never got frustrating. And if you like a challenge, the last few achievements are really hardcore (I haven&rsquo;t managed to finish any of the dreams with all 10 gods enabled. I already struggle with 5).</p>
+
+<h3>The Bad</h3>
+
+<p>Since we are on the go, it was most convenient for me to play Bastion on the iPad. The iPad is really great for recreational gaming. Melt with a couch or a comfy chair, pop in your favorite headphones and dive into the space between your hands.
+However a touchscreen isn&rsquo;t the perfect input device for games like bastion. While it did get the job done most of the time, a real gamepad would have been a lot better. It is just too easy to hit the wrong touch-area (aka button) in  busy moment and do a barrel roll into the abyss instead of pushing the enemy into the same.</p>
+
+<p>So, the touchscreen controls, while being ok, have to go into the bad section. Along with the german localization. Luckily they just translated onscreen texts and added subtitles. Yet, I would have preferred having the game the way it was intended to be. But I couldn&rsquo;t find a way to switch the language on my iPad although my entire iPad is set to english anyways. So either I am too stupid or the lack of a language switch has to be my biggest complaint about Bastion.
+Really, that is my biggest complaint about the game. That I couldn&rsquo;t set it to another language. The game itself, I have nothing to complain about.</p>
+
+<p>I could imagine, that some people might complain about replay-value. To be honest, once you&rsquo;ve finished the game a second time, there is not much left to do. The story has been told. The secrets are uncovered. There is not a lot left to pull you back into the game afterwards. But I consider that a plus. I am no student anymore and my time for games is scarce. I like it, when a game has a clear cut ending and I can put it away and move on. Nothing worse than those kind of games, that hook you up and never ever let you go again.</p>
+
+<h3>The Good</h3>
+
+<p>So the length of the game goes into The Good. The story had me hooked from the get go and unfolded at a great pace. You get a good value out of your buck. The game is usually priced between 10 and 20 $ and goes on different sales or bundles from time to time. And for that, you get many hours of fun gameplay, a great story and an atmosphere that will hook you right in.</p>
+
+<p>A big part of that atmosphere are the beautiful visuals. Bastion looks great with living colors and fluid animations. The whole world feels alive.</p>
+
+<p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/TheBastion.jpg" title="The Bastion, injured but still strong." ></p>
+
+<p>Another equally big part is the music. Bastion has one of the best soundtracks I&rsquo;ve heard in a game for a long time (although this doesn&rsquo;t really mean a lot considering how much I game these days). It&rsquo;s often dominated by acoustic guitars and strings, has a great beat and sometimes drifts a bit into the oriental space. The music perfectly underlines what is happening on the screen and you really want to turn it up. The soundtrack can even stand on its own. I have to admit, that the soundtrack had many rotations in my playlist long, long before I actually played the game. Bastion even manages to sneak in a few songs with lyrics in certain areas of the game &ndash; lyrics… in a game!</p>
+
+<p>I guess, whether you like this game or not boils down to whether you like the story and atmosphere. If they don&rsquo;t get you hooked, you probably won&rsquo;t like the game as much as I did. Yeah, it is fun. It is fun walking around and engaging in battle. It is fun getting new weapons and leveling them up. It feels great to counter block an enemy and than smash him in the ground. But if you are not hooked into the story, you&rsquo;ll probably put the controller aside sooner than later. From a pure gameplay-perspective, there are probably a few better hack-n-slash RPGs.</p>
+
+<p>But this one has a twist. A catch, that the others don&rsquo;t have. A nugget of awesome.</p>
+
+<h3>The Awesome</h3>
+
+<p>Two words: Logan Cunningham. It is quite a challenge writing so much about Bastion without mentioning Logan Cunningham until this point. Logan is the voice actor of Rucks, The Stranger. And with his smokey, rough voice, he comments and narrates the entire story from beginning to end. And this is Bastions unique and awesome twist. Most games tell their story between the Levels, advancing it via cutscenes and the like. But in Bastion, there is a story teller,  a narrator. He is telling you a story; the story you are just playing. And it works. It works beautifully. Even though there is rarely a minute where Rucks is not narrating what is happening on the screen, it never feels repetitive or out of place. The only downside of this is, the game is very linear. You don&rsquo;t have a lot of choice how to advance next.</p>
+
+<p>Trust me, just writing/reading this doesn&rsquo;t give it justice. You have to hear and see it in action.</p>
+
+<h3>Conclusion</h3>
+
+<p>As you might have guessed, I enjoyed Bastion a lot. I enjoyed it so much that I decided to tell the world about it. I give it   ★★★★★ without hesitation. I know, I&rsquo;m a bit late to the party (at least, Bastion isn&rsquo;t <a href="http://xkcd.com/606/">5 years</a> old by now). Bastion was first released well over a year. So you have no excuse as well. If you like games with some action at all, you should at least give it a try. So, if you don&rsquo;t yet own a copy, head over to your favorite digital store and get it. I recommend making sure to get the Soundtrack as well. As I said, it can easily stand on its own as a cool tune.</p>
+
+<p>If you give it a try, let me know, how you liked it!</p>
+
+<p>Turn up the volume all the way to eleven, take your Breaker&rsquo;s Bow and your Cael Hammer and let the Bastion guide your way. <em>Ain&rsquo;t much Kid can&rsquo;t handle with Hammer and Bow in hand.</em></p>
+
+<p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/Bastion.jpg" title="iPad, headphones and Bastion Loading screen." ></p>
+</div>
+
+
+    </article>
+  
+    
+    
+
+
+
+
+
+
+
+
+
+    <article >
+      
+  <header>
+    <h1 class="entry-title">
+
+<a href="/blog/2012/11/15/opportunities-of-scale/">Opportunities of Scale</a>
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2012-11-15T12:34:00+01:00" pubdate>Nov 15<span>th</span>, 2012</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2012/11/15/opportunities-of-scale/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p>We tend to forget how huge China is. Yeah, China is big and there are many Chinese. But how <em>many</em> Chinese there are, just needs a reminder from time to time.</p>
+
+<p>According to <a href="http://www.wolframalpha.com/input/?i=population+china+vs+eu">Wolfram Alpha</a>, the population of china was estimated to be 1.3 billion in 2010. That is easily more, than the population of the EU and the USA combined.</p>
+
+<p>This has a some peculiar consequences. For once, there are quite a few multi-million citizen cities, you&rsquo;ve likely never heard of before. Would you know, where to search for <a href="http://en.wikipedia.org/wiki/Zhoukou">Zhoukou</a> or <a href="http://en.wikipedia.org/wiki/Linyi">Linyi</a> on the map? They both have a population of around 10 Million &ndash; give or take.</p>
+
+<p>Another interesting consequence, there are a lots of hugely popular services and companies, that you have also probably never heard of &ndash; some of them more interesting than others.</p>
+
+<p>The <a href="https://twitter.com">Twitter</a> equivalent of China for example is <a href="http://weibo.com">Sina Weibo</a>. While being mostly unknown in the western world, Weibo is about the same size as Twitter. According to the wikipedia, Twitter has currently about 500 million users and generates about 340 million messages a day. The 3 year old Weibo currently has about 368 million users and generates 100 million messages a day &ndash; not as much but the same order of magnitude (<a href="http://en.wikipedia.org/wiki/Twitter">source</a> and <a href="http://en.wikipedia.org/wiki/Sina_Weibo">source</a>).</p>
+
+<p>Just as Weibo is quite similar to Twitter, there are many other china-only competitors to the services, we know. Yesterday, we used a very neat one. The site is called <a href="http://www.360buy.com/">360buy.com</a> (Strangely, many of the Chinese alternatives use .com instead of .cn TLDs). From the looks of it, they appear to be a competitor to <a href="http://www.amazon.de/?_encoding=UTF8&amp;camp=1638&amp;creative=19454&amp;linkCode=ur2&amp;site-redirect=de&amp;tag=notadomaincom-21">amazon</a>. Yet, 360buy has a cool feature: In many areas, including Beijing, they offer <em>same-day-delivery</em>. For free. Just like that.</p>
+
+<p>We decided, we needed to get a cheep DVD player for the TV in our apartment. We went to 360buy, used Chrome to translate the page, chose a device, entered our address and clicked on order. This was around 9:00 am. The same day at around 5:00 pm, it knocked on the door. We payed in cash and got our DVD player.</p>
+
+<p>The whole experience was fast, friendly and due to Chromes page translate-feature, even possible for lazy aliens, that don&rsquo;t speak Chinese.</p>
+
+<p>Part of me wants that from amazon <em>(in Germany)</em>!</p>
+</div>
+
+
+    </article>
+  
+    
+    
+
+
+
+
+
+
+
+
+
+    <article >
+      
+  <header>
+    <h1 class="entry-title">
+
+<a href="/blog/2012/11/10/small-differences-money/">Small Differences: Money</a>
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2012-11-10T12:24:00+01:00" pubdate>Nov 10<span>th</span>, 2012</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2012/11/10/small-differences-money/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p>Of course china uses money like everywhere else. And a lot of payments are done using cash. But the cash here is a bit different than in Europe.</p>
+
+<p>This mainly boils down to the fact, that the biggest bill available in china is the 100 RMB bill. This is currently worth roughly 12.50 €. All other bills are worth even less. Also, coins are used far less often and only go up to 1 RMB (about 0.12 €).</p>
+
+<p>This has two interesting consequences. First: You always have a trousers pocket full of papermoney. A thick stack of bills which is worth about 10 €. I kind of like that. Far more comfy than having a pocket full of €-coins. And still worth so little, that you don&rsquo;t really care if you lose a bill. (I guess this is similar in the US with their 1 $ bill).</p>
+
+<p>The second consequence is, whenever you have to pay for something a bit more expensive, you deal with huge stacks of money. Making you feel a bit like a gangster in the first moment and making you wish, you had a counting machine the moment after that. (Counting machines are extremely common in china. Basically every cash register has one).</p>
+
+<p>Did I mention, we payed our entire 3 month rent and a safety deposit in cash? This is how some of it looked:</p>
+
+<p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/Cash.jpg" title="Lots of cash" ></p>
+
+<p>Really, you have to deal with silly big stacks of cash from time to time. You have to make multiple trips to an ATM to get reasonable amounts of cash because they can&rsquo;t spit out stacks big enough. Stuff like that.</p>
+
+<p>Apparently there is also quite a lot of counterfeit money in the wild. The Chinese will always check 50 and 100 RMB bills for validity. Either by hand or by feeding it through a counting machine.</p>
+
+<p>And there is also the other side of the value spectrum. The smallest bill in circulation (and not quite uncommon) is the 1 Yi Jiao bill, aka 0.1 RMB. So it is roughly worth 1 euro cent.</p>
+
+<p>On the street, prices are usually multiples of 1 RMB. Amounts below 1 RMB are usually only found in supermarkets and similar stores. So you usually put your Yi Jiaos somewhere and hope to remember theme the next time you are grocery shopping.</p>
+
+<p>This is how it looks:</p>
+
+<p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/worthless.jpg" title="Worthless money" ></p>
+
+<p>It has roughly the same size and feel as monopoly money. Only, it is worth slightly less then monopoly money.</p>
+</div>
+
+
+    </article>
+  
+    
+    
+
+
+
+
+
+
+
+
+
+    <article >
+      
+  <header>
+    <h1 class="entry-title">
+
+<a href="/blog/2012/10/29/small-differences/">Small Differences: Prepaid</a>
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2012-10-29T18:37:00+01:00" pubdate>Oct 29<span>th</span>, 2012</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2012/10/29/small-differences/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><h1>Preface</h1>
+
+<p>We&rsquo;ve been in Beijing for over a month by now. After that time I feel quite confident in saying, that Beijing is just another big city. It is quite <em>western</em> and very big. If you look at it from a high enough level, it is very similar to other big cities. There is public transportation. People have jobs. There is a large middle class. People buy designer clothes in huge malls. Just the usual.</p>
+
+<p>It is the same shit like home, albeit <em>some</em> things are different. If you zoom in close enough, you can see lots of small differences. In the way, the city works, the society works. Really, it&rsquo;s all over the place. In the <em>Small Differences</em> series of posts, I plan to point out those differences, I found noticeable.</p>
+
+<h1>Small Differences: Prepaid</h1>
+
+<p>Having a prepaid cell phone is a very common thing here in Beijing like in many other big cities all around the globe. However, cell phones are not the only thing coming as prepaid variant over here. A few days ago, we had to find out, that also gas, water and electricity are often prepaid in China. And how do you discover something like that? Of course by standing under the shower and enjoying a lack of warm water. We complained to the landlord and low and behold &ndash; the next day someone came with a smart card, shoved it somewhere into the gas-meter and everything was fine again.</p>
+
+<p>They also showed us the cards. This is a bit useless since we have no idea at all how to recharge those cards. But I can at least show them here. In order from top to bottom: Water, electricity and gas.</p>
+
+<p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/Prepaid.jpg"></p>
+
+<p>If you think about it, it actually isn&rsquo;t that bad of an idea. At least people can&rsquo;t get in situations, where they all of a sudden have to repay huge sums because they used more gas then anticipated.</p>
+
+<p>I will write about heating here another time. There is a small difference to heating as well, although it is not prepaid like gas, water and electricity.</p>
+</div>
+
+
+    </article>
+  
+    
+    
+
+
+
+
+
+
+
+
+
+    <article >
+      
+  <header>
+    <h1 class="entry-title">
+
+<a href="/blog/2012/10/11/take-a-deep-breath/">Take a Deep Breath</a>
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2012-10-11T16:49:00+02:00" pubdate>Oct 11<span>th</span>, 2012</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2012/10/11/take-a-deep-breath/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p>A few weeks before we started our journey, a friend of mine gave me a
+link to an article in the german Tagesspiegel (<a href="http://www.tagesspiegel.de/weltspiegel/leben-in-china-dicke-luft-in-peking-/6848760.html">link</a>). The author of that article stayed a while in Beijing as well. And according to her, the quality of the air in Beijing is usually so bad,
+it took the author over a week to realize that her apartment had a view
+on the mountains.</p>
+
+<p>When we arrived in Beijing, we had a clear blue sky. So naturally, I was
+thinking the author exaggerated a bit. That is, until yesterday, when I
+realized that our apartment had a view on the mountains as well. It took
+us <em>just</em> five days to realize that.</p>
+
+<p>I took a picture from our window that morning. Today – also a nice
+day with lots of sun – I tried to take the same picutre again. Same ISO, same
+aperture, same shutter speed, roughly the same time of the day. I merged those images. This is the result:</p>
+
+<p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/Airquality.jpg" title="Overlay of a clear and a usual day" ></p>
+
+<p>To be honest, I made one mistake. I let the camera on
+auto-white-balance. This probably overstates the difference a bit.
+Anyways, take a deep breath and enjoy.</p>
+</div>
+
+
+    </article>
+  
+    
+    
+
+
+
+
+
+
+
+
+
+    <article >
+      
+  <header>
+    <h1 class="entry-title">
+
+<a href="/blog/2012/10/08/elevator-rushhour/">Elevator Rushhour</a>
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2012-10-08T09:35:00+02:00" pubdate>Oct 8<span>th</span>, 2012</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2012/10/08/elevator-rushhour/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p>This morning, we encountered something, I didn&rsquo;t knew existed: <em>Elevator
+Rushhour</em>. I&rsquo;ve never lived in a 28 story building before. We now live
+on the 21st floor. If every floor is roughly the same as ours, there are 12
+apartments on each floor.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=&gt; (* 28 12)
+</span><span class='line'>; 336</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So there are a good 300 apartments. The building currently has three working elevators.
+Even if we assume that not every
+apartment is inhabited and not every inhabitant has to get up in
+the morning to get to work, this leaves us with a lot of people that
+need to exit the building in a narrow timeframe.</p>
+
+<p>We left at 8:00. And we waited for nearly 10 minutes to finally leave the
+building. The elevators were all basically stopping at every other floor
+on their way down. Then going all the way up again only to repeat the
+stop and go on their way down.</p>
+</div>
+
+
+    </article>
+  
+    
+    
+
+
+
+
+
+
+
+
+
+    <article >
+      
+  <header>
+    <h1 class="entry-title">
+
+<a href="/blog/2012/10/02/farewell-russia/">До Свидания Russia</a>
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2012-10-02T21:19:00+02:00" pubdate>Oct 2<span>nd</span>, 2012</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2012/10/02/farewell-russia/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/map.jpg" title="'A map of the places where we took pictures'" ></p>
+
+<p>We have arrived in Beijing and I could already write a lot about it. But I won&rsquo;t do that now because I don&rsquo;t want all of our Russia impressions to get lost in time and memory. This post is intended two give a rather brief overview about our time there (but fails to be brief). More detailed stories are following soon (I hope).</p>
 
 </div>
   <footer>
-    <a rel="full-article" href="/blog/2012/03/19/octoflattr/">Read on &rarr;</a>
-  </footer>
-
-
-    </article>
-  
-    
-    
-
-
-
-  
-
-
-
-
-
-
-
-    <article data-linklog>
-      
-  <header>
-    <h1 class="entry-title">
-<span class='linklog-marker'>&rarr;</span>
-<a href="http://octopress.org/docs/blogging/linklog/">Octopress Linklog</a>
-
-</h1>
-
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2012-03-18T16:54:00+01:00" pubdate>Mar 18<span>th</span>, 2012</time>
-        
-         &bull; <a rel="bookmark" href="/blog/2012/03/18/octopress-linklog/">&infin;</a>
-      </p>
-    
-  </header>
-
-
-
-  <div class="entry-content"><p>I am currently integrating octopress linklog in my blog. Basically
-<a href="http://daringfireball.net/">daring fireball</a> style link blogging.</p>
-</div>
-
-
-    </article>
-  
-    
-    
-
-
-
-
-
-
-
-
-
-    <article >
-      
-  <header>
-    <h1 class="entry-title">
-
-<a href="/blog/2012/02/12/code-clouds/">Code Clouds</a>
-
-</h1>
-
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2012-02-12T19:04:00+01:00" pubdate>Feb 12<span>th</span>, 2012</time>
-        
-         &bull; <a rel="bookmark" href="/blog/2012/02/12/code-clouds/">&infin;</a>
-      </p>
-    
-  </header>
-
-
-
-  <div class="entry-content"><p>Last year, I&#8217;ve been to <a href="http://jz11.java.no/news.html">Javazone</a> and among the many great speakers was
-<a href="http://twitter.com/#!/kevlinhenney">Kevlin Henney</a>. His talk was titled <a href="http://vimeo.com/28772428">Cool Code</a> and if you havn&#8217;t seen it, I can highly recommend it! (same goes for all talks by Kevlin).</p>
-
-<p>One of the things he mentioned in his talk were word clouds generated
-from code to get a good overview of what a programm is about. They
-provide no hard facts but a very intersting insight nonetheless. The
-following is a word cloud generated from <a href="http://www.hibernate.org/">hibernate-core</a> with the 100
-most common words in the codebase. The bigger the word, the more common
-it is.</p>
-
-<p><img src="http://blog.notadomain.com/images/hibernate-cloud.png" alt="Cloud of hibernate-core" /></p>
-
-</div>
-  <footer>
-    <a rel="full-article" href="/blog/2012/02/12/code-clouds/">Read on &rarr;</a>
-  </footer>
-
-
-    </article>
-  
-    
-    
-
-
-
-
-
-
-
-
-
-    <article >
-      
-  <header>
-    <h1 class="entry-title">
-
-<a href="/blog/2012/01/03/completely-moved-to-solid-state/">Completely Moved to Solid State</a>
-
-</h1>
-
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2012-01-03T01:12:00+01:00" pubdate>Jan 3<span>rd</span>, 2012</time>
-        
-         &bull; <a rel="bookmark" href="/blog/2012/01/03/completely-moved-to-solid-state/">&infin;</a>
-      </p>
-    
-  </header>
-
-
-
-  <div class="entry-content"><p><em>tl;dr: SSDs are awesome. Don&#8217;t have one? Get one!</em></p>
-
-<p>Happy new year!</p>
-
-<p><img src="http://dl.dropbox.com/u/165601/blog/rocket.jpg" title="&#34;Picture completely unrelated to post - Happy new year&#34;" alt="&#34;Picture completely unrelated to post - Happy new year&#34;"></p>
-
-<p>I got a late christmas gift in the form of a <a href="http://www.amazon.de/gp/product/B004W2JL2A/ref=as_li_ss_tl?ie=UTF8&amp;tag=notadomaincom-21&amp;linkCode=as2&amp;camp=1638&amp;creative=19454&amp;creativeASIN=B004W2JL2A">Crucial M4 256G*</a> Solid State Drive. But let me start a bit earlier.</p>
-
-</div>
-  <footer>
-    <a rel="full-article" href="/blog/2012/01/03/completely-moved-to-solid-state/">Read on &rarr;</a>
-  </footer>
-
-
-    </article>
-  
-    
-    
-
-
-
-
-
-
-
-
-
-    <article >
-      
-  <header>
-    <h1 class="entry-title">
-
-<a href="/blog/2011/12/29/picketlink/">Picketlink</a>
-
-</h1>
-
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2011-12-29T17:28:00+01:00" pubdate>Dec 29<span>th</span>, 2011</time>
-        
-         &bull; <a rel="bookmark" href="/blog/2011/12/29/picketlink/">&infin;</a>
-      </p>
-    
-  </header>
-
-
-
-  <div class="entry-content"><p>My friend <a href="https://twitter.com/#!/michaelschuetz">Michael</a> and myself have been hacking some features into a specific version of <a href="http://www.jboss.org/picketlink">picketlink</a>. An update to a newer version was out of the question. We blogged about it over <a href="http://blog.akquinet.de/2011/12/26/patching-picketlink-to-support-multiple-ldap-stores/">here</a>.</p>
-
-</div>
-  <footer>
-    <a rel="full-article" href="/blog/2011/12/29/picketlink/">Read on &rarr;</a>
+    <a rel="full-article" href="/blog/2012/10/02/farewell-russia/">Read on &rarr;</a>
   </footer>
 
 
@@ -669,23 +733,23 @@ it is.</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/04/16/type-hints/">Type Hints</a>
+        <a href="/blog/2013/08/27/brain-for-hire/">Brain for Hire</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/04/12/reduced-maven-noise/">Reduced maven noise</a>
+        <a href="/blog/2012/12/11/bye-bye-beijing/">Bye Bye Beijing</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/04/03/javascript-the-good-parts/">JavaScript: The Good Parts</a>
+        <a href="/blog/2012/12/11/hops-coffee/">Hops Coffee</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/31/berlin-expert-days/">Berlin Expert Days</a>
+        <a href="/blog/2012/11/16/bastion/">Bastion</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/19/why-is-the-dos-path-character-slash/">Why is the DOS path character &#8220;&#92;&#8221;?</a>
+        <a href="/blog/2012/11/15/opportunities-of-scale/">Opportunities of Scale</a>
       </li>
     
   </ul>
@@ -700,23 +764,6 @@ it is.</p>
 
 
 <section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("mo_gr", 4, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/mo_gr" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @mo_gr</a>
-  
-</section>
-
-
-<section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
     <li class="loading">Status updating&#8230;</li>
@@ -725,7 +772,7 @@ it is.</p>
   <a href="https://github.com/mo-gr">@mo-gr</a> on GitHub
   
   <script type="text/javascript">
-    $.domReady(function(){
+    $(document).ready(function(){
         if (!window.jXHR){
             var jxhr = document.createElement('script');
             jxhr.type = 'text/javascript';
@@ -746,24 +793,13 @@ it is.</p>
 </section>
 
 
-<section class="googleplus">
-  <h1>
-    <a href="https://plus.google.com/106410106555697258570?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
   
 </aside>
 
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Moritz Grauel -
+  Copyright &copy; 2013 - Moritz Grauel -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -794,7 +830,7 @@ it is.</p>
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>
