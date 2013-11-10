@@ -3,7 +3,7 @@
   <title><![CDATA[Not a blog]]></title>
   <link href="http://blog.notadomain.com/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2013-09-01T17:44:04+02:00</updated>
+  <updated>2013-11-10T17:56:20+01:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -11,6 +11,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[AngularJS Workshop]]></title>
+<link href="http://blog.notadomain.com/blog/2013/11/10/angularjs-workshop/"/>
+<updated>2013-11-10T17:49:00+01:00</updated>
+<id>http://blog.notadomain.com/blog/2013/11/10/angularjs-workshop</id>
+
+      <content type="html"><![CDATA[<p>Only a little over a week left until my full-day AngularJS introduction
+workshop and I&rsquo;m really looking forward to it!</p>
+
+<p>Once again, it shows that the best way to get as deep as possible into a
+topic is teaching it. And although I have a firm grasp of AngularJS,
+I have the feeling, there will be
+questions, hitting me completely out of the blue. Bring it on!</p>
+
+<p>If you are interested in learning the Basics of AngularJS (and can
+handle a German workshop), there are still a few places left.</p>
+
+<p>The workshop will be held during the <a href="http://zaunberg-talks.de/berlin2013/javascript_angularjs">Zaunberg Talks</a> on the 18th of November in Berlin. <a href="http://blog.notadomain.com/about.html#contact">Ping me</a> if you want to join!</p>
+
+<p>See you all at <a href="http://zaunberg-talks.de/">Zaunberg Talks!</a></p>
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2013/11/10/angularjs-workshop/">&infin; Permalink</a></p>]]></content>
+    </entry>
   
     <entry>
       
@@ -1217,22 +1245,6 @@ me.</p>
 <p>And if you havn&rsquo;t yet tried <a href="http://flattr.com">Flattr</a>, go ahead and make the internet a
 better place for everyone!</p>
 <p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/19/octoflattr/">&infin; Permalink</a></p>]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[&rarr; Octopress linklog]]></title>
-<link href="http://octopress.org/docs/blogging/linklog/"/>
-<updated>2012-03-18T16:54:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2012/03/18/octopress-linklog</id>
-
-      <content type="html"><![CDATA[<p>I am currently integrating octopress linklog in my blog. Basically
-<a href="http://daringfireball.net/">daring fireball</a> style link blogging.</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/18/octopress-linklog/">&infin; Permalink</a></p>]]></content>
     </entry>
   
 </feed>
