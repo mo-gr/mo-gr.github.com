@@ -4,7 +4,7 @@
   <title><![CDATA[Category: web | Not a blog]]></title>
   <link href="http://blog.notadomain.com/blog/categories/web/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2013-11-10T17:56:59+01:00</updated>
+  <updated>2013-11-24T19:29:53+01:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -62,7 +62,7 @@ exposure to the new <a href="http://getbootstrap.com">Bootstrap v3</a>. An insta
 hosted on <a href="https://www.heroku.com">Heroku</a> and can be laughed at <a href="http://ang18n-example.herokuapp.com/">here</a>. And
 the code is of course over on <a href="https://github.com/mo-gr/ang18n">GitHub</a>.</p>
 
-<p>{% img <a href="http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app.png">http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app.png</a> My lame todo app %}</p>
+<p><img class="<a" src="href="http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app.png">http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app.png</a>" title="My lame todo app" ></p>
 
 <h2>What is required for proper i18n?</h2>
 
@@ -93,7 +93,7 @@ list the language in their own lingua (ever tried switching a japanese
 Windows to another language? I knew I was in the language settings but I
 had no idea what all the options were supposed to mean).</p>
 
-<p>{% img <a href="http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app-language-switch.png">http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app-language-switch.png</a> Language selection in the app %}</p>
+<p><img class="<a" src="href="http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app-language-switch.png">http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app-language-switch.png</a>" title="Language selection in the app" ></p>
 
 <p>The actual selection is then stored in a simple cookie. This way, the
 server knows the selected language in every request. I also reload the
@@ -274,7 +274,7 @@ box, there is neither &ldquo;Helvetica Neue&rdquo; nor Helvetica. And Arial
 apparently has no full Japanese character support. The result are a visually very ugly mix of the different character classes
 in Japanese.</p>
 
-<p>{% img <a href="http://com.notadomain.blogbucket.s3.amazonaws.com/code/app_jp.jpg">http://com.notadomain.blogbucket.s3.amazonaws.com/code/app_jp.jpg</a> Application with ugly Japanese font rendering in Windows %}</p>
+<p><img class="<a" src="href="http://com.notadomain.blogbucket.s3.amazonaws.com/code/app_jp.jpg">http://com.notadomain.blogbucket.s3.amazonaws.com/code/app_jp.jpg</a>" title="Application with ugly Japanese font rendering in Windows" ></p>
 
 <p>See the obvious missmatch in width and serif-style of the の with respect to the other kanji?</p>
 
@@ -284,7 +284,7 @@ some font to the mix that I&rsquo;ve never heard of before:</p>
 <pre><code>font-family: "Helvetica Neue", Helvetica, "MS PGothic", Arial, sans-serif;
 </code></pre>
 
-<p>{% img <a href="http://com.notadomain.blogbucket.s3.amazonaws.com/code/app_jp-font.jpg">http://com.notadomain.blogbucket.s3.amazonaws.com/code/app_jp-font.jpg</a> Application with better Japanese font rendering in Windows %}</p>
+<p><img class="<a" src="href="http://com.notadomain.blogbucket.s3.amazonaws.com/code/app_jp-font.jpg">http://com.notadomain.blogbucket.s3.amazonaws.com/code/app_jp-font.jpg</a>" title="Application with better Japanese font rendering in Windows" ></p>
 
 <p>Much better. Now even Japanese Windows Users can enjoy my awesome todo-list.</p>
 
