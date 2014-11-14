@@ -3,7 +3,7 @@
   <title><![CDATA[Not a blog]]></title>
   <link href="http://blog.notadomain.com/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2014-11-14T12:22:11+01:00</updated>
+  <updated>2014-11-14T12:24:45+01:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -11,6 +11,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Zaunberg Talks]]></title>
+<link href="http://blog.notadomain.com/blog/2013/11/24/zaunberg-talks/"/>
+<updated>2013-11-24T19:06:00+01:00</updated>
+<id>http://blog.notadomain.com/blog/2013/11/24/zaunberg-talks</id>
+
+      <content type="html"><![CDATA[<p>I finally get a chance to sit down and write a short post about the
+<a href="http://zaunberg-talks.de/berlin2013/">Zaunberg Talks</a> workshop day last
+monday. It was a lot of fun
+to give my AngularJS workshop to a great group of attendees!</p>
+
+<p> From
+the feedback I got so far, everyone there – me included – had a great time.
+We had some very interesting discussions along the way and I got some
+good ideas and suggestions to make it even more awesome the next time! Although, it was a lot more exhausting than I thought. At the end of the
+day my voice was close to collapsing and my brain was basically toast. I
+guess I&rsquo;m not used to be the center of attention for a whole day :)</p>
+
+<p>Anyways, a big <em>thank you</em> to everyone involved! The organization was
+flawless, the venue was professional (the wifi actually worked!) and it
+was especially nice that most of the attendees and speakers got together in
+the evening for beer, food and a chat. All in all a great day&hellip;</p>
+
+<p>(Oh, by the way: Some impressions of the workshops are available at the <a href="http://zaunberg-talks.de/berlin2013/impressions">Zaunberg Talks
+website</a>.)</p>
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2013/11/24/zaunberg-talks/">&infin; Permalink</a></p>]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[AngularJS Workshop]]></title>
+<link href="http://blog.notadomain.com/blog/2013/11/10/angularjs-workshop/"/>
+<updated>2013-11-10T17:49:00+01:00</updated>
+<id>http://blog.notadomain.com/blog/2013/11/10/angularjs-workshop</id>
+
+      <content type="html"><![CDATA[<p>Only a little over a week left until my full-day AngularJS introduction
+workshop and I&rsquo;m really looking forward to it!</p>
+
+<p>Once again, it shows that the best way to get as deep as possible into a
+topic is teaching it. And although I have a firm grasp of AngularJS,
+I have the feeling, there will be
+questions, hitting me completely out of the blue. Bring it on!</p>
+
+<p>If you are interested in learning the Basics of AngularJS (and can
+handle a German workshop), there are still a few places left.</p>
+
+<p>The workshop will be held during the <a href="http://zaunberg-talks.de/berlin2013/javascript_angularjs">Zaunberg Talks</a> on the 18th of November in Berlin. <a href="http://blog.notadomain.com/about.html#contact">Ping me</a> if you want to join!</p>
+
+<p>See you all at <a href="http://zaunberg-talks.de/">Zaunberg Talks!</a></p>
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2013/11/10/angularjs-workshop/">&infin; Permalink</a></p>]]></content>
+    </entry>
   
     <entry>
       
@@ -1132,104 +1193,6 @@ seperator (and therefore making the windows command line such an
 unpleasant place to be). I like this kind of history. It&rsquo;s often interesting
 and insightful.</p>
 <p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/19/why-is-the-dos-path-character-slash/">&infin; Permalink</a></p>]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[Octoflattr]]></title>
-<link href="http://blog.notadomain.com/blog/2012/03/19/octoflattr/"/>
-<updated>2012-03-19T10:54:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2012/03/19/octoflattr</id>
-
-      <content type="html"><![CDATA[<p><em>tl;dr:</em> <a href="https://github.com/mo-gr/not-a-blog/commit/1408219062aa8aac81abf54431d5edcd638dff2b">Here</a> is how I integrated <a href="http://flattr.com">Flattr</a> into my octopress blog.</p>
-
-<!--more-->
-
-
-<h2>Flattr</h2>
-
-<p>Over the weekend, I integrated <a href="http://flattr.com">Flattr</a> into my blog. <a href="http://flattr.com">Flattr</a> is an
-online payment system for giving small donations to content creators
-over the internet. It is a neat way to <em>tip</em> people on the web. It
-slowly gains some traction in Europe and many german content creators have it
-integrated into their services. Even some newspapers like the german
-<a href="http://taz.de">taz</a> integrate <a href="http://flattr.com">Flattr</a> to give users of their online portal an easy
-way to voluntarily pay for news articles.</p>
-
-<p>In the USA it is not that common yet. Although pages, like <a href="http://5by5.tv/">5by5</a>
-started integrating flattr recently as well.</p>
-
-<h2>Octopress integration</h2>
-
-<p>For the <a href="http://octopress.org/">Octopress</a> Integration, I basically used a
-solution by <a href="http://blog.simonszu.de">Simon Szustkowski</a> that I found
-via google. His solution is very straight forward. He gave a detailed
-description of it on his <a href="http://blog.simonszu.de/2012/02/flattr-fur-octopress/">blog</a>
-(which is in german) and there is also an octopress fork with the
-changes included over <a href="https://github.com/bascht/octopress/commit/e2591467af488bceb2ed058220865cc5111e4f3e#diff-1">here</a>.</p>
-
-<p>Following that way, you get a <a href="http://flattr.com">Flattr</a> button on every post. In addition to that,
-I also created a <a href="http://flattr.com">Flattr</a> button for the blog as a whole and added it to
-the asides. My changes to <a href="http://octopress.org/">Octopress</a> can be seen
-<a href="https://github.com/mo-gr/not-a-blog/commit/1408219062aa8aac81abf54431d5edcd638dff2b">here</a>.
-They integrate Simons solution and my Button for the blog into one
-commit to my blog repo.
-The <a href="http://flattr.com">Flattr</a> Thing for the blog must be created manually on the <a href="http://flattr.com">Flattr</a> homepage
-and the URL to that thing must be put in your <code>_config.yml</code> under
-<code>flattr_blog_thing</code>. If that configuration is set and the custom aside
-is enabled in the <code>default_asides</code>, there will be a <a href="http://flattr.com">Flattr</a> Button in
-the aside.</p>
-
-<div><script src='https://gist.github.com/2106894.js'></script>
-<noscript><pre><code>default_asides: [asides/recent_posts.html, asides/twitter.html, asides/github.html, asides/googleplus.html, custom/asides/flattr.html]
-# ... snip ...
-# Flattr
-flattr_user: mogr
-flattr_blog_thing: http://flattr.com/thing/582242/Not-a-blog</code></pre></noscript></div>
-
-
-<p>All other changes are directly from Simons solution. when the
-<code>flattr_user</code> is set in <code>_config.yml</code>, the flattr-api Javascript will be
-included in the header <code>source/_include/custom/head.html</code>. This will
-also conditionally include <code>flattr_button.html</code> in the sharing area below each
-post <code>source/_includes/post/sharing.html</code>. The <a href="http://flattr.com">Flattr</a> Things are
-automatically generated by the <a href="http://flattr.com">Flattr</a> API when someone first clicks on
-one of those buttons. (A <em>Thing</em> in Flattr-Lingo is something you can
-give money to.)</p>
-
-<h2>Official support?</h2>
-
-<p>By the way, the currently <a href="https://github.com/imathis/octopress/pull/255#issuecomment-2566028">official stance</a> of <a href="http://octopress.org/">Octopress</a> is to not
-integrate <a href="http://flattr.com">Flattr</a> into the core of <a href="http://octopress.org/">Octopress</a>. <a href="https://github.com/imathis">Brandon</a> wants to keep <a href="http://octopress.org/">Octopress</a>
-lean and have only the essentials in the core &ndash; which I think is very
-reasonable. Maybe there will be an official Flattr-pluign sometime in
-the future. Until then, I hope this helps other people integrating <a href="http://flattr.com">Flattr</a> into their
-<a href="http://octopress.org/">Octopress</a> setups. If you have any questions, feel free to <a href="http://blog.notadomain.com/about.html">contact</a>
-me.</p>
-
-<p>And if you havn&rsquo;t yet tried <a href="http://flattr.com">Flattr</a>, go ahead and make the internet a
-better place for everyone!</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/19/octoflattr/">&infin; Permalink</a></p>]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[&rarr; Octopress linklog]]></title>
-<link href="http://octopress.org/docs/blogging/linklog/"/>
-<updated>2012-03-18T16:54:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2012/03/18/octopress-linklog</id>
-
-      <content type="html"><![CDATA[<p>I am currently integrating octopress linklog in my blog. Basically
-<a href="http://daringfireball.net/">daring fireball</a> style link blogging.</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/18/octopress-linklog/">&infin; Permalink</a></p>]]></content>
     </entry>
   
 </feed>
