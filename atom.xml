@@ -3,7 +3,7 @@
   <title><![CDATA[Not a blog]]></title>
   <link href="http://blog.notadomain.com/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2013-11-24T19:29:53+01:00</updated>
+  <updated>2014-11-14T12:22:11+01:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -18,109 +18,48 @@
 
 
 
-<title type="html"><![CDATA[Zaunberg Talks]]></title>
-<link href="http://blog.notadomain.com/blog/2013/11/24/zaunberg-talks/"/>
-<updated>2013-11-24T19:06:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2013/11/24/zaunberg-talks</id>
-
-      <content type="html"><![CDATA[<p>I finally get a chance to sit down and write a short post about the
-<a href="http://zaunberg-talks.de/berlin2013/">Zaunberg Talks</a> workshop day last
-monday. It was a lot of fun
-to give my AngularJS workshop to a great group of attendees!</p>
-
-<p> From
-the feedback I got so far, everyone there – me included – had a great time.
-We had some very interesting discussions along the way and I got some
-good ideas and suggestions to make it even more awesome the next time! Although, it was a lot more exhausting than I thought. At the end of the
-day my voice was close to collapsing and my brain was basically toast. I
-guess I&rsquo;m not used to be the center of attention for a whole day :)</p>
-
-<p>Anyways, a big <em>thank you</em> to everyone involved! The organization was
-flawless, the venue was professional (the wifi actually worked!) and it
-was especially nice that most of the attendees and speakers got together in
-the evening for beer, food and a chat. All in all a great day&hellip;</p>
-
-<p>(Oh, by the way: Some impressions of the workshops are available at the <a href="http://zaunberg-talks.de/berlin2013/impressions">Zaunberg Talks
-website</a>.)</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2013/11/24/zaunberg-talks/">&infin; Permalink</a></p>]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[AngularJS Workshop]]></title>
-<link href="http://blog.notadomain.com/blog/2013/11/10/angularjs-workshop/"/>
-<updated>2013-11-10T17:49:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2013/11/10/angularjs-workshop</id>
-
-      <content type="html"><![CDATA[<p>Only a little over a week left until my full-day AngularJS introduction
-workshop and I&rsquo;m really looking forward to it!</p>
-
-<p>Once again, it shows that the best way to get as deep as possible into a
-topic is teaching it. And although I have a firm grasp of AngularJS,
-I have the feeling, there will be
-questions, hitting me completely out of the blue. Bring it on!</p>
-
-<p>If you are interested in learning the Basics of AngularJS (and can
-handle a German workshop), there are still a few places left.</p>
-
-<p>The workshop will be held during the <a href="http://zaunberg-talks.de/berlin2013/javascript_angularjs">Zaunberg Talks</a> on the 18th of November in Berlin. <a href="http://blog.notadomain.com/about.html#contact">Ping me</a> if you want to join!</p>
-
-<p>See you all at <a href="http://zaunberg-talks.de/">Zaunberg Talks!</a></p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2013/11/10/angularjs-workshop/">&infin; Permalink</a></p>]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
 <title type="html"><![CDATA[ang18n]]></title>
 <link href="http://blog.notadomain.com/blog/2013/09/01/ang18n/"/>
 <updated>2013-09-01T12:28:00+02:00</updated>
 <id>http://blog.notadomain.com/blog/2013/09/01/ang18n</id>
 
       <content type="html"><![CDATA[<p><em>tl;dr: This post describes how to build a multi-lingual
-<a href="http://angularjs.org">angular.js</a> <a href="https://github.com/mo-gr/ang18n">application</a> with a <a href="http://www.playframework.com">Play!</a> backend.</em></p>
+<a href="angular">angular.js</a> <a href="github">application</a> with a <a href="play">Play!</a> backend.</em></p>
 
 <p>I get asked from time to time what I would use to start a new greenfield
 web project these days. Of course the answer is always &lsquo;it depends&rsquo;.
-Nonetheless, a lot of the times, <a href="http://angularjs.org">angular.js</a> comes up in those discussions.</p>
+Nonetheless, a lot of the times, <a href="angular">angular.js</a> comes up in those discussions.</p>
 
-<p><a href="http://angularjs.org">Angular.js</a> is a client-side Model-View-Whatever framework
+<p><a href="angular">Angular.js</a> is a client-side Model-View-Whatever framework
 developed by Google with a lot of nice aspects and features. It provides
 robust data binding to the DOM, URL routing for single-page applications
 and has a very nice way to flexibly extend HTML for nice, declarative
-code. <a href="http://angularjs.org">Angular.js</a> has no requirements for the server side so
+code. <a href="angular">Angular.js</a> has no requirements for the server side so
 the question remains, what one might use on the server.</p>
 
-<p>I&rsquo;ve long been suspecting that <a href="http://angularjs.org">angular.js</a> would play very
-well with a <a href="http://www.playframework.com">Play!</a> server but up until now I never actually tried it.
+<p>I&rsquo;ve long been suspecting that <a href="angular">angular.js</a> would play very
+well with a <a href="play">Play!</a> server but up until now I never actually tried it.
 The Play! framework is a stateless, lightweight and scalable web framework written in
 Scala that allows developing applications in either Scala or Java. One
 of the very nice aspects of Play! is its template language, which is in
 fact also Scala. This gives us compiled, statically type checked
 templates. While this might seem irrelevant in the face of single-page
 application, I believe this actually enables us to overcome one of
-<a href="http://angularjs.org">angulars</a> more serious shortcomings, namely internationalization (i18n).</p>
+<a href="angular">angulars</a> more serious shortcomings, namely internationalization (i18n).</p>
 
-<p>While <a href="http://angularjs.org">angular.js</a> does not completely ignore i18n, I think out
+<p>While <a href="angular">angular.js</a> does not completely ignore i18n, I think out
 of the box it lacks an opinionated way of how to handle i18n, forcing
 developers to come up with their own ways to handle multi-language
 applications.</p>
 
 <p>So, I too came up with my own way, combining the strengths of
-<a href="http://www.playframework.com">Play!</a> and <a href="http://angularjs.org">angular.js</a> to handle i18n. As an example, I created a useless little todo-list
+<a href="play">Play!</a> and <a href="angular">angular.js</a> to handle i18n. As an example, I created a useless little todo-list
 app (the hello world of web applications). The todo-list uses Play!
 2.1.3 on the server. The front-end is written in angular.js 1.2.0rc1 (using
-<a href="http://http://coffeescript.org">CoffeeScript</a>, just because) and the ugly styling was my first
-exposure to the new <a href="http://getbootstrap.com">Bootstrap v3</a>. An instance of the app is
-hosted on <a href="https://www.heroku.com">Heroku</a> and can be laughed at <a href="http://ang18n-example.herokuapp.com/">here</a>. And
-the code is of course over on <a href="https://github.com/mo-gr/ang18n">GitHub</a>.</p>
+<a href="coffee">CoffeeScript</a>, just because) and the ugly styling was my first
+exposure to the new <a href="bootstrap">Bootstrap v3</a>. An instance of the app is
+hosted on <a href="heroku">Heroku</a> and can be laughed at <a href="example">here</a>. And
+the code is of course over on <a href="github">GitHub</a>.</p>
 
 <p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app.png" title="My lame todo app" ></p>
 
@@ -135,9 +74,9 @@ the code is of course over on <a href="https://github.com/mo-gr/ang18n">GitHub</
 </ol>
 
 
-<p>The first thing is what <a href="http://angularjs.org">angular.js</a> has no strong opinion about.
+<p>The first thing is what <a href="angular">angular.js</a> has no strong opinion about.
 Since we don&rsquo;t want to duplicate our templates for all supported
-languages, this is where <a href="http://www.playframework.com">Play!</a> will help us. Play! will generate
+languages, this is where <a href="play">Play!</a> will help us. Play! will generate
 the localized templates for us.
 The second aspect is where angular is already doing quite well on its
 own. And finally with the third aspect, we have to bring Play! and
@@ -456,10 +395,10 @@ controllers even in CoffeeScript. So instead of writing</p>
 
 <h2>Some words about the example</h2>
 
-<p>The code for the application is over on <a href="https://github.com/mo-gr/ang18n">GitHub</a>. Since I&rsquo;m
+<p>The code for the application is over on <a href="github">GitHub</a>. Since I&rsquo;m
 fairly new to Scala, it might not be the most idiomatic Scala (or Play!
 for that matter). I also did not set up a real database. The todo list
-uses the H2 in-memory DB even over on <a href="https://www.heroku.com">Heroku</a>. So don&rsquo;t expect
+uses the H2 in-memory DB even over on <a href="heroku">Heroku</a>. So don&rsquo;t expect
 your todos to stay there. I actually don&rsquo;t know when and whether heroku
 restarts the application. But when they do, the in-memory database
 will be cleared!</p>
@@ -489,11 +428,11 @@ Play! is one of the best server side templates I&rsquo;ve ever used.</p>
 
 <p>However there are also downsides. My biggest gripe is with the asset
 pipeline in Play! While on the first look it seems to be a very good
-system with <a href="http://http://coffeescript.org">CoffeeScript</a> and <a href="http://lesscss.org">LESS</a> support out of
+system with <a href="coffee">CoffeeScript</a> and <a href="http://lesscss.org">LESS</a> support out of
 the box, it actually turned out to be not as flexible as I would have
 wished. Maybe I&rsquo;m just not smart enough but I was not able to get Play!
 to execute <a href="http://pivotal.github.io/jasmine/">Jasmine</a> Test Specs
-written in <a href="http://http://coffeescript.org">CoffeeScript</a>. And no testing in angular.js means,
+written in <a href="coffee">CoffeeScript</a>. And no testing in angular.js means,
 you are missing out on one of the other great features of angular.</p>
 
 <p>On the last <a href="http://www.meetup.com/Play-Berlin-Brandenburg/">Play! Usergroup Meetup in Berlin</a>
@@ -504,7 +443,7 @@ more flexibility in asset handling, is a technology known to many
 front-end developers and provides an even cleaner separation between the
 GUI/front-end and the server/back-end.</p>
 
-<p>One more thing. Writing angular.js in <a href="http://http://coffeescript.org">CoffeeScript</a> is a great
+<p>One more thing. Writing angular.js in <a href="coffee">CoffeeScript</a> is a great
 pleasure! The more friendly syntax of CoffeeScript really helps a lot
 and makes the code much more readable.</p>
 
@@ -1193,6 +1132,104 @@ seperator (and therefore making the windows command line such an
 unpleasant place to be). I like this kind of history. It&rsquo;s often interesting
 and insightful.</p>
 <p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/19/why-is-the-dos-path-character-slash/">&infin; Permalink</a></p>]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Octoflattr]]></title>
+<link href="http://blog.notadomain.com/blog/2012/03/19/octoflattr/"/>
+<updated>2012-03-19T10:54:00+01:00</updated>
+<id>http://blog.notadomain.com/blog/2012/03/19/octoflattr</id>
+
+      <content type="html"><![CDATA[<p><em>tl;dr:</em> <a href="https://github.com/mo-gr/not-a-blog/commit/1408219062aa8aac81abf54431d5edcd638dff2b">Here</a> is how I integrated <a href="http://flattr.com">Flattr</a> into my octopress blog.</p>
+
+<!--more-->
+
+
+<h2>Flattr</h2>
+
+<p>Over the weekend, I integrated <a href="http://flattr.com">Flattr</a> into my blog. <a href="http://flattr.com">Flattr</a> is an
+online payment system for giving small donations to content creators
+over the internet. It is a neat way to <em>tip</em> people on the web. It
+slowly gains some traction in Europe and many german content creators have it
+integrated into their services. Even some newspapers like the german
+<a href="http://taz.de">taz</a> integrate <a href="http://flattr.com">Flattr</a> to give users of their online portal an easy
+way to voluntarily pay for news articles.</p>
+
+<p>In the USA it is not that common yet. Although pages, like <a href="http://5by5.tv/">5by5</a>
+started integrating flattr recently as well.</p>
+
+<h2>Octopress integration</h2>
+
+<p>For the <a href="http://octopress.org/">Octopress</a> Integration, I basically used a
+solution by <a href="http://blog.simonszu.de">Simon Szustkowski</a> that I found
+via google. His solution is very straight forward. He gave a detailed
+description of it on his <a href="http://blog.simonszu.de/2012/02/flattr-fur-octopress/">blog</a>
+(which is in german) and there is also an octopress fork with the
+changes included over <a href="https://github.com/bascht/octopress/commit/e2591467af488bceb2ed058220865cc5111e4f3e#diff-1">here</a>.</p>
+
+<p>Following that way, you get a <a href="http://flattr.com">Flattr</a> button on every post. In addition to that,
+I also created a <a href="http://flattr.com">Flattr</a> button for the blog as a whole and added it to
+the asides. My changes to <a href="http://octopress.org/">Octopress</a> can be seen
+<a href="https://github.com/mo-gr/not-a-blog/commit/1408219062aa8aac81abf54431d5edcd638dff2b">here</a>.
+They integrate Simons solution and my Button for the blog into one
+commit to my blog repo.
+The <a href="http://flattr.com">Flattr</a> Thing for the blog must be created manually on the <a href="http://flattr.com">Flattr</a> homepage
+and the URL to that thing must be put in your <code>_config.yml</code> under
+<code>flattr_blog_thing</code>. If that configuration is set and the custom aside
+is enabled in the <code>default_asides</code>, there will be a <a href="http://flattr.com">Flattr</a> Button in
+the aside.</p>
+
+<div><script src='https://gist.github.com/2106894.js'></script>
+<noscript><pre><code>default_asides: [asides/recent_posts.html, asides/twitter.html, asides/github.html, asides/googleplus.html, custom/asides/flattr.html]
+# ... snip ...
+# Flattr
+flattr_user: mogr
+flattr_blog_thing: http://flattr.com/thing/582242/Not-a-blog</code></pre></noscript></div>
+
+
+<p>All other changes are directly from Simons solution. when the
+<code>flattr_user</code> is set in <code>_config.yml</code>, the flattr-api Javascript will be
+included in the header <code>source/_include/custom/head.html</code>. This will
+also conditionally include <code>flattr_button.html</code> in the sharing area below each
+post <code>source/_includes/post/sharing.html</code>. The <a href="http://flattr.com">Flattr</a> Things are
+automatically generated by the <a href="http://flattr.com">Flattr</a> API when someone first clicks on
+one of those buttons. (A <em>Thing</em> in Flattr-Lingo is something you can
+give money to.)</p>
+
+<h2>Official support?</h2>
+
+<p>By the way, the currently <a href="https://github.com/imathis/octopress/pull/255#issuecomment-2566028">official stance</a> of <a href="http://octopress.org/">Octopress</a> is to not
+integrate <a href="http://flattr.com">Flattr</a> into the core of <a href="http://octopress.org/">Octopress</a>. <a href="https://github.com/imathis">Brandon</a> wants to keep <a href="http://octopress.org/">Octopress</a>
+lean and have only the essentials in the core &ndash; which I think is very
+reasonable. Maybe there will be an official Flattr-pluign sometime in
+the future. Until then, I hope this helps other people integrating <a href="http://flattr.com">Flattr</a> into their
+<a href="http://octopress.org/">Octopress</a> setups. If you have any questions, feel free to <a href="http://blog.notadomain.com/about.html">contact</a>
+me.</p>
+
+<p>And if you havn&rsquo;t yet tried <a href="http://flattr.com">Flattr</a>, go ahead and make the internet a
+better place for everyone!</p>
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/19/octoflattr/">&infin; Permalink</a></p>]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[&rarr; Octopress linklog]]></title>
+<link href="http://octopress.org/docs/blogging/linklog/"/>
+<updated>2012-03-18T16:54:00+01:00</updated>
+<id>http://blog.notadomain.com/blog/2012/03/18/octopress-linklog</id>
+
+      <content type="html"><![CDATA[<p>I am currently integrating octopress linklog in my blog. Basically
+<a href="http://daringfireball.net/">daring fireball</a> style link blogging.</p>
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/18/octopress-linklog/">&infin; Permalink</a></p>]]></content>
     </entry>
   
 </feed>

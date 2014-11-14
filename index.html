@@ -9,10 +9,8 @@
   <meta name="author" content="Moritz Grauel">
 
   
-  <meta name="description" content="I finally get a chance to sit down and write a short post about the
-Zaunberg Talks workshop day last
-monday. It was a lot of fun
-to give my AngularJS &hellip;">
+  <meta name="description" content="tl;dr: This post describes how to build a multi-lingual
+angular.js application with a Play! backend. I get asked from time to time what I would use &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -97,125 +95,6 @@ to give my AngularJS &hellip;">
   <header>
     <h1 class="entry-title">
 
-<a href="/blog/2013/11/24/zaunberg-talks/">Zaunberg Talks</a>
-
-</h1>
-
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2013-11-24T19:06:00+01:00" pubdate>Nov 24<span>th</span>, 2013</time>
-        
-         &bull; <a rel="bookmark" href="/blog/2013/11/24/zaunberg-talks/">&infin;</a>
-      </p>
-    
-  </header>
-
-
-
-  <div class="entry-content"><p>I finally get a chance to sit down and write a short post about the
-<a href="http://zaunberg-talks.de/berlin2013/">Zaunberg Talks</a> workshop day last
-monday. It was a lot of fun
-to give my AngularJS workshop to a great group of attendees!</p>
-
-<p> From
-the feedback I got so far, everyone there – me included – had a great time.
-We had some very interesting discussions along the way and I got some
-good ideas and suggestions to make it even more awesome the next time! Although, it was a lot more exhausting than I thought. At the end of the
-day my voice was close to collapsing and my brain was basically toast. I
-guess I&rsquo;m not used to be the center of attention for a whole day :)</p>
-
-<p>Anyways, a big <em>thank you</em> to everyone involved! The organization was
-flawless, the venue was professional (the wifi actually worked!) and it
-was especially nice that most of the attendees and speakers got together in
-the evening for beer, food and a chat. All in all a great day&hellip;</p>
-
-<p>(Oh, by the way: Some impressions of the workshops are available at the <a href="http://zaunberg-talks.de/berlin2013/impressions">Zaunberg Talks
-website</a>.)</p>
-</div>
-
-
-    </article>
-  
-    
-    
-
-
-
-
-
-
-
-
-
-    <article >
-      
-  <header>
-    <h1 class="entry-title">
-
-<a href="/blog/2013/11/10/angularjs-workshop/">AngularJS Workshop</a>
-
-</h1>
-
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2013-11-10T17:49:00+01:00" pubdate>Nov 10<span>th</span>, 2013</time>
-        
-         &bull; <a rel="bookmark" href="/blog/2013/11/10/angularjs-workshop/">&infin;</a>
-      </p>
-    
-  </header>
-
-
-
-  <div class="entry-content"><p>Only a little over a week left until my full-day AngularJS introduction
-workshop and I&rsquo;m really looking forward to it!</p>
-
-<p>Once again, it shows that the best way to get as deep as possible into a
-topic is teaching it. And although I have a firm grasp of AngularJS,
-I have the feeling, there will be
-questions, hitting me completely out of the blue. Bring it on!</p>
-
-<p>If you are interested in learning the Basics of AngularJS (and can
-handle a German workshop), there are still a few places left.</p>
-
-<p>The workshop will be held during the <a href="http://zaunberg-talks.de/berlin2013/javascript_angularjs">Zaunberg Talks</a> on the 18th of November in Berlin. <a href="http://blog.notadomain.com/about.html#contact">Ping me</a> if you want to join!</p>
-
-<p>See you all at <a href="http://zaunberg-talks.de/">Zaunberg Talks!</a></p>
-</div>
-
-
-    </article>
-  
-    
-    
-
-
-
-
-
-
-
-
-
-    <article >
-      
-  <header>
-    <h1 class="entry-title">
-
 <a href="/blog/2013/09/01/ang18n/">Ang18n</a>
 
 </h1>
@@ -239,42 +118,42 @@ handle a German workshop), there are still a few places left.</p>
 
 
   <div class="entry-content"><p><em>tl;dr: This post describes how to build a multi-lingual
-<a href="http://angularjs.org">angular.js</a> <a href="https://github.com/mo-gr/ang18n">application</a> with a <a href="http://www.playframework.com">Play!</a> backend.</em></p>
+<a href="angular">angular.js</a> <a href="github">application</a> with a <a href="play">Play!</a> backend.</em></p>
 
 <p>I get asked from time to time what I would use to start a new greenfield
 web project these days. Of course the answer is always &lsquo;it depends&rsquo;.
-Nonetheless, a lot of the times, <a href="http://angularjs.org">angular.js</a> comes up in those discussions.</p>
+Nonetheless, a lot of the times, <a href="angular">angular.js</a> comes up in those discussions.</p>
 
-<p><a href="http://angularjs.org">Angular.js</a> is a client-side Model-View-Whatever framework
+<p><a href="angular">Angular.js</a> is a client-side Model-View-Whatever framework
 developed by Google with a lot of nice aspects and features. It provides
 robust data binding to the DOM, URL routing for single-page applications
 and has a very nice way to flexibly extend HTML for nice, declarative
-code. <a href="http://angularjs.org">Angular.js</a> has no requirements for the server side so
+code. <a href="angular">Angular.js</a> has no requirements for the server side so
 the question remains, what one might use on the server.</p>
 
-<p>I&rsquo;ve long been suspecting that <a href="http://angularjs.org">angular.js</a> would play very
-well with a <a href="http://www.playframework.com">Play!</a> server but up until now I never actually tried it.
+<p>I&rsquo;ve long been suspecting that <a href="angular">angular.js</a> would play very
+well with a <a href="play">Play!</a> server but up until now I never actually tried it.
 The Play! framework is a stateless, lightweight and scalable web framework written in
 Scala that allows developing applications in either Scala or Java. One
 of the very nice aspects of Play! is its template language, which is in
 fact also Scala. This gives us compiled, statically type checked
 templates. While this might seem irrelevant in the face of single-page
 application, I believe this actually enables us to overcome one of
-<a href="http://angularjs.org">angulars</a> more serious shortcomings, namely internationalization (i18n).</p>
+<a href="angular">angulars</a> more serious shortcomings, namely internationalization (i18n).</p>
 
-<p>While <a href="http://angularjs.org">angular.js</a> does not completely ignore i18n, I think out
+<p>While <a href="angular">angular.js</a> does not completely ignore i18n, I think out
 of the box it lacks an opinionated way of how to handle i18n, forcing
 developers to come up with their own ways to handle multi-language
 applications.</p>
 
 <p>So, I too came up with my own way, combining the strengths of
-<a href="http://www.playframework.com">Play!</a> and <a href="http://angularjs.org">angular.js</a> to handle i18n. As an example, I created a useless little todo-list
+<a href="play">Play!</a> and <a href="angular">angular.js</a> to handle i18n. As an example, I created a useless little todo-list
 app (the hello world of web applications). The todo-list uses Play!
 2.1.3 on the server. The front-end is written in angular.js 1.2.0rc1 (using
-<a href="http://http://coffeescript.org">CoffeeScript</a>, just because) and the ugly styling was my first
-exposure to the new <a href="http://getbootstrap.com">Bootstrap v3</a>. An instance of the app is
-hosted on <a href="https://www.heroku.com">Heroku</a> and can be laughed at <a href="http://ang18n-example.herokuapp.com/">here</a>. And
-the code is of course over on <a href="https://github.com/mo-gr/ang18n">GitHub</a>.</p>
+<a href="coffee">CoffeeScript</a>, just because) and the ugly styling was my first
+exposure to the new <a href="bootstrap">Bootstrap v3</a>. An instance of the app is
+hosted on <a href="heroku">Heroku</a> and can be laughed at <a href="example">here</a>. And
+the code is of course over on <a href="github">GitHub</a>.</p>
 
 <p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app.png" title="My lame todo app" ></p>
 
@@ -289,9 +168,9 @@ the code is of course over on <a href="https://github.com/mo-gr/ang18n">GitHub</
 </ol>
 
 
-<p>The first thing is what <a href="http://angularjs.org">angular.js</a> has no strong opinion about.
+<p>The first thing is what <a href="angular">angular.js</a> has no strong opinion about.
 Since we don&rsquo;t want to duplicate our templates for all supported
-languages, this is where <a href="http://www.playframework.com">Play!</a> will help us. Play! will generate
+languages, this is where <a href="play">Play!</a> will help us. Play! will generate
 the localized templates for us.
 The second aspect is where angular is already doing quite well on its
 own. And finally with the third aspect, we have to bring Play! and
@@ -610,10 +489,10 @@ controllers even in CoffeeScript. So instead of writing</p>
 
 <h2>Some words about the example</h2>
 
-<p>The code for the application is over on <a href="https://github.com/mo-gr/ang18n">GitHub</a>. Since I&rsquo;m
+<p>The code for the application is over on <a href="github">GitHub</a>. Since I&rsquo;m
 fairly new to Scala, it might not be the most idiomatic Scala (or Play!
 for that matter). I also did not set up a real database. The todo list
-uses the H2 in-memory DB even over on <a href="https://www.heroku.com">Heroku</a>. So don&rsquo;t expect
+uses the H2 in-memory DB even over on <a href="heroku">Heroku</a>. So don&rsquo;t expect
 your todos to stay there. I actually don&rsquo;t know when and whether heroku
 restarts the application. But when they do, the in-memory database
 will be cleared!</p>
@@ -643,11 +522,11 @@ Play! is one of the best server side templates I&rsquo;ve ever used.</p>
 
 <p>However there are also downsides. My biggest gripe is with the asset
 pipeline in Play! While on the first look it seems to be a very good
-system with <a href="http://http://coffeescript.org">CoffeeScript</a> and <a href="http://lesscss.org">LESS</a> support out of
+system with <a href="coffee">CoffeeScript</a> and <a href="http://lesscss.org">LESS</a> support out of
 the box, it actually turned out to be not as flexible as I would have
 wished. Maybe I&rsquo;m just not smart enough but I was not able to get Play!
 to execute <a href="http://pivotal.github.io/jasmine/">Jasmine</a> Test Specs
-written in <a href="http://http://coffeescript.org">CoffeeScript</a>. And no testing in angular.js means,
+written in <a href="coffee">CoffeeScript</a>. And no testing in angular.js means,
 you are missing out on one of the other great features of angular.</p>
 
 <p>On the last <a href="http://www.meetup.com/Play-Berlin-Brandenburg/">Play! Usergroup Meetup in Berlin</a>
@@ -658,7 +537,7 @@ more flexibility in asset handling, is a technology known to many
 front-end developers and provides an even cleaner separation between the
 GUI/front-end and the server/back-end.</p>
 
-<p>One more thing. Writing angular.js in <a href="http://http://coffeescript.org">CoffeeScript</a> is a great
+<p>One more thing. Writing angular.js in <a href="coffee">CoffeeScript</a> is a great
 pleasure! The more friendly syntax of CoffeeScript really helps a lot
 and makes the code much more readable.</p>
 
@@ -1149,6 +1028,132 @@ Really, that is my biggest complaint about the game. That I couldn&rsquo;t set i
 
     </article>
   
+    
+    
+
+
+
+
+
+
+
+
+
+    <article >
+      
+  <header>
+    <h1 class="entry-title">
+
+<a href="/blog/2012/10/11/take-a-deep-breath/">Take a Deep Breath</a>
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2012-10-11T16:49:00+02:00" pubdate>Oct 11<span>th</span>, 2012</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2012/10/11/take-a-deep-breath/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p>A few weeks before we started our journey, a friend of mine gave me a
+link to an article in the german Tagesspiegel (<a href="http://www.tagesspiegel.de/weltspiegel/leben-in-china-dicke-luft-in-peking-/6848760.html">link</a>). The author of that article stayed a while in Beijing as well. And according to her, the quality of the air in Beijing is usually so bad,
+it took the author over a week to realize that her apartment had a view
+on the mountains.</p>
+
+<p>When we arrived in Beijing, we had a clear blue sky. So naturally, I was
+thinking the author exaggerated a bit. That is, until yesterday, when I
+realized that our apartment had a view on the mountains as well. It took
+us <em>just</em> five days to realize that.</p>
+
+<p>I took a picture from our window that morning. Today – also a nice
+day with lots of sun – I tried to take the same picutre again. Same ISO, same
+aperture, same shutter speed, roughly the same time of the day. I merged those images. This is the result:</p>
+
+<p><img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/Airquality.jpg" title="Overlay of a clear and a usual day" ></p>
+
+<p>To be honest, I made one mistake. I let the camera on
+auto-white-balance. This probably overstates the difference a bit.
+Anyways, take a deep breath and enjoy.</p>
+</div>
+
+
+    </article>
+  
+    
+    
+
+
+
+
+
+
+
+
+
+    <article >
+      
+  <header>
+    <h1 class="entry-title">
+
+<a href="/blog/2012/10/08/elevator-rushhour/">Elevator Rushhour</a>
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2012-10-08T09:35:00+02:00" pubdate>Oct 8<span>th</span>, 2012</time>
+        
+         &bull; <a rel="bookmark" href="/blog/2012/10/08/elevator-rushhour/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p>This morning, we encountered something, I didn&rsquo;t knew existed: <em>Elevator
+Rushhour</em>. I&rsquo;ve never lived in a 28 story building before. We now live
+on the 21st floor. If every floor is roughly the same as ours, there are 12
+apartments on each floor.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>=&gt; (* 28 12)
+</span><span class='line'>; 336</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So there are a good 300 apartments. The building currently has three working elevators.
+Even if we assume that not every
+apartment is inhabited and not every inhabitant has to get up in
+the morning to get to work, this leaves us with a lot of people that
+need to exit the building in a narrow timeframe.</p>
+
+<p>We left at 8:00. And we waited for nearly 10 minutes to finally leave the
+building. The elevators were all basically stopping at every other floor
+on their way down. Then going all the way up again only to repeat the
+stop and go on their way down.</p>
+</div>
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1164,14 +1169,6 @@ Really, that is my biggest complaint about the game. That I couldn&rsquo;t set i
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/11/24/zaunberg-talks/">Zaunberg Talks</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/11/10/angularjs-workshop/">AngularJS Workshop</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2013/09/01/ang18n/">Ang18n</a>
       </li>
     
@@ -1181,6 +1178,14 @@ Really, that is my biggest complaint about the game. That I couldn&rsquo;t set i
     
       <li class="post">
         <a href="/blog/2012/12/11/bye-bye-beijing/">Bye Bye Beijing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/11/hops-coffee/">Hops Coffee</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/11/16/bastion/">Bastion</a>
       </li>
     
   </ul>
@@ -1230,7 +1235,7 @@ Really, that is my biggest complaint about the game. That I couldn&rsquo;t set i
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Moritz Grauel -
+  Copyright &copy; 2014 - Moritz Grauel -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

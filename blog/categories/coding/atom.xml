@@ -4,7 +4,7 @@
   <title><![CDATA[Category: coding, | Not a blog]]></title>
   <link href="http://blog.notadomain.com/blog/categories/coding/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2013-11-24T19:29:53+01:00</updated>
+  <updated>2014-11-14T12:22:11+01:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -25,42 +25,42 @@
 <id>http://blog.notadomain.com/blog/2013/09/01/ang18n</id>
 
       <content type="html"><![CDATA[<p><em>tl;dr: This post describes how to build a multi-lingual
-<a href="http://angularjs.org">angular.js</a> <a href="https://github.com/mo-gr/ang18n">application</a> with a <a href="http://www.playframework.com">Play!</a> backend.</em></p>
+<a href="angular">angular.js</a> <a href="github">application</a> with a <a href="play">Play!</a> backend.</em></p>
 
 <p>I get asked from time to time what I would use to start a new greenfield
 web project these days. Of course the answer is always &lsquo;it depends&rsquo;.
-Nonetheless, a lot of the times, <a href="http://angularjs.org">angular.js</a> comes up in those discussions.</p>
+Nonetheless, a lot of the times, <a href="angular">angular.js</a> comes up in those discussions.</p>
 
-<p><a href="http://angularjs.org">Angular.js</a> is a client-side Model-View-Whatever framework
+<p><a href="angular">Angular.js</a> is a client-side Model-View-Whatever framework
 developed by Google with a lot of nice aspects and features. It provides
 robust data binding to the DOM, URL routing for single-page applications
 and has a very nice way to flexibly extend HTML for nice, declarative
-code. <a href="http://angularjs.org">Angular.js</a> has no requirements for the server side so
+code. <a href="angular">Angular.js</a> has no requirements for the server side so
 the question remains, what one might use on the server.</p>
 
-<p>I&rsquo;ve long been suspecting that <a href="http://angularjs.org">angular.js</a> would play very
-well with a <a href="http://www.playframework.com">Play!</a> server but up until now I never actually tried it.
+<p>I&rsquo;ve long been suspecting that <a href="angular">angular.js</a> would play very
+well with a <a href="play">Play!</a> server but up until now I never actually tried it.
 The Play! framework is a stateless, lightweight and scalable web framework written in
 Scala that allows developing applications in either Scala or Java. One
 of the very nice aspects of Play! is its template language, which is in
 fact also Scala. This gives us compiled, statically type checked
 templates. While this might seem irrelevant in the face of single-page
 application, I believe this actually enables us to overcome one of
-<a href="http://angularjs.org">angulars</a> more serious shortcomings, namely internationalization (i18n).</p>
+<a href="angular">angulars</a> more serious shortcomings, namely internationalization (i18n).</p>
 
-<p>While <a href="http://angularjs.org">angular.js</a> does not completely ignore i18n, I think out
+<p>While <a href="angular">angular.js</a> does not completely ignore i18n, I think out
 of the box it lacks an opinionated way of how to handle i18n, forcing
 developers to come up with their own ways to handle multi-language
 applications.</p>
 
 <p>So, I too came up with my own way, combining the strengths of
-<a href="http://www.playframework.com">Play!</a> and <a href="http://angularjs.org">angular.js</a> to handle i18n. As an example, I created a useless little todo-list
+<a href="play">Play!</a> and <a href="angular">angular.js</a> to handle i18n. As an example, I created a useless little todo-list
 app (the hello world of web applications). The todo-list uses Play!
 2.1.3 on the server. The front-end is written in angular.js 1.2.0rc1 (using
-<a href="http://http://coffeescript.org">CoffeeScript</a>, just because) and the ugly styling was my first
-exposure to the new <a href="http://getbootstrap.com">Bootstrap v3</a>. An instance of the app is
-hosted on <a href="https://www.heroku.com">Heroku</a> and can be laughed at <a href="http://ang18n-example.herokuapp.com/">here</a>. And
-the code is of course over on <a href="https://github.com/mo-gr/ang18n">GitHub</a>.</p>
+<a href="coffee">CoffeeScript</a>, just because) and the ugly styling was my first
+exposure to the new <a href="bootstrap">Bootstrap v3</a>. An instance of the app is
+hosted on <a href="heroku">Heroku</a> and can be laughed at <a href="example">here</a>. And
+the code is of course over on <a href="github">GitHub</a>.</p>
 
 <p><img class="<a" src="href="http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app.png">http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app.png</a>" title="My lame todo app" ></p>
 
@@ -75,9 +75,9 @@ the code is of course over on <a href="https://github.com/mo-gr/ang18n">GitHub</
 </ol>
 
 
-<p>The first thing is what <a href="http://angularjs.org">angular.js</a> has no strong opinion about.
+<p>The first thing is what <a href="angular">angular.js</a> has no strong opinion about.
 Since we don&rsquo;t want to duplicate our templates for all supported
-languages, this is where <a href="http://www.playframework.com">Play!</a> will help us. Play! will generate
+languages, this is where <a href="play">Play!</a> will help us. Play! will generate
 the localized templates for us.
 The second aspect is where angular is already doing quite well on its
 own. And finally with the third aspect, we have to bring Play! and
@@ -357,10 +357,10 @@ app.controller 'MyWorkingController', ['$scope', ($scope) -&gt;
 
 <h2>Some words about the example</h2>
 
-<p>The code for the application is over on <a href="https://github.com/mo-gr/ang18n">GitHub</a>. Since I&rsquo;m
+<p>The code for the application is over on <a href="github">GitHub</a>. Since I&rsquo;m
 fairly new to Scala, it might not be the most idiomatic Scala (or Play!
 for that matter). I also did not set up a real database. The todo list
-uses the H2 in-memory DB even over on <a href="https://www.heroku.com">Heroku</a>. So don&rsquo;t expect
+uses the H2 in-memory DB even over on <a href="heroku">Heroku</a>. So don&rsquo;t expect
 your todos to stay there. I actually don&rsquo;t know when and whether heroku
 restarts the application. But when they do, the in-memory database
 will be cleared!</p>
@@ -390,11 +390,11 @@ Play! is one of the best server side templates I&rsquo;ve ever used.</p>
 
 <p>However there are also downsides. My biggest gripe is with the asset
 pipeline in Play! While on the first look it seems to be a very good
-system with <a href="http://http://coffeescript.org">CoffeeScript</a> and <a href="http://lesscss.org">LESS</a> support out of
+system with <a href="coffee">CoffeeScript</a> and <a href="http://lesscss.org">LESS</a> support out of
 the box, it actually turned out to be not as flexible as I would have
 wished. Maybe I&rsquo;m just not smart enough but I was not able to get Play!
 to execute <a href="http://pivotal.github.io/jasmine/">Jasmine</a> Test Specs
-written in <a href="http://http://coffeescript.org">CoffeeScript</a>. And no testing in angular.js means,
+written in <a href="coffee">CoffeeScript</a>. And no testing in angular.js means,
 you are missing out on one of the other great features of angular.</p>
 
 <p>On the last <a href="http://www.meetup.com/Play-Berlin-Brandenburg/">Play! Usergroup Meetup in Berlin</a>
@@ -405,7 +405,7 @@ more flexibility in asset handling, is a technology known to many
 front-end developers and provides an even cleaner separation between the
 GUI/front-end and the server/back-end.</p>
 
-<p>One more thing. Writing angular.js in <a href="http://http://coffeescript.org">CoffeeScript</a> is a great
+<p>One more thing. Writing angular.js in <a href="coffee">CoffeeScript</a> is a great
 pleasure! The more friendly syntax of CoffeeScript really helps a lot
 and makes the code much more readable.</p>
 
