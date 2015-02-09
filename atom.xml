@@ -3,7 +3,7 @@
   <title><![CDATA[Not a blog]]></title>
   <link href="http://blog.notadomain.com/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2014-11-14T12:31:47+01:00</updated>
+  <updated>2015-02-09T21:27:52+01:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -85,7 +85,7 @@ handle a German workshop), there are still a few places left.</p>
 <id>http://blog.notadomain.com/blog/2013/09/01/ang18n</id>
 
       <content type="html"><![CDATA[<p><em>tl;dr: This post describes how to build a multi-lingual
-<a href="angular">angular.js</a> <a href="github">application</a> with a <a href="play">Play!</a> backend.</em></p>
+<a href="http://angularjs.org">angular.js</a> <a href="https://github.com/mo-gr/ang18n">application</a> with a <a href="http://www.playframework.com">Play!</a> backend.</em></p>
 
 <p>I get asked from time to time what I would use to start a new greenfield
 web project these days. Of course the answer is always &lsquo;it depends&rsquo;.
