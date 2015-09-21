@@ -3,7 +3,7 @@
   <title><![CDATA[Not a blog]]></title>
   <link href="http://blog.notadomain.com/atom.xml" rel="self"/>
   <link href="http://blog.notadomain.com/"/>
-  <updated>2015-02-09T21:45:01+01:00</updated>
+  <updated>2015-09-21T22:28:45+02:00</updated>
   <id>http://blog.notadomain.com/</id>
   <author>
     <name><![CDATA[Moritz Grauel]]></name>
@@ -11,6 +11,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[bedcon 2015]]></title>
+<link href="http://blog.notadomain.com/blog/2015/09/21/bedcon-2015/"/>
+<updated>2015-09-21T22:25:00+02:00</updated>
+<id>http://blog.notadomain.com/blog/2015/09/21/bedcon-2015</id>
+
+      <content type="html"><![CDATA[<p>I did a talk on this years <a href="http://bed-con.org/2015/">BED-Con</a> about
+React.js + Flux (more specifically Redux). I don&rsquo;t think there is a
+video of the talk, but my slides are available <a href="http://reactflux.notadomain.com/">here</a>. They are at least partially german, since I
+gave the talk in german. Maybe I&rsquo;ll try to condense it also into a blog
+post. But don&rsquo;t hold your breath.</p>
+<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2015/09/21/bedcon-2015/">&infin; Permalink</a></p>]]></content>
+    </entry>
   
     <entry>
       
@@ -1175,24 +1194,6 @@ slides and they looked great. But then again, he also hat something interesting 
 create the slides, it is also a nice exercise for your web-fu! And you can use <a href="http://www.jetbrains.com/idea">IntelliJ</a> instead of PowerPoint for
 creating slides &ndash; how awesome is that?!</p>
 <p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/31/berlin-expert-days/">&infin; Permalink</a></p>]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[&rarr; Why is the DOS path character "\\"?]]></title>
-<link href="http://blogs.msdn.com/b/larryosterman/archive/2005/06/24/432386.aspx"/>
-<updated>2012-03-19T13:38:00+01:00</updated>
-<id>http://blog.notadomain.com/blog/2012/03/19/why-is-the-dos-path-character-slash</id>
-
-      <content type="html"><![CDATA[<p>Interesting article on why Microsofts engineers chose &ldquo;&#92;&rdquo; as the path
-seperator (and therefore making the windows command line such an
-unpleasant place to be). I like this kind of history. It&rsquo;s often interesting
-and insightful.</p>
-<p><a rel="bookmark" href="http://blog.notadomain.com/blog/2012/03/19/why-is-the-dos-path-character-slash/">&infin; Permalink</a></p>]]></content>
     </entry>
   
 </feed>
