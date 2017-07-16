@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Not a blog - Code clouds</title>
+        <link rel="stylesheet" href="../../css/default.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../../">Not a blog</a>
+            </div>
+            <nav>
+                <a href="../../archive">Archive</a>
+                <a href="../../about">About</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>Code clouds</h1>
+            <article>
+    <section class="header">
+        Posted on February 12, 2012
+        
+    </section>
+    <section>
+        <p>Last year, I’ve been to <a href="http://jz11.java.no/news.html">Javazone</a> and among the many great speakers was <a href="http://twitter.com/#!/kevlinhenney">Kevlin Henney</a>. His talk was titled <a href="http://vimeo.com/28772428">Cool Code</a> and if you havn’t seen it, I can highly recommend it! (same goes for all talks by Kevlin).</p>
+<p>One of the things he mentioned in his talk were word clouds generated from code to get a good overview of what a programm is about. They provide no hard facts but a very intersting insight nonetheless. The following is a word cloud generated from <a href="http://www.hibernate.org/">hibernate-core</a> with the 100 most common words in the codebase. The bigger the word, the more common it is.</p>
+<div class="figure">
+<img src="http://blog.notadomain.com/images/hibernate-cloud.png" alt="Cloud of hibernate-core" />
+<p class="caption">Cloud of hibernate-core</p>
+</div>
+<!--more-->
+<p>On the first glance, one can see, that hibernate deals with lots of Strings and takes a great deal of work to somehow handle null. Names and sessions are important to hiberante as well and obviously, hiberante also deals with transactions.</p>
+<p>I really like this kind of visualization of code. It provides no hard facts but it can help detect code smells and project priorities. If <em>String</em> is very common, this might be a sign of an insufficient domain model. Maybe a few more classes should be introduced. Same goes for <em>Object</em>. In general, a code cloud should talk about the domain of the programm. About customers, orders and the like. It should not talk about implementation details like Strings or booleans. (Since <a href="http://www.hibernate.org/">hibernate-core</a> is a general library, it might be ok, that transactions and sessions are not the primary words but Strings and Objects - although I somehow doubt it). Use code clouds as an additional datapoint, don’t rely to heavily on them and they might turn out to be a useful little tool in your analysis box.</p>
+<p>After <a href="http://jz11.java.no/news.html">Javazone</a>, I tried to create code clouds for the projects, I was working on. However I couldn’t find a good tool. <a href="http://www.wordle.net/">Wordle</a> generates nice clouds, but it works only online. I am not so comfortable with uploading my complete codebase of customer projects to some website. So <a href="http://www.wordle.net/">Wordle</a> was out of the game. Apparently there were a few Windows tools, but I didn’t check them out. But the idea of code clouds stuck with me.</p>
+<p>Then a few days ago, I read a post on <a href="http://news.ycombinator.com/">hacker news</a> about <a href="https://github.com/jasondavies/d3-cloud">d3-cloud</a> by [Jason Davies]. <a href="https://github.com/jasondavies/d3-cloud">d3-cloud</a> is a layout plugin for the amazing JavaScript data visualization engine <a href="http://mbostock.github.com/d3/">d3</a>. This was all I needed.</p>
+<p>So I started playing around with it a bit and created <a href="https://github.com/mo-gr/Cloudserver">cloudserver</a>. The above cloud of hibernate-core was created with it.</p>
+<p>Since I wanted to get into <a href="http://mbostock.github.com/d3/">d3</a> anyway, this was a good start. And if I am working in JavaScript anyway, why not try it in <a href="http://nodejs.org">node.js</a>? And if I am working in <a href="http://nodejs.org">node.js</a>, why not just do it in <a href="http://coffeescript.org/">CoffeeScript</a>?</p>
+<p>So <a href="https://github.com/mo-gr/Cloudserver">cloudserver</a> got a bit of a playground of technologies. It is mostly written in <a href="http://coffeescript.org/">CoffeeScript</a>. It reads in source files, cleans them up a bit and counts each word. After it is done processing all files, it brings them in a <a href="https://github.com/jasondavies/d3-cloud">d3-cloud</a>-friendly format and starts a local <a href="http://nodejs.org">node.js</a> webserver. This server serves a small html file that contains the <a href="http://mbostock.github.com/d3/">d3</a> bootstrap code and generates the cloud.</p>
+<p>I tried to keep it mostly language agnostic with a pluggable system to configure it to specific languages. Currenlty it only supports Java, but it should be fairly easy to make langauge configurations for other languages.</p>
+<p>I have lots of ideas on how to improve <a href="https://github.com/mo-gr/Cloudserver">cloudserver</a>, like stripping comments. And it is surely not bugfree. Since this is my first contact with <a href="http://nodejs.org">node.js</a> and I am still not very mature in <a href="http://coffeescript.org/">CoffeeScript</a>, I assume there are lots of rookie-mistakes lurking around.</p>
+<p>I plan to write up my impressions of <a href="http://nodejs.org">node.js</a> and <a href="http://coffeescript.org/">CoffeeScript</a> in seperate posts.</p>
+<p>If you used <a href="https://github.com/mo-gr/Cloudserver">cloudserver</a>, have questions or ideas, I would love to hear from you! I would also love to show you some more clouds, but I currently only have customer-projects with interesting code bases around - and I am not comfortable with presenting them here.</p>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+            <a class="imprint" href="../../impressum">Impressum</a>
+            Site proudly generated by
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>

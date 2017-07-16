@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Not a blog</title>
+    <link href="http://blog.notadomain.com/atom.xml" rel="self" />
+    <link href="http://blog.notadomain.com" />
+    <id>http://blog.notadomain.com/atom.xml</id>
+    <author>
+        <name>Moritz Grauel</name>
+        <email>mo@notadomain.com</email>
+    </author>
+    <updated>2015-09-21T00:00:00Z</updated>
+    <entry>
+    <title>bedcon 2015</title>
+    <link href="http://blog.notadomain.com/posts/2015-09-21-bedcon-2015/index.html" />
+    <id>http://blog.notadomain.com/posts/2015-09-21-bedcon-2015/index.html</id>
+    <published>2015-09-21T00:00:00Z</published>
+    <updated>2015-09-21T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on September 21, 2015
+        
+    </section>
+    <section>
+        <p>I did a talk on this years <a href="http://bed-con.org/2015/">BED-Con</a> about React.js + Flux (more specifically Redux). I don’t think there is a video of the talk, but my slides are available <a href="http://reactflux.notadomain.com/">here</a>. They are at least partially german, since I gave the talk in german. Maybe I’ll try to condense it also into a blog post. But don’t hold your breath.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Zaunberg Talks</title>
+    <link href="http://blog.notadomain.com/posts/2013-11-24-zaunberg-talks/index.html" />
+    <id>http://blog.notadomain.com/posts/2013-11-24-zaunberg-talks/index.html</id>
+    <published>2013-11-24T00:00:00Z</published>
+    <updated>2013-11-24T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on November 24, 2013
+        
+    </section>
+    <section>
+        <p>I finally get a chance to sit down and write a short post about the <a href="http://zaunberg-talks.de/berlin2013/">Zaunberg Talks</a> workshop day last monday. It was a lot of fun to give my AngularJS workshop to a great group of attendees!</p>
+<p>From the feedback I got so far, everyone there – me included – had a great time. We had some very interesting discussions along the way and I got some good ideas and suggestions to make it even more awesome the next time! Although, it was a lot more exhausting than I thought. At the end of the day my voice was close to collapsing and my brain was basically toast. I guess I’m not used to be the center of attention for a whole day :)</p>
+<p>Anyways, a big <em>thank you</em> to everyone involved! The organization was flawless, the venue was professional (the wifi actually worked!) and it was especially nice that most of the attendees and speakers got together in the evening for beer, food and a chat. All in all a great day…</p>
+<p>(Oh, by the way: Some impressions of the workshops are available at the <a href="http://zaunberg-talks.de/berlin2013/impressions">Zaunberg Talks website</a>.)</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>AngularJS Workshop</title>
+    <link href="http://blog.notadomain.com/posts/2013-11-10-angularjs-workshop/index.html" />
+    <id>http://blog.notadomain.com/posts/2013-11-10-angularjs-workshop/index.html</id>
+    <published>2013-11-10T00:00:00Z</published>
+    <updated>2013-11-10T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on November 10, 2013
+        
+    </section>
+    <section>
+        <p>Only a little over a week left until my full-day AngularJS introduction workshop and I’m really looking forward to it!</p>
+<p>Once again, it shows that the best way to get as deep as possible into a topic is teaching it. And although I have a firm grasp of AngularJS, I have the feeling, there will be questions, hitting me completely out of the blue. Bring it on!</p>
+<p>If you are interested in learning the Basics of AngularJS (and can handle a German workshop), there are still a few places left.</p>
+<p>The workshop will be held during the <a href="http://zaunberg-talks.de/berlin2013/javascript_angularjs">Zaunberg Talks</a> on the 18th of November in Berlin. <a href="http://blog.notadomain.com/about.html#contact">Ping me</a> if you want to join!</p>
+<p>See you all at <a href="http://zaunberg-talks.de/">Zaunberg Talks!</a></p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>ang18n</title>
+    <link href="http://blog.notadomain.com/posts/2013-09-01-ang18n/index.html" />
+    <id>http://blog.notadomain.com/posts/2013-09-01-ang18n/index.html</id>
+    <published>2013-09-01T00:00:00Z</published>
+    <updated>2013-09-01T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on September  1, 2013
+        
+    </section>
+    <section>
+        <p><em>tl;dr: This post describes how to build a multi-lingual <a href="http://angularjs.org">angular.js</a> <a href="https://github.com/mo-gr/ang18n">application</a> with a <a href="http://www.playframework.com">Play!</a> backend.</em></p>
+<p>I get asked from time to time what I would use to start a new greenfield web project these days. Of course the answer is always ‘it depends’. Nonetheless, a lot of the times, <a href="http://angularjs.org">angular.js</a> comes up in those discussions.</p>
+<p><a href="http://angularjs.org">Angular.js</a> is a client-side Model-View-Whatever framework developed by Google with a lot of nice aspects and features. It provides robust data binding to the DOM, URL routing for single-page applications and has a very nice way to flexibly extend HTML for nice, declarative code. <a href="http://angularjs.org">Angular.js</a> has no requirements for the server side so the question remains, what one might use on the server.</p>
+<p>I’ve long been suspecting that <a href="http://angularjs.org">angular.js</a> would play very well with a <a href="http://www.playframework.com">Play!</a> server but up until now I never actually tried it. The Play! framework is a stateless, lightweight and scalable web framework written in Scala that allows developing applications in either Scala or Java. One of the very nice aspects of Play! is its template language, which is in fact also Scala. This gives us compiled, statically type checked templates. While this might seem irrelevant in the face of single-page application, I believe this actually enables us to overcome one of <a href="http://angularjs.org">angulars</a> more serious shortcomings, namely internationalization (i18n).</p>
+<p>While <a href="http://angularjs.org">angular.js</a> does not completely ignore i18n, I think out of the box it lacks an opinionated way of how to handle i18n, forcing developers to come up with their own ways to handle multi-language applications.</p>
+<p>So, I too came up with my own way, combining the strengths of <a href="http://www.playframework.com">Play!</a> and <a href="http://angularjs.org">angular.js</a> to handle i18n. As an example, I created a useless little todo-list app (the hello world of web applications). The todo-list uses Play! 2.1.3 on the server. The front-end is written in angular.js 1.2.0rc1 (using <a href="http://http://coffeescript.org">CoffeeScript</a>, just because) and the ugly styling was my first exposure to the new <a href="http://getbootstrap.com">Bootstrap v3</a>. An instance of the app is hosted on <a href="https://www.heroku.com">Heroku</a> and can be laughed at <a href="http://ang18n-example.herokuapp.com/">here</a>. And the code is of course over on <a href="https://github.com/mo-gr/ang18n">GitHub</a>.</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app.png" title="My lame todo app" />
+
+</div>
+<h2 id="what-is-required-for-proper-i18n">What is required for proper i18n?</h2>
+<p>Proper multi language applications have to take care of three aspects:</p>
+<ol style="list-style-type: decimal">
+<li>the static texts in the templates must be translated</li>
+<li>locale specific formatting must be done (especially regarding dates and numbers)</li>
+<li>the user must be able to select a language</li>
+</ol>
+<p>The first thing is what <a href="http://angularjs.org">angular.js</a> has no strong opinion about. Since we don’t want to duplicate our templates for all supported languages, this is where <a href="http://www.playframework.com">Play!</a> will help us. Play! will generate the localized templates for us. The second aspect is where angular is already doing quite well on its own. And finally with the third aspect, we have to bring Play! and angular.js together.</p>
+<p>So let’s tackle them in opposite order.</p>
+<h2 id="selecting-a-language">Selecting a language</h2>
+<p>The actual selection of a language is currently done in a simple select box. One could go wild here. But please make sure to also list the language in their own lingua (ever tried switching a japanese Windows to another language? I knew I was in the language settings but I had no idea what all the options were supposed to mean).</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/code/todo-app-language-switch.png" title="Language selection in the app" />
+
+</div>
+<p>The actual selection is then stored in a simple cookie. This way, the server knows the selected language in every request. I also reload the page after setting the language. This reloads the angular application with the new language.</p>
+<p>The actual language setting in angular is done via a LanguageService</p>
+<pre><code>app.service(&#39;LanguageService&#39;, [&#39;$http&#39;, &#39;$cookies&#39;, &#39;$window&#39;, ($http, $cookies, $window) -&gt;
+  @setLanguage = (key) -&gt;
+    $cookies.language = key
+    $window.location.reload()
+
+  @currentLanguage = () -&gt;
+    $cookies.language or &quot;en&quot;
+])</code></pre>
+<p>The service stores the current language in a cookie (don’t forget to add <code>ngCookies</code> as a dependency of your angular app!) and retrieves it either from the cookie or defaults to <code>&quot;en&quot;</code>.</p>
+<p>That Service is used by the view via a simple little controller</p>
+<pre><code>app.controller(&#39;LanguageController&#39;, [&#39;$scope&#39;, &#39;LanguageService&#39;, ($scope, LanguageService) -&gt;
+  $scope.language = LanguageService.currentLanguage()
+
+  $scope.updateLanguage = (language) -&gt;
+    LanguageService.setLanguage(language)
+])</code></pre>
+<p>And finally the view (ignore the <code>implicit lang</code> for now - we’ll come to that):</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">@(implicit lang: Lang)
+
+<span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;navbar-right&quot;</span><span class="ot"> ng-controller=</span><span class="st">&quot;LanguageController&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;select</span><span class="ot"> name=</span><span class="st">&quot;language&quot;</span><span class="ot"> id=</span><span class="st">&quot;language&quot;</span><span class="ot"> ng-model=</span><span class="st">&quot;language&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;option</span><span class="ot"> value=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span>English (@Messages(&quot;language.select.en&quot;))<span class="kw">&lt;/option&gt;</span>
+        <span class="kw">&lt;option</span><span class="ot"> value=</span><span class="st">&quot;de&quot;</span><span class="kw">&gt;</span>Deutsch (@Messages(&quot;language.select.de&quot;))<span class="kw">&lt;/option&gt;</span>
+        <span class="kw">&lt;option</span><span class="ot"> value=</span><span class="st">&quot;ja&quot;</span><span class="kw">&gt;</span>日本語 (@Messages(&quot;language.select.ja&quot;))<span class="kw">&lt;/option&gt;</span>
+    <span class="kw">&lt;/select&gt;</span>
+    <span class="kw">&lt;button</span><span class="ot"> ng-click=</span><span class="st">&quot;updateLanguage(language)&quot;</span><span class="kw">&gt;</span>
+              @Messages(&quot;language.select.button&quot;)
+    <span class="kw">&lt;/button&gt;</span>
+<span class="kw">&lt;/div&gt;</span></code></pre></div>
+<p>The relevant parts in the view are the <code>ng-model</code> directive on the select element. The controllers sets that to the current language from the service. And finally the button that triggers the language update via its <code>ng-click</code> directive.</p>
+<h2 id="locale-specific-formatting">Locale specific formatting</h2>
+<p>The way angular handles locale specific formatting is via a locale specific JavaScript file that is either included separately or concatenated to the end of the actual angular.js file. While this approach works, it is not possible to change the formatting on the fly. But since we reload the angular application on language changes anyway, this is ok for us. The actual include on the server now looks like this:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;@routes.Assets.at(&quot;</span><span class="er">javascripts/angular.js&quot;)&quot;</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+<span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;@routes.Assets.at(&quot;</span><span class="er">javascripts/angular-locale_&quot;</span> <span class="er">+</span><span class="ot"> lang.language</span> <span class="er">+</span> <span class="er">&quot;.js&quot;)&quot;</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></code></pre></div>
+<p>Where <code>lang</code> is a <code>play.api.i18n.Lang</code> object representing the current language used for the request on the server (more on that later). That way the angular application is always running with the language set by the user and correctly reinitialized on language switching.</p>
+<p>Since my todo app would not actually make use of any of this, I’ve simply added a footer that shows todays date formatted by angular. (Therefore my application gained a neat feature: If you ever need todays date in Japanese for whatever reason, just use my todo app).</p>
+<h2 id="translated-templates">Translated templates</h2>
+<p>The actual meat of the i18n happens on the server. All the templates are translated by Play!. Play! has a very nice way of dealing with different languages. All supported languages must be declared in the <code>application.conf</code> like so:</p>
+<pre><code>application.langs=&quot;en,de,ja&quot;</code></pre>
+<p>The actual translations are stored in files called <code>messages.XXX</code> where <code>XXX</code> is the language as declared previously. For all practical intents and purposes, those files behave exactly like Javas <code>.properties</code> files with one critical difference. Play! actually expects those files to be in UTF-8 (There goes the need for my <a href="https://github.com/mo-gr/Escapist">escapist</a>).</p>
+<p>And now it’s finally time to come the implicit language parameter that we already saw in the language switch view.</p>
+<p>The way you access those messages files is via a call to <code>Messages(&quot;propery.key&quot;)</code>. This method also takes an implicit parameter of type <code>play.api.i18n.Lang</code>. So all we have to do is fetch the language from the cookie, transform it into a valid <code>Lang</code> and pass it to our templates.</p>
+<p>In Play! template files are a weird mix of HTML and Scala code that is actually compiled (and type checked at compile time!) into a regular function that you call from your server-side controllers. To declare, that our template requires a <code>Lang</code> Parameter, that should be used as an implicit, we have to start our template with a parameter declaration like so:</p>
+<pre><code>@(implicit lang: Lang)</code></pre>
+<p>We already saw that in the language parameter view. The view is normal HTML and everything that starts with an <code>@</code> is expected to be Scala code. So we can now write <code>@Messages(&quot;propery.key&quot;)</code> everywhere in our template and it will magically choose the right language.</p>
+<p>One word about Scalas implicits. They are a powerful feature of the language that can reduce a lot of useless boilerplate code. However they are very close to magic and should therefore be used with caution and only where really needed. If in doubt, avoid implicits.</p>
+<p>Finally, here is the trait I use to get the language out of the cookie header:</p>
+<pre><code>trait LocaleFromRequest {
+  def localeFromRequest(implicit request: RequestHeader): Lang = {
+    request.cookies.get(&quot;language&quot;) match {
+      case None =&gt; Application.lang(request)
+      case Some(cookie) =&gt; Lang.get(cookie.value).getOrElse(Application.lang(request))
+    }
+  }
+}</code></pre>
+<p>If there is no <code>language</code> key in the cookie, just use the Applications default way of determining the language. Otherwise create a Lang from the cookie-value. If that fails, fall back again to let play determine a language from its known set of languages.</p>
+<h2 id="why-dont-you-use-the-accept-language-http-header">Why don’t you use the Accept-Language HTTP header?</h2>
+<p>Good question. Because I want to give my users an easy way of changing the application language. And changing the <code>Accept-Language</code> of your browser is not at all easy or accessible to the common user.</p>
+<h2 id="pitfall-bootstraps-default-fonts">Pitfall: Bootstraps default fonts</h2>
+<p>Bootstrap 3 by default has a font-family declaration of:</p>
+<pre><code>font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;</code></pre>
+<p>This is all nice and good on real systems. However on a default windows box, there is neither “Helvetica Neue” nor Helvetica. And Arial apparently has no full Japanese character support. The result are a visually very ugly mix of the different character classes in Japanese.</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/code/app_jp.jpg" title="Application with ugly Japanese font rendering in Windows" />
+
+</div>
+<p>See the obvious missmatch in width and serif-style of the の with respect to the other kanji?</p>
+<p>Upon recommendation by Fabian Prinz, I’ve added some font to the mix that I’ve never heard of before:</p>
+<pre><code>font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;MS PGothic&quot;, Arial, sans-serif;</code></pre>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/code/app_jp-font.jpg" title="Application with better Japanese font rendering in Windows" />
+
+</div>
+<p>Much better. Now even Japanese Windows Users can enjoy my awesome todo-list.</p>
+<h2 id="pitfall-json-in-play-2.1">Pitfall: JSON in Play! 2.1</h2>
+<p>Play!-Scala has great support for working with JSON. But due to the fact that Scala has a strong type-system and Play! 2.1 introduced some substantial changes to the way JSON is handled, it might be a bit difficult to get started (the <a href="http://www.playframework.com/documentation/2.1.x/ScalaJson">documentation</a> is a bit thin and most examples in the web refer to the old ways).</p>
+<p>The basics for handling JSON is creating a reader and a writer. The reader also doubles as a validator. The following is a reader for a ToDo that parses the JSON string <code>{&quot;name&quot;: &quot;A Todo&quot;, &quot;done&quot;: false, &quot;id&quot;: 42}</code> with the little caveat that the id key is optional:</p>
+<pre><code>implicit val toDoJsonReader = new Reads[ToDo] {
+  def reads(json: JsValue) = {
+    (json \ &quot;name&quot;).validate[String].flatMap { name =&gt;
+        (json \ &quot;done&quot;).validate[Boolean].map { done =&gt;
+          (json \ &quot;id&quot;).asOpt[Long] match {
+            case Some(id) =&gt; ToDo(Id(id), name, done)
+            case _ =&gt; ToDo(Id(0L), name, done)
+          }
+        }
+    }
+  }</code></pre>
+<p>While this is very straight forward and idiomatic Scala, it can be a bit overwhelming for people new to Scala. It took me a while to really get the hang of it.</p>
+<p>However, the Reads object is then implicitly used like in the following example:</p>
+<pre><code>def create = Action(parse.json) { request =&gt;
+    request.body.validate[ToDo].fold(
+      valid = todo =&gt; Ok(Json.toJson(ToDoService.createNew(todo))),
+      invalid = e =&gt; BadRequest(&quot;invalid request&quot;)
+    )
+  }</code></pre>
+<h2 id="pitfall-minification">Pitfall: Minification</h2>
+<p>A well known pitfall in angular.js is the danger of JavaScript minifiers to the dependency-injection mechanism of angular. It is therefore best to get in the habit of using the more verbose array-syntax for controllers even in CoffeeScript. So instead of writing</p>
+<pre><code>app.controller &#39;MyBrokenController&#39;, ($scope) -&gt;
+  $scope.value = &#39;will break in minification&#39;</code></pre>
+<p>Always write the long form, that survives minification:</p>
+<pre><code>app.controller &#39;MyWorkingController&#39;, [&#39;$scope&#39;, ($scope) -&gt;
+  $scope.value = &#39;will work minified&#39;
+]</code></pre>
+<h2 id="some-words-about-the-example">Some words about the example</h2>
+<p>The code for the application is over on <a href="https://github.com/mo-gr/ang18n">GitHub</a>. Since I’m fairly new to Scala, it might not be the most idiomatic Scala (or Play! for that matter). I also did not set up a real database. The todo list uses the H2 in-memory DB even over on <a href="https://www.heroku.com">Heroku</a>. So don’t expect your todos to stay there. I actually don’t know when and whether heroku restarts the application. But when they do, the in-memory database will be cleared!</p>
+<p>One other thing I kind of regret, when I started I was on the fence of writing <em>todo</em> or <em>to-do</em>. The results are inconsequently named Objects. Sometimes I used <code>todo</code> and sometimes <code>toDo</code>. This inconsistency annoys me and If it wouldn’t be so annoying to change only the case of files in git under OS X, I would probably already have done it. This proves once more, that there are only two hard problems in computer science:</p>
+<ol style="list-style-type: decimal">
+<li>Cache invalidation</li>
+<li>Naming things</li>
+<li>Off-by-one errors</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>So is the combination of Play! and angular.js a good fit for multi-language single-page applications? Absolutely! It is a breeze to write a RESTful API with Play! Once you get a hang on the way Play! handles JSON there is very little friction. And the templating system in Play! is one of the best server side templates I’ve ever used.</p>
+<p>However there are also downsides. My biggest gripe is with the asset pipeline in Play! While on the first look it seems to be a very good system with <a href="http://http://coffeescript.org">CoffeeScript</a> and <a href="http://lesscss.org">LESS</a> support out of the box, it actually turned out to be not as flexible as I would have wished. Maybe I’m just not smart enough but I was not able to get Play! to execute <a href="http://pivotal.github.io/jasmine/">Jasmine</a> Test Specs written in <a href="http://http://coffeescript.org">CoffeeScript</a>. And no testing in angular.js means, you are missing out on one of the other great features of angular.</p>
+<p>On the last <a href="http://www.meetup.com/Play-Berlin-Brandenburg/">Play! Usergroup Meetup in Berlin</a> was a presentation by my good friend <a href="https://twitter.com/simon_yann">Yann Simon</a> showing how to use <a href="http://gruntjs.com">Grunt</a> instead of the asset pipeline in Play! I would recommend to use that for real projects as it provides more flexibility in asset handling, is a technology known to many front-end developers and provides an even cleaner separation between the GUI/front-end and the server/back-end.</p>
+<p>One more thing. Writing angular.js in <a href="http://http://coffeescript.org">CoffeeScript</a> is a great pleasure! The more friendly syntax of CoffeeScript really helps a lot and makes the code much more readable.</p>
+<h2 id="what-next">What next?</h2>
+<p>One important thing that I havn’t yet looked into is caching. Currently, there is the real danger of browsers caching the templates and therefore not updating correctly to a language switch. The easy (and ugly) way out would be to just disable caching on all html files. A better approach would be to add the language as query- or url-parameter to give the browser a chance to cache the files for every language separately.</p>
+<p>There should also be a way to set the language via a URL to make it possible to link into a specific language. This should be quite easy with Play! What else are you missing from the todo-app in respect to i18n?</p>
+<p>I hope this post was helpful for someone. I intend to make this the first in a series of more technical posts here. If you have any questions, feel free to ask. I’m looking forward to your feedback!</p>
+<p><em>(Thanks a lot to Fabian Prinz for the Japanese translation)</em></p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Brain for hire</title>
+    <link href="http://blog.notadomain.com/posts/2013-08-27-brain-for-hire/index.html" />
+    <id>http://blog.notadomain.com/posts/2013-08-27-brain-for-hire/index.html</id>
+    <published>2013-08-27T00:00:00Z</published>
+    <updated>2013-08-27T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on August 27, 2013
+        
+    </section>
+    <section>
+        <p>I guess it’s time to make it official:</p>
+<h3 id="i-am-now-a-freelancer">I am now a freelancer</h3>
+<p>After years of constant employment, this is the first time I am standing on my own two feet. I’m still on the fence whether this is the best decision or biggest mistake in my career so far.</p>
+<p>I greatly enjoyed working at <a href="http://www.spree.de">akquinet</a> for the last two and a half years. So, the decision to take this step was not an easy one. But I just have to do this personal experiment. I don’t want to look back at my life later on and regret never having tried this. The time is right and for the first few months I should be all set.</p>
+<p>Nonetheless, here is some shameless self promotion: If you are looking for an experienced technical consultant to maneuver your JVM based project out of a tight corner – <a href="/about.html#contact">contact me</a>. If you are looking for an excellent developer to help on your next kick-ass web application – <a href="/about.html#contact">contact me</a>. If you need someone coaching your team to get up to speed on modern web technologies – <a href="/about.html#contact">contact me</a>. And if you are actually looking for a highly motivated clojure developer – please, please <a href="/about.html#contact">contact me</a>.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Hops Coffee</title>
+    <link href="http://blog.notadomain.com/posts/2012-12-11-hops-coffee/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-12-11-hops-coffee/index.html</id>
+    <published>2012-12-11T00:00:00Z</published>
+    <updated>2012-12-11T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on December 11, 2012
+        
+    </section>
+    <section>
+        <p>Last weekend, we’ve been to Qingdao (青岛). Qingdao is quite often also referred to by its <em>german</em> name-mangling Tsingtao. Tsingtao happens to be the biggest brewer and beer exporter in China and therefore also one of the largest in the world (Chinas economy of scale at work here).</p>
+<p>Therefore it can’t come as a huge surprise, that Qingdao features a rather nice beer museum. The history of the brewery and the old as well as the current brewing equipment is on display along with a bar for tasting and of course a gift shop with lot’s of souvenirs. Some more related to beer than others.</p>
+<p>The one, that really caught my eye was <em>Hops Coffee</em>. The direct combination of my two most favorite beverages in the world can’t be recommended at all. But the idea of a slight hops aroma in a nice cup of coffee sounds at least interesting to me.</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/HopsCoffee.jpg" title="Hops Coffee, brewed and ready to drink" />
+
+</div>
+<p>Sadly, the actual product was more of a multi stage disappointment than a great new beverage. First, it’s instant. I can live with that and was kind of expecting it to be.</p>
+<p>Second, the instant mix also includes sweeteners (<em>yuck</em>) and milk powder, ruining an otherwise perfectly good instant coffee.</p>
+<p>And then, there is the actual Hops. Or better yet, the lack of it. The hops aroma exists purely by the power of your mind. It is so weak, that after my first cup, I searched the box to see if the hops aroma might be in another sachet. It isn’t. If you concentrate hard and really want to smell some hops it is just barely there. But nothing more.…</p>
+<p>All in all, the hops coffee was rather disappointing. It is a sweetened, whitened, otherwise boring instant coffee. However, I’ll probably get hold of some actual hops for proper brewing some time early next year. I’ll use that to make some proper hops coffee. Brewed from good beans and otherwise black as coffee is intended to be. Looking forward to see how that turns out…</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Bye bye Beijing</title>
+    <link href="http://blog.notadomain.com/posts/2012-12-11-bye-bye-beijing/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-12-11-bye-bye-beijing/index.html</id>
+    <published>2012-12-11T00:00:00Z</published>
+    <updated>2012-12-11T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on December 11, 2012
+        
+    </section>
+    <section>
+        <p>On another note, today is actually my last day in Beijing. My next stop will be Seoul and I’m looking forward to it (and to finally having proper Internet again).</p>
+<p>However, I’ll continue my journey without the mac that I’m currently typing on. I’ll only have an iPad with me. Therefore, I can’t post any further updates to this blog until we are back home.</p>
+<p>Until further notice, all updates will go to either <a href="http://mo-gr.tumblr.com">tumblr</a>, <a href="http://twitter.com/mo_gr">twitter</a> or <a href="https://alpha.app.net/mo">app.net</a>.</p>
+<p>See you on the other side…</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Bastion</title>
+    <link href="http://blog.notadomain.com/posts/2012-11-16-bastion/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-11-16-bastion/index.html</id>
+    <published>2012-11-16T00:00:00Z</published>
+    <updated>2012-11-16T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on November 16, 2012
+        
+    </section>
+    <section>
+        <div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/TheBastionLogo.jpg" alt="Bastion Logo" />
+<p class="caption">Bastion Logo</p>
+</div>
+<p>Yesterday, I finally finished my second play through of Bastion. The game is so great, that I want to recommend it here.</p>
+<h3 id="story">Story</h3>
+<p>On first sight, The Bastion appears to be little more than a flying peace of rock drifting through the remains of what the Calamity left of the old world. In the beginning of the game, The Bastion finds The Kid (or The Kid finds The Bastion). On the Bastion, the Kid meets The Stranger and - guided by him - The Kid searches the land to find other survivors and ultimately to uncover the secrets of the Calamity, that fractured the earth, destroyed Caelondia and left so few survivors.</p>
+<p>When The Kid and The Stranger first met, the Bastion is weak and powerless. To bring her back to old glory, The Kid first has to search for the Cores, that are scattered throughout the land. With every Core that is recovered, the Bastion gains new Energy and grows, enabling them to travel much further into the lands. Soon they realize, they are not the only ones who survived the Calamity. Other Survivors, like Zulf from the folk of the Ura, join them on the Bastion.</p>
+<p>In the end, they figure out, what the Calamity actually was, what led to this huge catastrophe. A discovery, not everyone deals with equally…</p>
+<h3 id="gameplay">Gameplay</h3>
+<p>One could think of Bastion as a hack-n-slash RPG. You control The Kid and roam the world in an isometric top-down perspective. Battle in Bastion is realtime and The Kid gathers quite an arsenal of close-combat and long-range weapons. Throw in his Bullhead Shield and some special abilities and you are set. There is also some leveling involved, but apart from packing a bigger punch and more health, leveling up doesn’t gain you much. So don’t expect a Diablo-Style skill tree or anything.</p>
+<p>Bastion started out as an Indie game on XBox Live but is now available on nearly everything that has a display. I’ve played it on the iPad, but if you can, play it on something that has a bigger screen - Bastion is beautiful. Bastion is drawn in living, vibrant colors and has a comic-art-style that really hits my taste. It’s meant to be played on your big screen TV, with the rocking volume from your speakers. But I’ll get to the audio later.</p>
+<p>The difficulty was quite right for me. I had no problem, finishing the game. The occasional death happened, but it never got frustrating. And if you like a challenge, the last few achievements are really hardcore (I haven’t managed to finish any of the dreams with all 10 gods enabled. I already struggle with 5).</p>
+<h3 id="the-bad">The Bad</h3>
+<p>Since we are on the go, it was most convenient for me to play Bastion on the iPad. The iPad is really great for recreational gaming. Melt with a couch or a comfy chair, pop in your favorite headphones and dive into the space between your hands. However a touchscreen isn’t the perfect input device for games like bastion. While it did get the job done most of the time, a real gamepad would have been a lot better. It is just too easy to hit the wrong touch-area (aka button) in busy moment and do a barrel roll into the abyss instead of pushing the enemy into the same.</p>
+<p>So, the touchscreen controls, while being ok, have to go into the bad section. Along with the german localization. Luckily they just translated onscreen texts and added subtitles. Yet, I would have preferred having the game the way it was intended to be. But I couldn’t find a way to switch the language on my iPad although my entire iPad is set to english anyways. So either I am too stupid or the lack of a language switch has to be my biggest complaint about Bastion. Really, that is my biggest complaint about the game. That I couldn’t set it to another language. The game itself, I have nothing to complain about.</p>
+<p>I could imagine, that some people might complain about replay-value. To be honest, once you’ve finished the game a second time, there is not much left to do. The story has been told. The secrets are uncovered. There is not a lot left to pull you back into the game afterwards. But I consider that a plus. I am no student anymore and my time for games is scarce. I like it, when a game has a clear cut ending and I can put it away and move on. Nothing worse than those kind of games, that hook you up and never ever let you go again.</p>
+<h3 id="the-good">The Good</h3>
+<p>So the length of the game goes into The Good. The story had me hooked from the get go and unfolded at a great pace. You get a good value out of your buck. The game is usually priced between 10 and 20 $ and goes on different sales or bundles from time to time. And for that, you get many hours of fun gameplay, a great story and an atmosphere that will hook you right in.</p>
+<p>A big part of that atmosphere are the beautiful visuals. Bastion looks great with living colors and fluid animations. The whole world feels alive.</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/TheBastion.jpg" alt="The Bastion, injured but still strong." />
+<p class="caption">The Bastion, injured but still strong.</p>
+</div>
+<p>Another equally big part is the music. Bastion has one of the best soundtracks I’ve heard in a game for a long time (although this doesn’t really mean a lot considering how much I game these days). It’s often dominated by acoustic guitars and strings, has a great beat and sometimes drifts a bit into the oriental space. The music perfectly underlines what is happening on the screen and you really want to turn it up. The soundtrack can even stand on its own. I have to admit, that the soundtrack had many rotations in my playlist long, long before I actually played the game. Bastion even manages to sneak in a few songs with lyrics in certain areas of the game - lyrics… in a game!</p>
+<p>I guess, whether you like this game or not boils down to whether you like the story and atmosphere. If they don’t get you hooked, you probably won’t like the game as much as I did. Yeah, it is fun. It is fun walking around and engaging in battle. It is fun getting new weapons and leveling them up. It feels great to counter block an enemy and than smash him in the ground. But if you are not hooked into the story, you’ll probably put the controller aside sooner than later. From a pure gameplay-perspective, there are probably a few better hack-n-slash RPGs.</p>
+<p>But this one has a twist. A catch, that the others don’t have. A nugget of awesome.</p>
+<h3 id="the-awesome">The Awesome</h3>
+<p>Two words: Logan Cunningham. It is quite a challenge writing so much about Bastion without mentioning Logan Cunningham until this point. Logan is the voice actor of Rucks, The Stranger. And with his smokey, rough voice, he comments and narrates the entire story from beginning to end. And this is Bastions unique and awesome twist. Most games tell their story between the Levels, advancing it via cutscenes and the like. But in Bastion, there is a story teller, a narrator. He is telling you a story; the story you are just playing. And it works. It works beautifully. Even though there is rarely a minute where Rucks is not narrating what is happening on the screen, it never feels repetitive or out of place. The only downside of this is, the game is very linear. You don’t have a lot of choice how to advance next.</p>
+<p>Trust me, just writing/reading this doesn’t give it justice. You have to hear and see it in action.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>As you might have guessed, I enjoyed Bastion a lot. I enjoyed it so much that I decided to tell the world about it. I give it ★★★★★ without hesitation. I know, I’m a bit late to the party (at least, Bastion isn’t <a href="http://xkcd.com/606/">5 years</a> old by now). Bastion was first released well over a year. So you have no excuse as well. If you like games with some action at all, you should at least give it a try. So, if you don’t yet own a copy, head over to your favorite digital store and get it. I recommend making sure to get the Soundtrack as well. As I said, it can easily stand on its own as a cool tune.</p>
+<p>If you give it a try, let me know, how you liked it!</p>
+<p>Turn up the volume all the way to eleven, take your Breaker’s Bow and your Cael Hammer and let the Bastion guide your way. <em>Ain’t much Kid can’t handle with Hammer and Bow in hand.</em></p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/Bastion.jpg" alt="iPad, headphones and Bastion Loading screen." />
+<p class="caption">iPad, headphones and Bastion Loading screen.</p>
+</div>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Opportunities of scale</title>
+    <link href="http://blog.notadomain.com/posts/2012-11-15-opportunities-of-scale/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-11-15-opportunities-of-scale/index.html</id>
+    <published>2012-11-15T00:00:00Z</published>
+    <updated>2012-11-15T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on November 15, 2012
+        
+    </section>
+    <section>
+        <p>We tend to forget how huge China is. Yeah, China is big and there are many Chinese. But how <em>many</em> Chinese there are, just needs a reminder from time to time.</p>
+<p>According to <a href="http://www.wolframalpha.com/input/?i=population+china+vs+eu">Wolfram Alpha</a>, the population of china was estimated to be 1.3 billion in 2010. That is easily more, than the population of the EU and the USA combined.</p>
+<p>This has a some peculiar consequences. For once, there are quite a few multi-million citizen cities, you’ve likely never heard of before. Would you know, where to search for <a href="http://en.wikipedia.org/wiki/Zhoukou">Zhoukou</a> or <a href="http://en.wikipedia.org/wiki/Linyi">Linyi</a> on the map? They both have a population of around 10 Million - give or take.</p>
+<p>Another interesting consequence, there are a lots of hugely popular services and companies, that you have also probably never heard of - some of them more interesting than others.</p>
+<p>The <a href="https://twitter.com">Twitter</a> equivalent of China for example is <a href="http://weibo.com">Sina Weibo</a>. While being mostly unknown in the western world, Weibo is about the same size as Twitter. According to the wikipedia, Twitter has currently about 500 million users and generates about 340 million messages a day. The 3 year old Weibo currently has about 368 million users and generates 100 million messages a day - not as much but the same order of magnitude (<a href="http://en.wikipedia.org/wiki/Twitter">source</a> and <a href="http://en.wikipedia.org/wiki/Sina_Weibo">source</a>).</p>
+<p>Just as Weibo is quite similar to Twitter, there are many other china-only competitors to the services, we know. Yesterday, we used a very neat one. The site is called <a href="http://www.360buy.com/">360buy.com</a> (Strangely, many of the Chinese alternatives use .com instead of .cn TLDs). From the looks of it, they appear to be a competitor to <a href="http://www.amazon.de/?_encoding=UTF8&amp;camp=1638&amp;creative=19454&amp;linkCode=ur2&amp;site-redirect=de&amp;tag=notadomaincom-21">amazon</a>. Yet, 360buy has a cool feature: In many areas, including Beijing, they offer <em>same-day-delivery</em>. For free. Just like that.</p>
+<p>We decided, we needed to get a cheep DVD player for the TV in our apartment. We went to 360buy, used Chrome to translate the page, chose a device, entered our address and clicked on order. This was around 9:00 am. The same day at around 5:00 pm, it knocked on the door. We payed in cash and got our DVD player.</p>
+<p>The whole experience was fast, friendly and due to Chromes page translate-feature, even possible for lazy aliens, that don’t speak Chinese.</p>
+<p>Part of me wants that from amazon <em>(in Germany)</em>!</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Small Differences: Money</title>
+    <link href="http://blog.notadomain.com/posts/2012-11-10-small-differences-money/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-11-10-small-differences-money/index.html</id>
+    <published>2012-11-10T00:00:00Z</published>
+    <updated>2012-11-10T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on November 10, 2012
+        
+    </section>
+    <section>
+        <p>Of course china uses money like everywhere else. And a lot of payments are done using cash. But the cash here is a bit different than in Europe.</p>
+<p>This mainly boils down to the fact, that the biggest bill available in china is the 100 RMB bill. This is currently worth roughly 12.50 €. All other bills are worth even less. Also, coins are used far less often and only go up to 1 RMB (about 0.12 €).</p>
+<p>This has two interesting consequences. First: You always have a trousers pocket full of papermoney. A thick stack of bills which is worth about 10 €. I kind of like that. Far more comfy than having a pocket full of €-coins. And still worth so little, that you don’t really care if you lose a bill. (I guess this is similar in the US with their 1 $ bill).</p>
+<p>The second consequence is, whenever you have to pay for something a bit more expensive, you deal with huge stacks of money. Making you feel a bit like a gangster in the first moment and making you wish, you had a counting machine the moment after that. (Counting machines are extremely common in china. Basically every cash register has one).</p>
+<p>Did I mention, we payed our entire 3 month rent and a safety deposit in cash? This is how some of it looked:</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/Cash.jpg" title="Lots of cash" />
+
+</div>
+<p>Really, you have to deal with silly big stacks of cash from time to time. You have to make multiple trips to an ATM to get reasonable amounts of cash because they can’t spit out stacks big enough. Stuff like that.</p>
+<p>Apparently there is also quite a lot of counterfeit money in the wild. The Chinese will always check 50 and 100 RMB bills for validity. Either by hand or by feeding it through a counting machine.</p>
+<p>And there is also the other side of the value spectrum. The smallest bill in circulation (and not quite uncommon) is the 1 Yi Jiao bill, aka 0.1 RMB. So it is roughly worth 1 euro cent.</p>
+<p>On the street, prices are usually multiples of 1 RMB. Amounts below 1 RMB are usually only found in supermarkets and similar stores. So you usually put your Yi Jiaos somewhere and hope to remember theme the next time you are grocery shopping.</p>
+<p>This is how it looks:</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/worthless.jpg" title="Worthless money" />
+
+</div>
+<p>It has roughly the same size and feel as monopoly money. Only, it is worth slightly less then monopoly money.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Small differences: Prepaid</title>
+    <link href="http://blog.notadomain.com/posts/2012-10-29-small-differences/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-10-29-small-differences/index.html</id>
+    <published>2012-10-29T00:00:00Z</published>
+    <updated>2012-10-29T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on October 29, 2012
+        
+    </section>
+    <section>
+        <h1 id="preface">Preface</h1>
+<p>We’ve been in Beijing for over a month by now. After that time I feel quite confident in saying, that Beijing is just another big city. It is quite <em>western</em> and very big. If you look at it from a high enough level, it is very similar to other big cities. There is public transportation. People have jobs. There is a large middle class. People buy designer clothes in huge malls. Just the usual.</p>
+<p>It is the same shit like home, albeit <em>some</em> things are different. If you zoom in close enough, you can see lots of small differences. In the way, the city works, the society works. Really, it’s all over the place. In the <em>Small Differences</em> series of posts, I plan to point out those differences, I found noticeable.</p>
+<h1 id="small-differences-prepaid">Small Differences: Prepaid</h1>
+<p>Having a prepaid cell phone is a very common thing here in Beijing like in many other big cities all around the globe. However, cell phones are not the only thing coming as prepaid variant over here. A few days ago, we had to find out, that also gas, water and electricity are often prepaid in China. And how do you discover something like that? Of course by standing under the shower and enjoying a lack of warm water. We complained to the landlord and low and behold - the next day someone came with a smart card, shoved it somewhere into the gas-meter and everything was fine again.</p>
+<p>They also showed us the cards. This is a bit useless since we have no idea at all how to recharge those cards. But I can at least show them here. In order from top to bottom: Water, electricity and gas.</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/Prepaid.jpg" />
+
+</div>
+<p>If you think about it, it actually isn’t that bad of an idea. At least people can’t get in situations, where they all of a sudden have to repay huge sums because they used more gas then anticipated.</p>
+<p>I will write about heating here another time. There is a small difference to heating as well, although it is not prepaid like gas, water and electricity.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Take a deep breath</title>
+    <link href="http://blog.notadomain.com/posts/2012-10-11-take-a-deep-breath/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-10-11-take-a-deep-breath/index.html</id>
+    <published>2012-10-11T00:00:00Z</published>
+    <updated>2012-10-11T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on October 11, 2012
+        
+    </section>
+    <section>
+        <p>A few weeks before we started our journey, a friend of mine gave me a link to an article in the german Tagesspiegel (<a href="http://www.tagesspiegel.de/weltspiegel/leben-in-china-dicke-luft-in-peking-/6848760.html">link</a>). The author of that article stayed a while in Beijing as well. And according to her, the quality of the air in Beijing is usually so bad, it took the author over a week to realize that her apartment had a view on the mountains.</p>
+<p>When we arrived in Beijing, we had a clear blue sky. So naturally, I was thinking the author exaggerated a bit. That is, until yesterday, when I realized that our apartment had a view on the mountains as well. It took us <em>just</em> five days to realize that.</p>
+<p>I took a picture from our window that morning. Today – also a nice day with lots of sun – I tried to take the same picutre again. Same ISO, same aperture, same shutter speed, roughly the same time of the day. I merged those images. This is the result:</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/Airquality.jpg" title="Overlay of a clear and a usual day" />
+
+</div>
+<p>To be honest, I made one mistake. I let the camera on auto-white-balance. This probably overstates the difference a bit. Anyways, take a deep breath and enjoy.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Elevator Rushhour</title>
+    <link href="http://blog.notadomain.com/posts/2012-10-08-elevator-rushhour/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-10-08-elevator-rushhour/index.html</id>
+    <published>2012-10-08T00:00:00Z</published>
+    <updated>2012-10-08T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on October  8, 2012
+        
+    </section>
+    <section>
+        <p>This morning, we encountered something, I didn’t knew existed: <em>Elevator Rushhour</em>. I’ve never lived in a 28 story building before. We now live on the 21st floor. If every floor is roughly the same as ours, there are 12 apartments on each floor.</p>
+<pre><code>=&gt; (* 28 12)
+; 336</code></pre>
+<p>So there are a good 300 apartments. The building currently has three working elevators. Even if we assume that not every apartment is inhabited and not every inhabitant has to get up in the morning to get to work, this leaves us with a lot of people that need to exit the building in a narrow timeframe.</p>
+<p>We left at 8:00. And we waited for nearly 10 minutes to finally leave the building. The elevators were all basically stopping at every other floor on their way down. Then going all the way up again only to repeat the stop and go on their way down.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>До Свидания Russia</title>
+    <link href="http://blog.notadomain.com/posts/2012-10-02-farewell-russia/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-10-02-farewell-russia/index.html</id>
+    <published>2012-10-02T00:00:00Z</published>
+    <updated>2012-10-02T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on October  2, 2012
+        
+    </section>
+    <section>
+        <div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/map.jpg" title="A map of the places where we took pictures" />
+
+</div>
+<p>We have arrived in Beijing and I could already write a lot about it. But I won’t do that now because I don’t want all of our Russia impressions to get lost in time and memory. This post is intended two give a rather brief overview about our time there (but fails to be brief). More detailed stories are following soon (I hope).</p>
+<!--more-->
+<h1 id="москва">Москва</h1>
+<p>We arrived in the late afternoon in Moscow Domodedovo and proceeded to the German embassy to meet a friend of A. We grossly underestimated the time it took us to get there. Moscow is <em>huge</em>! And busy like hell during rush hour. And I mean seriously busy. And huge. Berlin is tiny and calm compared to Moscow at rush hour.</p>
+<p>Nonetheless we had a very nice evening in Moscow with some beer, квас and great Ukrainian food (don’t ask). The next day, we did the usual sight seeing before getting our bags out of the embassy and going back to Domodedovo to catch our plane to Irkutsk. All in all, our Moscow trip was short and intense, but we enjoyed it nonetheless. One thing about Domodedovo: guys, broken and rotten airplanes are not the best decoration for an airport. It creates nervous feelings.</p>
+<h1 id="lake-baikal">Lake Baikal</h1>
+<div class="figure">
+<img src="http://24.media.tumblr.com/tumblr_mapyz7GE9q1rgtzh1o1_500.jpg" title="Blurry Irkutsk" />
+
+</div>
+<p>This marks the start of an amazing, yet exhausting week in Siberia. We arrived in Иркутск (Irkutsk) before sunrise, somehow managed to get on a trolley bus to the center and walked the rest to the hostel, at which we intended to stay a week later. At the hostel, we woke the poor lady in charge that day, dropped off some of our baggage, we wouldn’t need in Russia and left again. Without sleep or real breakfast, we moved to the ferry port to take the boat to Листвянка (Lystvyanka) - at least that was the plan. However the boat was already sold out. This was a bit off a downer.</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/Lystvyanka.jpg" title="Lystvyanka" />
+
+</div>
+<p>We were not the only ones who were in this sad situation. There were two Russian couples in their early thirties with their children who wanted to go to Lystvyanka as well. It is safe to say there was a slight language barrier between us. They decided to go there by Маршгутка (Marschrutka) instead of the boat and kindly offered to take us along. Although it took them and us a while to communicate that.</p>
+<p>If you’ve never been in a Marschrutka before, this can be a bit scary and it absolutely deserves a post of its own. Lets just say, it was a relief to do it together with locals for the first time. About an hour later we arrived in Lystvyanka - sleep deprived and tired. This might add up to the fact that we were a bit disappointed about it. Lake Baikal is beautiful! But Lystvyanka is a rather boring tourist trap for Russians. And off-season there really wasn’t that much to do or see. Somehow we were expecting more.</p>
+<p>Therefore we changed our plan a bit and got on the ferry to Port Baikal on the opposite side of the River Ангара (Angara). The ferry looked a bit… Let’s call her battle proven.</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/ferry.jpg" title="Ferry to Port Baikal" />
+
+</div>
+<p>Port Baikal also deserves its own entry. A long time ago it must have been a thriving place – a key port to the Trans Siberian Express. Now it is just a shadow of its former self. But it has a calm, melancholic beauty and is a good place to start short hikes. We stayed there for two nights, had a great time and met some wonderful people who are now new friends of ours (Ivan &amp; Mascha).</p>
+<div class="figure">
+<img src="http://25.media.tumblr.com/tumblr_maulaqXJB41rgtzh1o1_1280.jpg" title="View from over Port Baikal" />
+
+</div>
+<p>In Port Baikal we also discovered that our original plan of going directly to Слюдянка (Sludyanka) via train was not feasible. The time schedule of the trains is a bit weird. So we went back to Lystvyanka via ferry, took another Marschrutka (this time on our own) to Irkutsk and stayed there for an unplanned night.</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/cat%20galina.jpg" title="Galinas Cat" />
+
+</div>
+<p>After we arrived in Irkutsk, we must have looked a bit lost because a lady, that was on the same Marschrutka asked us if we might need help. Turned out, she was German and lived in the area for a while now. She recommended us a nice pension (Pension Galina), called there to make sure, they have room for us and told us the way. Then she disappeared. We were very thankful (and lucky) we met her. The pension was very nice. Galina herself looks a bit like a friendly witch. She lives in an old, wooden house with a beautiful cat and makes amazing влини for breakfast. And she even talks a bit German.</p>
+<p>After our first shower in days and a good night of sleep, we left her in the early morning to take the regional train to Sludyanka.</p>
+<p>At the train station, two young Americans (?) approached us: “do you speak English?” We said yes. “Very good! Here, this says…” At that point we interrupted them and told them, we don’t really speak Russian. Did we really already looked like locals to them? We tried anyway but couldn’t really help them. They had some sort of trouble getting their preordered train ticket. I hope they somehow figured it out.</p>
+<h1 id="siberian-taiga">Siberian Taiga</h1>
+<p>We went to Sludyanka in order to hike up to Пик Черского (peak Cherskogo) and see lake heart. It is said to be good for a young couple to see lake heart together. I guess we are on the safe side now because in the end we did manage to see the lake. However we would not have made it without the help of two other nice people we met in Sludyanka.</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/lake%20heart.jpg" title="Lake Heart" />
+
+</div>
+<p>Since we arrived in Sludyanka too late to start the hike the same day, we stayed for a night at the local mineral museum that also has a guest house. We asked them whether it is possible to get up to the peak and back down on the same day. Apparently it has been done before but it requires top physical condition. We decided to try.</p>
+<p>In the evening however two middle aged men also arrived there: Andrei and Nikolai. They had a slightly longer hike planned than ours (with a much more relaxed time schedule). But the peak was their first stop as well. They offered to take us along with them. And they assured us that there is a base camp were we could sleep (even without a sleeping bag). We agreed to join them and spend the following night together with them at the camp.</p>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/basecamp.jpg" title="View from the Basecemp" />
+
+</div>
+<p>Nikolai is a professional guide in the area and his skills were very useful. The next day started rainy which would quickly turn into snowy as we progressed. And hiking in Russia is different. The trail is not really marked. You can see where people usually walk and that is it. No painted trees or rocks like on European routes. And with a few cm of snow, it is very easy to loose the trail. But Nikolai knew the area very well and got us safely to the Base camp.</p>
+<p>The two days with Nikolai and Andrei are also worth a separate post. In short, we managed to get to the lake together. However A. and myself sadly had to turn around a few hundred meters before we could reach the actual peak to get back to Sludyanka in the evening.</p>
+<h1 id="transsib">TransSib</h1>
+<div class="figure">
+<img src="http://com.notadomain.blogbucket.s3.amazonaws.com/images/ulan%20head.jpg" title="Ulan Udes head" />
+
+</div>
+<p>We had to make it back down that day because we had tickets to a 2nd class sleeping car in the trans sib to Улан Уле (Ulan Ude). The train departed around midnight local time. If you ever get to take a train in Russia, be aware: times are always announced in Moscow time - no matter where and in which time zone you are!</p>
+<p>The sleeping car was quite pleasant and we had a four person cabin just for us. We even managed to get a few hours of sleep. In Ulan Ude, we did the usual sight seeing. Learned a bit about buriat culture and visited a Buddhist temple. After some buriat food in the evening, we got to the station again to catch another train the same evening back to Irkutsk. But this time in 3rd class. Lets just say, the difference is obvious and the ride was not as pleasant as the first one.</p>
+<h1 id="irkutsk---finally">Irkutsk - finally</h1>
+<div class="figure">
+<img src="http://25.media.tumblr.com/tumblr_mb4bbgAKhA1rgtzh1o1_500.jpg" title="Irkutsk Airport" />
+
+</div>
+<p>We arrived late in the night (~ 2:00), got to the hostel where our baggage was stored, took the second shower in Siberia and slept. We slept well and long.</p>
+<p>After we finally got up and had a little breakfast - nah… lunch - at a wonderful small place that had tasty local food, some culture: the local art museum which claims to be the biggest in Siberia. Later in the afternoon, we met Ivan and Mascha again and spent some great time together. They showed us a bit around in Irkutsk. We went to a fire jugglers spectacle and finally settled down in a local brewpub (!!!) that had a few really good beers! (I have to tag it in open street map soon so it’ll show up in the openbrewpub map). In the end, we said goodbye at the Аеропорт around 23.30 and tried to check in to our flight to Beijing. If you ever get to Irkutsk, be aware, the Аеропорт and the Airport are different buildings! However, they are right next to each other. One is for domestic and the other for international flights.</p>
+<h1 id="take-away">Take away</h1>
+<p>In the end, we both agree, that we had a very exhausting but wonderful time in Siberia. The nature is breathtakingly beautiful. Surprisingly similar to german nature but on a much bigger scale. You can see up to the horizon without a trace of human constructions. If you enjoy hiking, consider visiting the Baikal area! However, without A.’s sparse Russian skills we would have had problems - basic understanding of the Russian language is a requirement in the area.</p>
+<p>Another thing that is very different: the extreme temperature difference between day and night. The afternoons were usually very fit for t shirts. However as soon as the sun set, temperature fell quickly below zero. The upside: no moskitos. This makes the Siberian autumn a great time for a visit!</p>
+<p>One more thing must be mentioned: the people in the area! Each and every one of the people (except one - who was very drunk), we had direct interactions with in Siberia were extremely kind, friendly and tried to help us as much as possible. In that sense: thanks to everyone and до свидания!</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Stay calm</title>
+    <link href="http://blog.notadomain.com/posts/2012-10-01-stay-calm/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-10-01-stay-calm/index.html</id>
+    <published>2012-10-01T00:00:00Z</published>
+    <updated>2012-10-01T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on October  1, 2012
+        
+    </section>
+    <section>
+        <p><a href="http://www.spiegel.de/panorama/china-fuenf-deutsche-bei-busunfall-nahe-peking-gestorben-a-858843.html">Stay calm</a></p>
+<p>Just a quick sign of life: There was a serious road accident near Beijing with german casualties. We are none of them. We have savely arrived in our Beijing hostel. Expect to hear more from us soon.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Berlin → Москва → Иркутск → 北京 → ???</title>
+    <link href="http://blog.notadomain.com/posts/2012-09-11-big-travel/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-09-11-big-travel/index.html</id>
+    <published>2012-09-11T00:00:00Z</published>
+    <updated>2012-09-11T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on September 11, 2012
+        
+    </section>
+    <section>
+        <div class="figure">
+<img src="http://25.media.tumblr.com/tumblr_madug76njY1rgtzh1o1_1280.jpg" title="Ready to go on a tour" />
+
+</div>
+<p>On thrusday, in just a few short days, we will start quite a big travel. First stop will be Moscow, where we stay for a day before we head on to lake baikal for a week of hiking and vacation.</p>
+<p>Next stop will be china. <em>A.</em> will be doing an internship in Beijing starting in October and I will give her company as long as I’m permitted to stay in China. Sadly it is not possible to stay in China as a tourist for as long as an intern.</p>
+<p>When my permission to stay in China expires, we will have to part our ways for a few weeks. I will move on to South Korea and Japan (and maybe some more places where I don’t need a complicated visa).</p>
+<p>At the end of december, we will rejoin at beijing airport to fly back home together. Or at least that is the plan.</p>
+<p>All of this is surely going to be very exciting and we are looking forward to it a lot (although from time to time a bit nervously). Did I mention, we don’t really speak any chinese language?</p>
+<p>As a result of our travels, over the next few weeks and months, the focus of this blog might shift a bit away from technical topics over to documenting our travels.</p>
+<p>Since I’m not sure about the conditions of the intertube access along the way, this might be more or less complicated. I might have trouble posting to this blog, therefore I’ve also set up accounts over at <a href="http://mo-gr.tumblr.com">tumblr</a> and <a href="http://mo-gr.posterous.com">posterous</a>. And be sure to also follow me on <a href="http://twitter.com/mo_gr">twitter</a> if you want to stay up to date.</p>
+<p>We will post pictures and status updates to at least one of those places in a semi regular fashion.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Type Hints</title>
+    <link href="http://blog.notadomain.com/posts/2012-04-16-type-hints/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-04-16-type-hints/index.html</id>
+    <published>2012-04-16T00:00:00Z</published>
+    <updated>2012-04-16T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on April 16, 2012
+        
+    </section>
+    <section>
+        <p>Today, <a href="mana">Matthias Naber</a> made me aware of <a href="idea">IntelliJ</a> type hints in JSF and JSP files.</p>
+<p><a href="idea">IntelliJ</a> does quite a good job in figuring out the types of EL variables itself, providing code completion and usage information. But there are situations where <a href="idea">IDEA</a> is unable determine the type of an EL variable. This usually occurs to me in a facelet <code>composition</code> where the variables are passed in as a <code>param</code>.</p>
+<p>The following is a basic facelt composition invocation:</p>
+<pre><code>&lt;ui:include src=&quot;toiletten.xhtml&quot;&gt;
+    &lt;ui:param name=&quot;toilette&quot; value=&quot;#{umkleide.toiletten}&quot;/&gt;
+&lt;/ui:include&gt;</code></pre>
+<p>In the file containing the invocation, <a href="idea">IDEA</a> is fully aware of the type of the EL variables. However in the included file (toiletten.xhtml), which might look something like this:</p>
+<pre><code>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;
+  xmlns:h=&quot;http://java.sun.com/jsf/html&quot; 
+  xmlns:ui=&quot;http://java.sun.com/jsf/facelets&quot;&gt;
+  &lt;ui:composition&gt;
+    &lt;h:outputLabel value=&quot;#{toilette.ppBecken}&quot;/&gt;
+  &lt;/ui:composition&gt;
+&lt;/html&gt;</code></pre>
+<p><a href="idea">IntelliJ</a> is unable to infere the type of the EL variable <code>toilette</code>. It is therefore neither able to offer me code completion nor warn me about typos and errors. It might even mark the getter <code>getPpBecken()</code> in the Toilette as unused.</p>
+<p>However, if you help <a href="idea">IDEA</a> a little bit by hinting the type, all the goodness is restored. Just add the following, proprietary comment somewhere in the file:</p>
+<pre><code>    &lt;!--@elvariable id=&quot;toilette&quot; type=&quot;com.notadomain.datamodel.Toiletten&quot;--&gt;</code></pre>
+<p>This comment tells <a href="idea">IntelliJ</a> the type of the EL variable, enabling autocompletion, usage indexing and of course only marking true errors in the file.</p>
+<p>If you are using JSPs, the comment should probably look something like:</p>
+<pre><code>    &lt;%--@elvariable id=&quot;toilette&quot; type=&quot;com.notadomain.datamodel.Toiletten&quot;--%&gt;</code></pre>
+<p>If you are somehow worried about putting proprietary comments in your files, <em>you</em> have some weird issues. But nonetheless, those comments, at least in facelets, even work outside of the <code>composition</code>-tag, which will make them become ignored anyway.</p>
+<pre><code>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;
+  xmlns:h=&quot;http://java.sun.com/jsf/html&quot; 
+  xmlns:ui=&quot;http://java.sun.com/jsf/facelets&quot;&gt;
+  &lt;!--@elvariable id=&quot;toilette&quot; type=&quot;com.notadomain.datamodel.Toiletten&quot;--&gt;
+  &lt;ui:composition&gt;
+    &lt;h:outputLabel value=&quot;#{toilette.ppBecken}&quot;/&gt;
+  &lt;/ui:composition&gt;
+&lt;/html&gt;</code></pre>
+<p>A properly configured <a href="idea">IntelliJ</a> setup will help you so many times a day. You are going to be a <em>lot</em> more productive. It is absolutely worth, adding some comments and guides to make the warnings and analyzations of your IDE more precise and focussed.</p>
+<p>If I had gotten a coin for every time, I fixed a bug, that was already underlined and critized by <a href="idea">IDEA</a> when I found it, I’d have an aweful lot of coins.</p>
+<p>Use your tools to their full advance and don’t check in code that contains warnings! I really wish, there would be something like the <code>-Werror</code> flag in <code>javac</code>!</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Reduced maven noise</title>
+    <link href="http://blog.notadomain.com/posts/2012-04-12-reduced-maven-noise/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-04-12-reduced-maven-noise/index.html</id>
+    <published>2012-04-12T00:00:00Z</published>
+    <updated>2012-04-12T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on April 12, 2012
+        
+    </section>
+    <section>
+        <p>I stumbled upon this quick post by <a href="pv">Peter Veentjer</a> about how to reduce maven test output. Highly recommended. Gives you the ability back to actually parse the output of maven by reducing the noise generated by tests to a minimum. Basically just add</p>
+<pre><code>&lt;redirectTestOutputToFile&gt;true&lt;/redirectTestOutputToFile&gt;</code></pre>
+<p>to your surefire config.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>JavaScript: The Good Parts</title>
+    <link href="http://blog.notadomain.com/posts/2012-04-03-javascript-the-good-parts/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-04-03-javascript-the-good-parts/index.html</id>
+    <published>2012-04-03T00:00:00Z</published>
+    <updated>2012-04-03T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on April  3, 2012
+        
+    </section>
+    <section>
+        <p><a href="http://www.youtube.com/watch?v=hQVTIJBZook">JavaScript: The Good Parts</a></p>
+<p>Thanks to <a href="https://twitter.com/#!/davidvoelkel">David Völkel</a> for pointing me to <a href="http://www.crockford.com/">Doug Crockfords</a> Talk about JavaScripts good parts. If you enjoyed my CoffeeScript talk not <em>only</em> for the entertainment, you probably gonna like that talk as well. Highly recommend watching it - well worth the hour.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>Berlin Expert Days</title>
+    <link href="http://blog.notadomain.com/posts/2012-03-31-berlin-expert-days/index.html" />
+    <id>http://blog.notadomain.com/posts/2012-03-31-berlin-expert-days/index.html</id>
+    <published>2012-03-31T00:00:00Z</published>
+    <updated>2012-03-31T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        Posted on March 31, 2012
+        
+    </section>
+    <section>
+        <p>This years <a href="http://bed-con.org/">Berlin Expert Days</a> conference has come to an end. The <a href="http://bed-con.org/">BEDCon</a> is a small tech conference in, you guessed it, Berlin. The focus is somewhere around the Java ecosystem but it is no LASER sharp focus.</p>
+<p>This years <a href="http://bed-con.org/">BEDCon</a> was full of high quality talks and interesting attendies. The conference sold out with somewhere around 350 people and although some talks were a bit crowded, the atmosphere was very nice and friendly! Thanks to everyone who contributed in one way or another! I had a great time.</p>
+<h2 id="why-coffee-is-good-for-developers">Why Coffee is good for developers</h2>
+<p>This was the first conference, where I attended as a speaker. I gave a (hopefully) entertaining introduction to <a href="http://coffeescript.org/">CoffeeScript</a> on the second day titled <a href="http://bed-con.org/talks/why-coffee-is-good-for-developers/">Why Coffee is good for developers</a>. And judging by the feedback I got in person and via twitter, the talk was a huge success. Thanks to everyone who attended! I hope you had as much fun listening as I had giving the talk!</p>
+<p>I opened my talk with some facts about actual coffee as a pun on the title of the talk before spinning into <a href="http://coffeescript.org/">CoffeeScript</a> and the problems, it tries to solve. Some people told me, they liked the idea and also enjoyed my facts about coffee. Although one person aparently didn’t liked it at all. He left before I even got to the interesting parts probably thinking, I was talking about coffee for an hour. Maybe he is more of a tea guy :)</p>
+<h2 id="html-slides-are-gaining-traction">HTML slides are gaining traction</h2>
+<p>My <a href="http://blog.notadomain.com/wcig4d">slides</a> are available online and the sources are on <a href="https://github.com/mo-gr/wcig4d">github</a> too (Sorry, slides are in german.) The slides work best in Safari but should also work in Chrome. Non-WebKit Browsers are probably going to have some problems. Since a few people have asked me, I made the slides with my own custom fork of the fabulous <a href="https://github.com/bartaz/impress.js">impress.js</a>. I rewrote it in <a href="http://coffeescript.org/">CoffeeScript</a> and modified it quite a bit for this presentation. If you plan to use it, at this moment, I have to recomment using <a href="https://github.com/bartaz/impress.js">impress.js</a> over my fork. I plan to put some more effort into my fork and iron out many of the wrinkles. But at the moment, <a href="https://github.com/bartaz/impress.js">impress.js</a> is more stable and more active. I’ll post here when there are news about my fork.</p>
+<p>I was by far not the only speaker with HTML slides. An intersting trend, that I really do appreciate. HTML slides tend to be less bullet point ridden than powerpoint slides. The presentations are often more interactive and engaging. The slides are easier and faster to share after the talk and they discourage the stupid idea of printing out slides. But as <a href="https://github.com/bartaz/impress.js">impress.js</a> calls out in its readme, they “may not help you if you have nothing interesting to say ;)”</p>
+<p>One other framework for HTML slides, that looked very intersting was <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>. <a href="http://twitter.com/#!/spinscale">Alexander Reelsen</a> used it for his slides and they looked great. But then again, he also hat something interesting to say…</p>
+<p>If you have anything to do with the web at all, check out one of the options for HTML slides! Not only is it fun to create the slides, it is also a nice exercise for your web-fu! And you can use <a href="http://www.jetbrains.com/idea">IntelliJ</a> instead of PowerPoint for creating slides - how awesome is that?!</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+
+</feed>
